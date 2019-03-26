@@ -1,0 +1,231 @@
+body
+{
+	margin: 0;
+	padding: 0;
+    background-color:#f5f5f5;
+}
+
+.bar
+{
+	width: 100%;
+	height: 50px;
+	font-size: 16px;
+	text-align: center;
+	border-bottom: 1px solid #eee;
+
+    display: flex;
+    flex-direction:row;
+    background-color:#fff;
+
+
+}
+.content1{
+
+background-color:#f5f5f5;
+height:100%;
+padding:20px;
+display:flex;
+width:100%;
+white-space: normal;
+box-sizing:border-box;
+padding-right: 40px;
+
+}
+.content2{
+
+background-color:#f5f5f5;
+height:100%;
+padding:20px;
+display:flex;
+width:100%;
+white-space: normal;
+box-sizing:border-box;
+padding-left: 40px;
+
+}
+.back_pic{
+
+    width:10%;
+    height:50px;
+    display: inline-flex;
+    flex-direction:row;
+        align-items: center;
+
+
+}
+.bar .back
+{
+    height:24px;
+    margin-left: 12px;
+
+
+
+}
+.bar_name
+{
+    width:80%;
+   
+    display: flex;
+    flex-direction:column;
+
+     justify-content: space-around;
+
+
+
+
+}
+.ziliao{width: 10%;   
+display:flex;
+    flex-direction: row;
+    align-items: center;
+        justify-content: center;}
+.ziliao img
+{
+	height: 20px;
+}
+.post
+{
+
+font-size:12px;
+color: #888;
+
+
+}
+.bar_chat
+{
+
+    font-size:16px;
+
+}
+.qi_chat,.qi_chatr
+{
+    display:inline-block;
+    background-color: #FEFEFE;
+    min-height: 40px;
+    margin-left: 10px;
+    border-radius: 5px;
+    line-height:22px ;
+    position: relative;
+    font-size: 13px;
+    min-width:30px;
+    font-size:12px;
+    padding:10px;
+    box-sizing: border-box;
+    width:100%;
+    letter-spacing:2px;
+    color:#666;
+
+
+}
+.qi_chatr
+{
+      margin-left:0px;
+
+}
+.qi_chat:before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    right: 100%;
+    top: 12px;
+    border-top: 7px solid transparent;
+    border-right: 7px solid #fff;
+    border-bottom: 7px solid transparent;
+}
+.content_img
+{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+}
+.content2 .content_img
+{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    float: right;
+}
+.qipao_content
+{
+width:86%;
+}
+
+.left_icon
+{
+    display:inline-block;
+width:14%;
+}
+.right_icon
+{
+    display:inline-block;
+width:14%;
+margin-left:10px;
+}
+
+
+
+.qi_chatr::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    left: 100%;
+    top: 12px;
+    border-top: 7px solid transparent;
+    border-left: 7px solid #fff;
+    border-bottom: 7px solid transparent;
+}
+.time
+{
+text-align: center;
+color:#999;
+font-size:12px;
+transform: scale(0.8);
+margin-top: 20px;
+}
+
+.tabBar
+{
+    height:66px;
+    width:100%;
+    position:fixed;
+    bottom: 0;
+    left:0;
+    background-color:#fff;
+    border-top:1px solid #eee;
+    z-index: 999;
+    padding:10px 20px;
+    box-sizing:border-box;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+}
+.tabBar input
+{
+ height:100%;
+ border:none;
+ margin:0;
+ padding: 0;
+ width:80%;
+ color:#888;
+ font-size:12px;
+ padding-left:10px;
+ white-space:normal;
+}
+
+.tabBar button
+{
+     width:20%;
+     height:30px;
+     margin:0;
+         background-color: #CA5F5B;
+     border:none;
+    color:#fff;
+    border-radius:5px;
+
+}
+
+.tabBar input:focus {
+    outline: none;
+ }
