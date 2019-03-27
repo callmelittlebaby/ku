@@ -132,7 +132,7 @@ body
 	font-size: 12px;
 	font-weight: 600;
 	color: #707070;
-	border-bottom: 1px solid #eee;
+
 
 }
 
@@ -146,6 +146,7 @@ body
 	height: 50px;
 	line-height: 50px;
 	padding: 4px 20px;
+	border-bottom: 1px solid #eee;
 }
 
 .mb_s .mb_row {
@@ -186,7 +187,7 @@ body
 .same_content {
 	border-left: 1px solid #eee;
 	border-right: 1px solid #eee;
-	border-top: 1px solid #eee;
+/* 	border-top: 1px solid #eee; */
 	min-height: 60px;
 	padding: 0 20px;
 	box-sizing: border-box;
