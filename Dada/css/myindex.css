@@ -73,45 +73,103 @@ display: flex;
 	display: flex;
 	flex-direction: column;
 	align-self: center;
+	width: 56%;
+	
 	
 	
 }
-.namebox span
+.namebox .lheight
 {
 	line-height: 30px;
 }
 .dex_icon
 {
-	width: 60px;
-	height: 60px;
+	width: 55px;
+	height: 55px;
 	border-radius: 50%;
 	
 	
 }
 .icon_box
 {
-	padding:  0 30px;
+	padding-left: 30px;
 	position: relative;
+	width: 44%;
+	
+}
+.vip
+{  
+	display: inline-block;
+    background-color: #FBD54E;
+    color: #B72025;
+    padding: 2px;
+    font-size: 14px;
+    
+    transform: scale(0.9);
+    line-height: 8px;
+    border-radius: 8px;
+    text-align: center;
+    width: 30px;
+    font-weight: 600;
+    position: relative;
+    line-height: 13px;
+	    bottom: 1px;
+    left: 5px;
+}
+
+.shan {
+	position: absolute;
+	-webkit-animation: changeImg 3s ease 0s;
+	-o-animation: changeImg 3s ease 0s;
+	animation: changeImg 3s ease 0s;
+	top: 0;
+	width: 30%;
+	height: 100%;
+	content: "";
+	background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .4) 50%, rgba(255, 255, 255, 0) 100%);
+	background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .4) 50%, rgba(255, 255, 255, 0) 100%);
+	background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .4) 50%, rgba(255, 255, 255, 0) 100%);
+	background: linear-gradient(to right, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .4) 50%, rgba(255, 255, 255, 0) 100%);
+	transform: skewX(-1deg);
+	animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	
+}
+
+@-webkit-keyframes changeImg {
+	from {
+		left: 0%;
+	}
+
+	100% {
+		left: 60%;
+	}
 }
 .icon_box .text_c
 {
 	
     height: 20px;
     position: absolute;
-    right: 29px;
+    right: 35%;
     bottom: 2px;
+	
 
 
 }
 .name 
 {
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: 600;
+	color: #fff;
+	width: 100%;
+	height: 30px;
+	overflow: hidden;
 }
 .idn
 {
 	font-size: 12px;
-	color: #fff;
+	color: #464242;;
 }
 .qd
 {  
@@ -122,7 +180,7 @@ display: flex;
     background-color: #fff;
     line-height: 30px;
     font-size: 12px;
-    width: 30%;
+    width: 27%;
     height: 30px;
     justify-content: center;
     border: none;
@@ -138,7 +196,7 @@ display: flex;
 }
 .limtk
 {
-	width: 70%;
+	width: 73%;
 	display: flex;
 		flex-direction: row;	
 		align-items: center;
@@ -157,4 +215,67 @@ position: absolute;
     box-shadow: 0px 6px 12px #cfd9e7;
     border: 1px solid #eee;
     border-radius: 10px;
+}
+
+.icon_hg  {
+	
+	display: flex;
+	align-items: center;
+	height: 100%;
+	padding-left: 20px;
+	position: relative;
+}
+.icon_hg  img
+{
+	
+	height: 30px;
+	
+}
+.vip_text
+{
+	
+font-size: 14px;
+margin-left: 20px;
+height: 30px;
+display: inline-block;
+line-height: 30px;
+	
+}
+.lever_add
+{
+	float: right;
+	display: inline-block;
+	position: absolute;
+	font-size: 12px;
+	color:#CC7339 ;
+	right: 20px;
+
+	
+}
+.function_all
+{
+	padding: 20px;
+	margin-top: 60px;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	font-size: 12px;
+}
+
+.function_area{
+	
+width: 25%;
+
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+margin-bottom: 20px;
+}
+
+.function_area img
+{
+	height: 20px;
+
+	margin: auto;
+	margin-bottom: 10px;
 }
