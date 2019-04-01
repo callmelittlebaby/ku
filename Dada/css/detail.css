@@ -41,9 +41,10 @@ height: 30px;
 }
 .user_tag{
 	
-	height: 14px;
-	display: inline-block;
-	margin-left: 5px;
+	    height: 19px;
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: bottom;
 	
 }
 .user_name
@@ -69,6 +70,7 @@ height: 30px;
 	
 	font-size: 14px;
 	margin: 20px  0;
+
 }
 
 .function_area
@@ -87,7 +89,7 @@ height: 30px;
 .function_area img
 {
 	height: 14px;
-	vertical-align: middle;
+	vertical-align: bottom;
 }
 .area_all
 {
@@ -147,3 +149,157 @@ bottom: 0;
 	
 }
 
+.pl_text{
+	
+	
+}
+
+.pl_tag
+{
+	font-size: 14px;
+	padding:20px 20px;
+	
+	box-shadow: 1px 0px 1px #eee;
+	
+}
+.pl_xu
+{
+	float:right;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+
+.user_idtag
+{
+	    background-color: #2B80FF;
+    padding: 4px 4px;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 10%;
+    width: 24px;
+    text-align: center;
+    margin-left: 5px;
+    height: 10px;
+    display: inline-block;
+    line-height: 10px;
+    transform: scale(0.9);
+	
+  
+}
+.plUser .user_box
+{
+	margin-top: 20px;
+	padding: 0px 20px;
+	position: relative;
+}
+.loucTag
+{
+	font-size: 12px;
+	color: #999;
+	margin-top: 5px;
+}
+.loucTag span
+{
+	margin-right: 10px;
+	
+	
+}
+@font-face {
+	font-family: ping;
+
+
+	src:
+		url('../fonts/PINGFANGM.TTF'),
+		url('../fonts/PINGFANGM.eot');
+	/* IE9 */
+
+}
+
+body {
+	font-family: ping;
+}
+
+
+.ry_content
+{
+	padding: 0px 20px;
+	font-size: 14px;
+	margin: 10px 0;
+	padding-left: 75px;
+}
+.zanbox
+{
+	display: flex;
+	flex-direction: row;
+	position: absolute;
+	right: 14px;
+	top: 10px;
+	    font-size: 12px;
+    color: #757575;
+}
+.zanbox span
+{
+	margin: 0 10px;
+}
+.zanbox img
+{
+	height: 14px;
+	vertical-align: bottom;
+	
+}
+.pl_repy
+{
+	padding:  0 20px;
+padding-left: 75px;
+
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	
+}
+.pl_repy_content
+{
+	width: 100%;
+	min-height: 42px;
+		background-color: #F2F2F2;
+}
+
+.person_sent
+{
+	color: #4C6B9B;
+	font-size: 14px;
+	line-height: 21px;
+	padding: 5px;
+padding-left: 10px;
+	box-sizing: border-box;
+}
+.person_sent:first-child
+{
+		
+	padding-top: 10px;
+}
+
+.nr
+{
+	color: #333;
+}
+.hf_btn
+{
+width: 100%;
+	height: 20px;
+	font-size: 12px;
+	line-height: 20px;
+	display: block;
+}
+.hf_btn span
+{
+	float:right;
+	margin-right:6px;
+	color: #999;
+}
+.check_more
+{
+	font-size: 12px;
+	
+	color:#333;
+}
