@@ -303,3 +303,136 @@ width: 100%;
 	
 	color:#333;
 }
+
+.backdrop{
+	    position: fixed;
+    z-index: 9;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.3);
+	display: none;
+	
+}
+.xzgg_box {
+    background: #fff;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 90%;
+   display: none;
+    z-index: 1000;
+    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transition: transform 350ms;
+    -webkit-transition: transform 350ms;
+    -ms-transition: transform 350ms;
+    -moz-transition: transform 350ms;
+    -o-transition: transform 350ms;
+    box-shadow: 0 0rem 0.2rem #999;
+}
+
+.xzgg_box_on {
+    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    transition: transform 350ms;
+    -webkit-transition: transform 350ms;
+    -ms-transition: transform 350ms;
+    -moz-transition: transform 350ms;
+    -o-transition: transform 350ms;
+}
+.xzgg_box .plUser:first-child
+{
+	border-bottom: 5px solid  #F3F3F3;
+}
+.xzgg_box .plUser:first-child .user_box
+{
+	margin-top: 40px;
+}
+.xzgg_box .plUser .user_box
+{
+	margin-top: 10px;
+	padding: 0px 10px;
+}
+.xzgg_box .plUser  .ry_content
+{
+	padding: 0;
+	    padding-left: 65px;
+		font-size: 12px;
+		margin: 0;
+		margin-bottom:10px ;
+}
+#HuiN
+{
+	padding: 10px;
+	font-size: 12px;
+}
+
+.input_text2
+{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	border-top: 1px solid #eee;
+   padding:0 10px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+
+}
+.input_text2 input
+{
+	width: 80%;
+	border: none;
+	
+	height: 40px;
+	line-height: 40px;
+	font-size: 12px;
+	
+	color: #333;
+	display: inline-block;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+input
+{
+	outline: none;
+}
+input::-webkit-input-placeholder{    color: #918787;}
+.sent
+{
+	display: inline-block;
+	background-color: #F5F5F5;
+	padding: 2px 10px;
+	font-size: 12px;
+	color: #606060;
+	float: left;
+	height: 20px;
+	margin-top: 8px;
+	line-height: 20px;
+	width: 14%;
+	text-align: center;
+	
+}
+
+#bclose
+{
+	height:15px;
+	position: absolute;
+	top: 5px;
+	left:5px;
+}
+.tag_active{
+	font-weight: 600 ;
+	color: #555;
+}
