@@ -1,3 +1,13 @@
+@font-face {
+	font-family: ping;
+
+
+	src:
+		url('../fonts/PINGFANG.TTF'),
+		url('../fonts/PINGFANG.eot');
+	/* IE9 */
+
+}
 
 body
 {
@@ -147,13 +157,15 @@ body
 	line-height: 50px;
 	padding: 4px 20px;
 	border-bottom: 1px solid #eee;
+	font-family: ping;
+	
 }
 
 .mb_s .mb_row {
-	height: 9px;
+	height: 6px;
 	float: right;
 	position: relative;
-	top: 16px;
+	top: 20px;
 }
 
 .mb_s .qipao {
@@ -303,4 +315,95 @@ line-height:60px;
 .dong_box a 
 {
 	text-decoration: none;
+}
+
+
+.toPart
+{
+	display: flex;
+	flex-direction:row;
+	
+}
+.toPart img 
+{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+.toPart_exImg{
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px;
+	font-weight: 500;
+}
+.toPart_exImg .aName
+{
+	
+	font-size: 14px;
+	margin-left: 2px;
+	color: #333;
+}
+.toPart_exImg .aDate
+{
+	font-size: 12px;
+	transform: scale(0.9);
+	margin-top: 5px;
+	
+}
+.bottoMpart
+{
+		display: flex;
+	flex-direction:row;
+	background-color:#F2F2F2 ;
+	height: 60px;
+}
+.aContent
+{
+	color: #000;
+	font-size: 12px;
+	font-weight: 500;
+	margin: 10px 0;
+	line-height: 30px;
+	
+}
+.truebox
+{
+	padding: 20px;
+	box-sizing: border-box;
+	border-bottom: 4px solid #eee;
+
+}
+.b_l
+{
+	width: 20%;
+	height:60px ;
+	
+	
+}
+.b_l img {
+	width: 100%;max-height: 100%;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;}
+	
+.b_r
+{
+height: 60px;
+	line-height: 50px;
+	padding-left: 10px;
+	font-weight:500 ;
+	color: #666;
+	line-height: 60px;
+}
+.hf_bar .a_hfbar
+{  
+	float: right;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 12px;
+	    float: right;
+   
+   
+	display: block;
+	color: #333;
+	margin-top: 10px;
 }
