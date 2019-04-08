@@ -18,9 +18,9 @@ body {
 
 .positon {
 	width: 100%;
-	height: 100px;
+	height: 150px;
 	background-color: transparent;
-	position: fixed;
+	position:absolute;
 	top: 0;
 	left: 0;
 	z-index: 2;
@@ -33,7 +33,7 @@ body {
 
 .positon_more {
 	width: 100%;
-	height: 80px;
+	height: 128px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -152,7 +152,7 @@ body {
 }
 
 .psg_topic {
-	font-size: 12px;
+	font-size: 14px;
 	margin-top: 5px;
 }
 
@@ -847,8 +847,12 @@ body {
 
 .swiper-container {
     width: 100%;
-    height:100px;
-}  
+    height:150px;
+} 
+ .swiper-container img {
+   
+     height:100%;
+ }  
 .swiper-pagination-bullet-active {
     opacity: 0.8 !important;
     background: #ffffff !important;

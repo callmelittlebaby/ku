@@ -50,7 +50,7 @@ body
 .gg_box {
 	border: 1px solid #eee;
 	box-shadow: 1px 1px 1px #EEEEEE;
-	margin:10px;
+		margin: 0px 11px ;
 	background-color: #fff;
 }
 
@@ -58,13 +58,18 @@ body
 	font-size: 14px;
     font-weight: 600;
     color: #333;
-    padding-left: 20px;
+    background-color: #fff;
     /* margin-top: 20px; */
     display: flex;
     justify-content: center;
     position: relative;
     height: 50px;
     align-items: center;
+		margin: 0px 12px ;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+		margin-top: 20px;
+		
 }
 
 .gg_text img {
@@ -75,6 +80,7 @@ body
 .gg_content {
 	padding: 10px 20px;
 	border-bottom: 1px solid #eee;
+
 }
 
 .gg_topic {
@@ -119,10 +125,19 @@ body
 
 .xiaoxi_box {
 	background-color: #fff;
-	margin: 20px 10px;
-	border: 1px solid #eee;
-	box-shadow: 1px 1px 1px #EEEEEE;
 	
+	border: 1px solid #eee;
+	margin: 0px 10px ;
+	
+
+	
+}
+.xx_num
+{
+	color: #999;
+	transform: scale(0.9);
+	display: inline-block;
+	margin-left: 20px;
 }
 
 .xiaoxi img {
@@ -132,16 +147,24 @@ body
 
 .xiaoxi {
 	display: flex;
-    justify-content: center;
+    
     align-items: center;
-    height: 50px;
-
+   
+	padding-left:25px;
+	background-color: #fff;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	line-height: 40px;
+	height: 40px;
+		margin: 0px 11px ;
+		 margin-top: 20px;
 }
 
 .mb_s {
 	font-size: 12px;
 	font-weight: 600;
-	color: #707070;
+	
+	
 
 
 }
@@ -158,7 +181,26 @@ body
 	padding: 4px 20px;
 	border-bottom: 1px solid #eee;
 	font-family: ping;
+	position: relative;
 	
+	
+}
+.check_text
+{
+	position: absolute;
+	border:1px solid #eee ;
+	border-radius: 10px;
+	right: 10px;
+	top: 15px;
+	height: 20px;
+	line-height: 20px;
+	padding: 5px 10px;
+}
+.same_box .icon_sf
+{
+	height: 40px;
+	vertical-align: middle;
+	margin-right: 20px;
 }
 
 .mb_s .mb_row {
