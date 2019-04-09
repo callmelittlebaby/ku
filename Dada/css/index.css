@@ -152,7 +152,7 @@ body {
 }
 
 .psg_topic {
-	font-size: 14px;
+	font-size: 16px;
 	margin-top: 5px;
 }
 
@@ -161,6 +161,24 @@ body {
 	display: flex;
 	justify-content: flex-start;
 	align-content: space-around;
+}
+.shan {
+	position: absolute;
+	-webkit-animation: changeImg 3s ease 0s;
+	-o-animation: changeImg 3s ease 0s;
+	animation: changeImg 3s ease 0s;
+	top: 0;
+	width: 30%;
+	height: 100%;
+	content: "";
+	background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .4) 50%, rgba(255, 255, 255, 0) 100%);
+	background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .4) 50%, rgba(255, 255, 255, 0) 100%);
+	background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .4) 50%, rgba(255, 255, 255, 0) 100%);
+	background: linear-gradient(to right, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .4) 50%, rgba(255, 255, 255, 0) 100%);
+	transform: skewX(-45deg);
+	animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
 }
 
 .mui-slider .mui-slider-group .mui-slider-item .pic_ad img {
@@ -203,7 +221,7 @@ body {
 }
 
 .jp img {
-	height: 12px !important;
+	height: 16px !important;
 	display: inline-block;
 }
 
@@ -405,7 +423,7 @@ body {
 
 .driver_all {
 	border-radius: 5px;
-	box-shadow: 1px 2px 19px #f0dada;
+	box-shadow: 1px 2px 8px #f0dada;
 	border: 1px solid #f0dada;
 	margin: 10px;
 }
@@ -757,13 +775,12 @@ body {
 
 .zp_company {
 	color: #fff;
-	font-size: 12px;
+	font-size: 14px;
 	color: #333;
 }
 
 .zp_company .yz_vip {
-	-webkit-transform: scale(0.8);
-	transform: scale(0.8);
+	
 	display: inline-block;
 	padding: 5px;
 	border: none;

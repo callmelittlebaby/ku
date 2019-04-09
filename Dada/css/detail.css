@@ -49,8 +49,8 @@ height: 30px;
 }
 .user_name
 {
-	font-weight: 600;
-	font-size: 14px;
+	
+	font-size: 16px;
 
 }
 .replay_time{
@@ -435,4 +435,47 @@ input::-webkit-input-placeholder{    color: #918787;}
 .tag_active{
 	font-weight: 600 ;
 	color: #555;
+}
+.lotteryDraw 
+{
+width: 100%;
+	height: 100%;	
+}
+.lotteryDraw img
+{   
+	display: block;
+	width: 60%;
+	height: 100%;
+	margin: auto;
+}
+#ld_topic
+{
+	text-align: center;
+}
+.ld_detail
+{
+	text-align: center;
+	margin-top: 10px;
+	font-size: 12px;
+	color: #999;
+
+}
+.ld_detail span
+{
+	margin-right: 5px;
+}
+.join_ld
+{
+	width: 70px;
+	height: 70px;
+	background-color:#D15243 ;
+	text-align: center;
+	line-height: 70px;
+	color: #fff;
+	border-radius: 50%;
+	
+	margin: auto;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	
 }
