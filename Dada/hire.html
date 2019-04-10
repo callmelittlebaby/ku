@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/hire.css"/>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=oyH6yYLWUK3xfGxXuHwG9NFaQgsFLVlY"></script>
+	<body>
+		<div class="bar">
+			<div class="left">
+				<img src="pic/left_row.png" alt="">
+			</div>
+			
+		</div>
+		 <div class="base">
+		<div class="baseM">
+			<div class="gangW">
+				PHP工程师
+			</div>
+			<div class="tag_box">
+				<div class="tag">
+				<img src="pic/icon_dw.png" alt="">	
+				<span>惠州·江北</span>
+				</div>
+				
+				<div class="tag">
+				<img src="pic/icon_zs.png" alt="">	
+				<span>1-3年</span>
+				</div>
+				
+				<div class="tag">
+				<img src="pic/icon_xwz.png" alt="">	
+				<span>本科</span>
+				</div>
+			</div>
+			<div class="xinWater">10k-20k</div>
+		</div>
+		
+		<div class="zp_work">
+			
+          <img src="pic/icon_yh.png" alt="" class="icon_tx">
+		  <div class="zp_allM">
+			  <div class="zp_top">陈广锋</div>
+			  <div class="zp_bottom">卡易推·人事经理</div>
+		  </div>
+		   
+		</div>
+		
+		
+		 <div class="gw_detail">
+			 <div class="gw_content">
+			 <div class="gw-tag">
+				 职位详情
+			 </div>
+			 <div class="gw_need">
+			 1.计算机或相关专业本科学历，三年以上Java工程师工作经历
+			 </div>
+			 <div class="gw_need">
+			 2.掌握PHP基础知识，熟悉php基础类库和J2EE技术，遵循UML设计进行代码开发编码，具有良好的编码规范
+			   </div>
+			  <div class="gw_need">
+			 3.熟悉HTML、JSP、Javascript、ajax、css等Web开发技术
+			 </div>
+			  <div class="gw_need">
+			 4.熟悉Oracle,SQL Server,Sybase等开发技术
+			 </div>
+			  <div class="bz_tag">
+			  备注：
+			 </div>
+			 <div class="bz_need">
+				 1.女士优先，原因我喜欢女的;
+			 </div>
+			  <div class="bz_need">
+			 	2. 体重大于100斤免谈，
+			 </div>
+			 </div>
+			  <div class="gw-tag">
+			  				技能要求
+			  </div>
+			  <div class="work_tag">
+				  
+				 <span>Php</span> 
+				 <span>JavaScript</span> 
+				 <span>Linux</span>
+			  </div>
+			  <div id="allmap" style="width: 100%;height: 300px;"></div>
+               <div class="connect">立即联系</div>
+		 </div>
+		</div>
+	</body>
+	<script type="text/javascript">
+    // 百度地图API功能
+    var map = new BMap.Map("allmap");
+    var point = new BMap.Point(24.11353985,118.41065808);
+    map.centerAndZoom(point,12);
+    var top_left_control = new BMap.ScaleControl({anchor: BMAP_ANCHOR_TOP_LEFT});// 左上角，添加比例尺
+	var top_left_navigation = new BMap.NavigationControl();  //左上角，添加默认缩放平移控件
+	var top_right_navigation = new BMap.NavigationControl({anchor: BMAP_ANCHOR_TOP_RIGHT, type: BMAP_NAVIGATION_CONTROL_SMALL}); //右上角，仅包含平移和缩放按钮
+    var geolocation = new BMap.Geolocation();
+    geolocation.getCurrentPosition(function(r){console.log(r.point)
+        if(this.getStatus() == BMAP_STATUS_SUCCESS){
+            var mk = new BMap.Marker(r.point);
+            map.addOverlay(mk);//标出所在地
+            map.panTo(r.point);//地图中心移动
+            map.addControl(top_left_control);
+    		map.addControl(top_left_navigation);
+    		map.addControl(top_right_navigation);
+            //alert('您的位置：'+r.point.lng+','+r.point.lat);
+            var point = new BMap.Point(r.point.lng,r.point.lat);//用所定位的经纬度查找所在地省市街道等信息
+            var gc = new BMap.Geocoder();
+            gc.getLocation(point, function(rs){
+               var addComp = rs.addressComponents; console.log(rs.address);//地址信息
+               //根据经纬度获取地址
+               var geoc = new BMap.Geocoder();
+        		//传入经纬度
+           		var pt = rs.point;
+           		geoc.getLocation(pt, function(rs){
+           			var addComp = rs.addressComponents;
+                    var transit = new BMap.TransitRoute(map, {
+                    	//绑定div
+                   		renderOptions: {map: map, panel: "r-result"}
+                   	});
+                    //起点和束点传给百度（地址 不是经纬度）
+                   	transit.search(addComp.province  + addComp.city + addComp.district+ addComp.street + addComp.streetNumber, "");
+
+           		});
+
+            });
+        }else {
+            alert('failed'+this.getStatus());
+        }
+    },{enableHighAccuracy: true});
+
+</script>
+</html>

@@ -1,0 +1,153 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+.bar
+{
+	height: 44px;
+	display: flex;
+    align-items: center;
+}
+.left img
+{
+height: 30px;	
+}
+.base{
+	padding: 20px;
+position: relative;
+}
+.baseM
+{
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #eee;
+	
+	}
+.baseM .gangW
+{
+		font-size: 24px;
+		font-weight: 600;
+		letter-spacing:2px;
+		margin-bottom: 10px;
+}
+.baseM .tag_box
+{
+	display: flex;
+	flex-direction: row;
+	
+}
+
+.baseM .tag_box .tag
+{
+	font-size: 12px;
+	margin-right: 20px;
+}
+.baseM .tag_box .tag img
+{
+	height: 12px;
+	vertical-align: middle;
+}
+.xinWater
+{
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	color: #F34A15;
+	font-size: 14px;
+}
+
+.zp_work 
+{
+	display: flex;
+	flex-direction: row;
+	padding: 20px 0;
+	border-bottom: 1px solid  #eee;
+}
+.zp_work .icon_tx
+{
+	width: 60px;
+	height:60px;
+	border-radius: 50%;
+	margin-right: 20px;
+}
+.zp_allM
+{  
+	padding: 2px 0;
+	display:flex;
+	flex-direction: column;
+justify-content: space-between;    font-size: 14px;
+	
+}
+
+.gw_detail
+{
+	padding-bottom: 20px;
+
+}
+.gw_detail .gw-tag
+{
+	padding: 20px  0;
+	font-weight: 600;
+}
+.gw_need
+{
+font-size: 14px;
+color: #888;
+margin-bottom: 20px;
+line-height:26px;
+
+}
+.bz_tag
+{
+	font-size: 14px;
+	color: #888;
+	margin-bottom: 20px;
+	
+}
+.bz_need
+{
+	font-size: 14px;
+	color: #888;
+	margin-bottom: 20px;
+	line-height:26px;
+	
+	
+}
+.work_tag
+{
+	padding-bottom: 20px;
+	border-bottom: 1px solid #eee;
+	
+}
+.work_tag span
+{
+	border: 1px solid #eee;
+	padding: 5px;
+	font-size: 12px;
+	color: #999;
+	margin-right: 10px;
+	
+}
+.gw_content
+{
+	border-bottom: 1px solid #eee;
+}
+
+.connect
+{
+	text-align: center;
+
+	padding: 10px;
+	width:100%;
+	height: 30px;
+	line-height: 10px;
+	font-size: 14px;
+	margin: auto;
+    margin-top: 40px;
+	background-color:#CB6252 ;
+	color: #fff;
+	box-sizing: border-box;
+	
+}
