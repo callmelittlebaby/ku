@@ -48,6 +48,8 @@ position: relative;
 {
 	height: 12px;
 	vertical-align: middle;
+	position: relative;
+    top: -2px;
 }
 .xinWater
 {

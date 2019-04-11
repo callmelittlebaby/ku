@@ -639,16 +639,93 @@ left: 4px;
 {
 	content: "";
     width: 0px;
-    height: 50%;
+    height: 20%;
     position: absolute;
     right: 0px;
-    top: 25%;
-    border-right: 1px solid #999;
+    top: 40%;
+    border-right: 1px solid #aeaaaa;
 	
 	   
 	
 }
 
+
+.oneBox
+{
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	border-bottom: 5px  solid #F5F5F6;
+}
+.row_Tb
+{
+	display: flex;
+	flex-direction: column;
+	
+	justify-content: space-between;
+}
+.oneRow
+{
+	display: flex;
+	flex-direction: row;
+	height:50px ;
+	
+}
+.oneBox .oneRow img{
+height: 50px !important;
+margin-right: 20px;
+vertical-align: middle;
+}
+.top_row .tr_name
+{
+	font-weight: 600;
+	font-size: 16px;
+	margin-right: 20px;
+}
+.same_styleTr
+{
+	font-size: 14px;
+	color: #888;
+	margin-right: 2px;
+}
+.or_companyN
+{
+	font-size: 14px;
+	
+}
+
+
+.tagRow{
+	margin: 10px  0;
+	
+	
+	
+}
+.tagRow span{
+	
+	display: inline-block;
+	margin-right: 20px;
+	padding:4px 8px;
+	box-sizing: border-box;
+	font-size: 12px;
+	background-color: #F8F8F8;
+	color: #ADADAD;
+	transform: scale(0.9);
+	border-radius: 5px;
+	position: relative;
+	left: -6px;
+	
+	
+}
+.describeRow
+{
+	
+	font-size: 12px;
+	color: #888;
+	max-height: 42px;
+	width: 100%;
+	overflow: hidden;
+}
 /*招聘*/
 
 .mrtj
