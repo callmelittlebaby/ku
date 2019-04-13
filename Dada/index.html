@@ -68,7 +68,7 @@
 		        <div id="item1" class="mui-slider-item mui-control-content mui-active">
 		            <ul class="mui-table-view">
 		                <li class="mui-table-view-cell">
-		                	<img src="pic/icon_tj.png" alt=""  class="tj"/>
+		                	<!-- <img src="pic/icon_tj.png" alt=""  class="tj"/> -->
 		                	<div class="psg_topic">
 		                		求职记，现实福利活动，白无常素材免费送 ，走过路过不要错过
 		                	</div>
@@ -76,7 +76,7 @@
 		                		<img src="pic/ad_1.jpg"/><img src="pic/ad_free.png"/><img src="pic/ad_2.png"/>
 		                	</div>
 		                	<div class="tag_bar">
-		                		<span class="company">中易智能传媒</span> <span class="jp"><img src="pic/cj-ad2.png"/ class=""></span>
+		                		<span class="company">中易智能传媒</span> <span class="jp">有奖活动</span>
 		                	</div>
 		                	</li>
 		                <li class="mui-table-view-cell">
@@ -87,7 +87,7 @@
 		                		<img src="pic/ad_1.jpg"/><img src="pic/ad_free.png"/><img src="pic/ad_2.png"/>
 		                	</div>
 		                	<div class="tag_bar">
-		                		<span class="company">中易智能传媒</span> <span class="jp"><img src="pic/cj-ad2.png"/></span>
+		                		<span class="company">中易智能传媒</span> <span class="jp">有奖活动</span>
 		                	</div>
 		                </li>
 		                
@@ -498,17 +498,18 @@
 	<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
 	(function () {
-	  console.log('do something');
-	  var data=[];
-	  var colorG=["#333","#fff","#000"];
 	  
+	  var data=[];
+	  var colorG=["#FFE6E6","#FFEDD8","#000"];
+	  var colorT=["red","#FF8E12","#fff"];
 	  // 
-	  data=['.bianM','.goods','.tag_bar'];
-	  console.log(data);
-	  for(var i=0;i<data.length;i++)
+	  
+	  data=$('.bianM .goods .tag_bar').find('span');
+     for(var i=0;i<data.length;i++)
 	  {
-		  var this_name = data[i]+' span';
-	    	$(this_name).css("background-color",colorG[i]);	
+		 var this_name = data[i];
+	     $(this_name).css("background-color",colorG[i]);	
+		  $(this_name).css("color",colorT[i]);	
 	  }
 	  
 	})();
