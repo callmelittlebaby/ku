@@ -1,0 +1,307 @@
+@font-face {
+	font-family: din;
+     src:
+		url('../fonts/DIN-Black.otf');
+		
+	
+
+}
+*{
+	padding: 0;
+	margin: 0;
+}
+
+.bar
+{
+	height: 44px;
+    text-align: center;
+	font-weight: 600;
+	line-height: 44px;
+	box-shadow: 1px 0px 1px #eee;
+    color:#F56358;
+	background-color: #F5F5F5;
+	font-family: din;
+
+}
+
+.left img
+{
+position: absolute;
+height: 30px;
+left: 0;
+top: 7px;
+
+}
+.bs_bar
+{  
+	padding-bottom: 20px;
+	display: flex;
+	flex-direction: row;
+	border-bottom: 1px solid #eee;
+}
+
+.bs_bar  img
+{
+	width: 40px;
+	height: 40px;
+	border-radius: 5px;
+	
+}
+.all{
+	
+	padding: 20px;
+}
+.ecPic
+{
+	display: flex;
+	flex-direction: column;
+	margin-left: 20px;	
+	justify-content: space-between;
+}
+.ecPic .name
+{
+	font-size: 14px;
+	font-weight: 600;
+}
+.ecPic .state
+{
+	font-size: 12px;
+	color: #888;
+	
+}
+.price
+{
+	font-weight: 600;
+	 color:#F56358;
+	 font-family: din;
+	 margin: 10px 0;
+}
+.content
+{
+	line-height: 28px;
+	
+
+}
+.all
+{
+	border-bottom: 6px solid #F4F5F9 ;
+}
+.xx
+{
+	padding: 20px;
+	border-bottom: 6px solid #F4F5F9 ;
+}
+.xx .name
+{
+font-size: 14px;
+font-weight: 600;
+}
+.xx .show
+{
+	font-size: 12px;
+	margin: 10px 0;
+}
+.xx .tag
+{
+	color: #888;
+	font-size: 12px;
+	display: flex;
+	flex-direction: row;
+}
+.tag_box
+{
+	margin-right: 20px;
+}
+
+.tag_box img 
+{
+display: inline-block;
+height: 14px;
+vertical-align: middle;
+}
+.fenGe
+{
+	display: flex;
+	flex-direction: row;
+}
+.fenGe .right
+{
+	width: 30%;
+	position: relative;
+	height: 100%;
+	
+}
+.fenGe .icon_tx
+{   
+	width: 50px;
+    height: 50px;
+    border-radius: 5px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	
+	
+}
+.fenGe .left
+{
+	width: 70%;
+}
+
+.liuY
+{
+	padding: 20px;
+}
+.ly_tag
+{
+	font-size: 14px;
+	font-weight: 600;
+	height: 30px;
+	line-height:30px;
+	padding:20px;
+	border-bottom: 1px solid #eee;
+}
+.chat
+{
+	
+   display: flex;
+	flex-direction: row;
+	border-bottom: 1px solid #eee;
+	
+}
+.chat_all
+{
+	    padding: 20px;
+    padding-bottom: 0;
+	
+}
+.chat_left{
+	
+width: 10%;
+position: relative;
+
+}
+.chat_left img{
+width: 30px;
+height: 30px;
+border-radius: 5px;
+position: absolute;
+right: 10px;
+top: 3px;
+}
+.yg_all
+{
+	width: 90%;
+}
+.ygA
+{
+	
+border-bottom: 1px solid #eee;	
+
+	
+}
+.ygA .name
+{
+font-size: 12px;
+	color: #666;
+}
+.ygA  .hf 
+{
+	height: 20px;
+	color: #888;
+}
+.ygA  .hf span
+{
+	float: right;
+	font-size: 12px;
+}
+.ygA .content
+{
+font-size: 14px;
+margin: 5px 0;
+	
+}
+.ygA .date
+{
+font-size: 12px;
+color: #999;
+margin-bottom: 10px;
+	
+}
+.ygB
+{
+	padding: 20px 0;
+}
+.ygB .name
+{
+font-size: 12px;
+	color: #666;
+}
+.ygB .contentB
+{
+font-size: 14px;
+margin: 10px 0;
+line-height: 30px;
+	
+}
+.ygB .date
+{
+font-size: 12px;
+color: #999;
+margin: 10px 0;
+	
+}
+.ygB
+{
+display: flex;
+flex-direction: row;
+
+}
+.ygB_left img
+{
+	width: 30px;
+	height: 30px;
+	border-radius: 5px;
+	margin-right: 10px;
+	
+}
+.bar_bottom
+{
+	background-color: #fff;
+	position: fixed;
+	bottom: 0;
+	height: 50px;
+	width: 100%;
+	border-top: 1px solid #eee;
+   z-index: 2;
+}
+.want
+{
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	margin-top: -19px;
+	background-color: #F56358;
+	color: #fff;
+	padding: 10px 20px;
+	font-size: 12px;
+	height: 18px;
+	border-radius: 5px;
+	
+}
+.barb_left
+{
+	width: 70%;
+	line-height: 50px;
+	font-size: 12px;
+	display: flex;
+  color: #888;
+	justify-content: space-around;
+}
+.barb_left img
+{
+	height: 14px;
+	vertical-align: middle;
+	margin-right: 5px;
+	position: relative;
+	top: -2px;
+}

@@ -1,0 +1,222 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+.bar
+{
+	height: 44px;
+	display: flex;
+    align-items: center;
+}
+.left img
+{
+height: 30px;	
+}
+.qz
+{
+	
+		display: flex;
+		flex-direction: row;
+		
+		justify-content: space-between;
+		align-items: center;
+	
+	
+}
+
+.qz_all
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	color: #888;
+		
+}
+.qz_all .name
+{
+	font-weight: 600;
+	margin-bottom: 10px;
+		color: #333;
+}
+#icon_tx
+{
+	height: 60px;
+}
+
+.all_same
+{
+	margin:0 20px;
+	padding: 20px 0;
+	border-bottom:1px solid #eee;
+}
+
+.work_state
+{
+	font-size: 14px;
+}
+
+.tag
+{
+	
+   
+	margin: 20px 0;
+	 margin-right: 20px;
+}
+.tag img
+{
+	height: 12px;
+    vertical-align: middle;
+	display: inline-block;
+	margin-right: 5px;
+	position: relative;
+	top: -2px;
+}
+
+.tagBox
+{
+	display: flex;
+	flex-direction: row;
+	font-size: 12px;
+}
+.describeRow
+{
+	
+	font-size: 12px;
+	color: #888;
+	max-height: 42px;
+	width: 100%;
+	overflow: hidden;
+	
+}
+.qz_tag
+{
+	font-size: 14px;
+}
+.qz_tag:before
+{   
+	content: "";
+	width:4px ;
+	height: 4px;
+	background-color: #CA5853;
+	border-radius: 50%;
+	display: inline-block;
+	position: relative;
+	top: -4px;
+    left: -6px;
+}
+.qz_work{
+font-size: 12px;
+font-weight: 600;	
+margin-top: 20px;
+padding-left: 8px;
+}
+.work_position
+{
+	font-size: 12px;
+	margin-top: 20px;
+	padding-left: 10px;
+	color: #888;
+}
+.qz_box
+{
+	position: relative;
+}
+
+.gx
+{
+	position: absolute;
+	right: 20px;
+	top:40px;
+	font-weight: 600;
+	color: #CA5853;
+}
+.qz_work
+{
+	position: relative;
+}
+.duringDate
+{
+	position: absolute;
+	right: 10px;
+	top:0px;
+	font-size: 12px;
+	transform: scale(0.95);
+	color: #7F7F7F;
+	font-weight: 500;
+	box-sizing: border-box;
+	
+}
+.qz_Hwork
+{
+	font-size: 12px;
+	color: #888;
+	margin-top: 20px;
+	padding-left: 8px;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+}
+.qz_content
+{
+	
+border-top:1px solid #eee;
+	
+	
+}
+.qz_content:first-child
+{	
+border-top:0px solid #eee ;
+		
+}
+
+.qz_content:last-child .qz_Hwork
+{	
+
+		margin-bottom: 0px;
+}
+.all_same .subjuct
+{
+	font-size: 12px;
+	color: #888;
+	font-weight: 500;
+	margin-top: 20px;
+}
+.all
+{
+	border-bottom: 4px solid #F5F5F6;
+}
+.connect
+{
+	text-align: center;
+
+	padding: 10px;
+	width:80%;
+	height: 40px;
+	line-height: 20px;
+	font-size: 14px;
+	margin: auto;
+    margin-top: 40px;
+	background-color:#CB6252 ;
+	color: #fff;
+	box-sizing: border-box;
+	margin-left: 10%;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	
+}
+.tagHezi
+{
+	margin-top: 20px;
+
+}
+.tagHezi span
+{
+	padding: 4px 8px;
+	border: 1px solid #eee;
+	margin-right: 20px;
+	color: #888;
+	border-radius: 5px;
+	display: inline-block;
+	font-size: 12PX;
+    transform: scale(0.9);
+	}
