@@ -18,6 +18,34 @@ height: 30px;
 	
 	padding:10px 20px ;
 }
+
+.jz_part
+{
+	width: 100%;
+	text-align: center;
+	font-size: 12px;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+		
+	
+}
+
+
+.jz_part img
+{  
+	display: block;
+	margin: auto;
+	margin-bottom: 30px;
+	height: 50px;
+	
+}
+.jz_part .jz_text
+{
+	
+	color:#888;
+}
 .user_box
 {
 	display: flex;
