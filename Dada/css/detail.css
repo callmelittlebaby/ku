@@ -63,16 +63,22 @@ height: 30px;
 {
 	width: 100%;
 
-	border-radius: 1%;
+	margin-top: 10px;
 
 }
 .px_text{
 	
-	font-size: 14px;
+	font-size: 16px;
 	margin: 20px  0;
 
 }
+.articleContent
+{
+	font-size: 14px;
+	line-height: 30px;
+	color: #888;
 
+}
 .function_area
 {
 	display: flex;
@@ -336,6 +342,7 @@ width: 100%;
     -moz-transition: transform 350ms;
     -o-transition: transform 350ms;
     box-shadow: 0 0rem 0.2rem #999;
+	overflow-y:scroll;
 }
 
 .xzgg_box_on {
@@ -379,7 +386,7 @@ width: 100%;
 
 .input_text2
 {
-	position: absolute;
+	
 	right: 0;
 	bottom: 0;
 	width: 100%;
@@ -478,4 +485,12 @@ width: 100%;
 	margin-bottom: 20px;
 	margin-top: 20px;
 	
+}
+.moreOne
+{
+	text-align: center;
+	font-size:12px;
+	width: 100%;
+	color: #888;
+	margin-top: 10px;
 }

@@ -19,6 +19,7 @@
 		</div>
 		<div class="content_all">
 		<div class="user_box">  
+		
 		<img src="pic/logo.jpg" alt="" class="user_icon">
 		<div class="user_text"> 
 		<div class="">
@@ -28,9 +29,14 @@
 		
 		</div>
          <div class="px_text">卡易推激情一夏，全国招募卡易推兼职运营，拿底薪，自由做老板！！！</div>
-		<img src="pic/hd.jpg" alt="" class="litu">
 		
 		
+		<div class="article">
+		 <div class="articleContent">
+			卡易推激情一夏，全国招募卡易推兼职运营，拿底薪，自由做老板！！！卡易推激情一夏，全国招募卡易推兼职运营，拿底薪，自由做老板！！！卡易推激情一夏，全国招募卡易推兼职运营，拿底薪，自由做老板！！！
+		 </div>
+			<img src="pic/hd.jpg" alt="" class="litu">
+		</div>
 		
 		
 		<div class="function_area">
@@ -121,6 +127,31 @@
 				</a>
 				
 			</div>
+			<div class="plUser">
+				<div class="user_box">  
+				
+				<img src="pic/logo.jpg" alt="" class="user_icon">
+				<div class="user_text"> 
+				<div class="">
+					<span class="user_name">卡易推</span><span><img src="pic/vip.png" alt="" class="user_tag"></span>
+					<span class="user_idtag">楼主</span>
+					</div>
+				<div class="loucTag"><span>2楼</span><span>03-26</span></div>
+				</div>
+				<div class="zanbox">
+					<img src="pic/zan.png" alt=""><span>3</span> <img src="pic/laji.png" alt="">
+				</div>
+				</div>
+				
+				<div class="ry_content">
+						本次活动最终全由本公司所有
+				</div>
+				<a class="hf_btn" href="huiF.html">
+					<span>回复</span>
+				</a>
+				
+			</div>
+			
 				<div class="plUser">
 				<div class="user_box">  
 				
@@ -221,6 +252,7 @@
 					
 				</div>
 				
+				
 				<div  id="HuiN">9条回复</div>
 				<div class="plUser">
 					<div class="user_box">  
@@ -246,6 +278,82 @@
 					</a>
 					
 				</div>
+				
+				<div class="plUser">
+					<div class="user_box">  
+					
+					<img src="pic/logo.jpg" alt="" class="user_icon">
+					<div class="user_text"> 
+					<div class="">
+						<span class="user_name">卡易推</span><span><img src="pic/vip.png" alt="" class="user_tag"></span>
+						
+						</div>
+					<div class="loucTag"><span>3楼</span><span>03-26</span></div>
+					</div>
+					<div class="zanbox">
+						<img src="pic/zan.png" alt=""><span>3</span> <img src="pic/laji.png" alt="">
+					</div>
+					</div>
+					
+					<div class="ry_content">
+							本次活动最终全由本公司所有
+					</div>
+					<a class="hf_btn" href="huiF.html">
+						<span>回复</span>
+					</a>
+					
+				</div>
+				
+				<div class="plUser">
+					<div class="user_box">  
+					
+					<img src="pic/logo.jpg" alt="" class="user_icon">
+					<div class="user_text"> 
+					<div class="">
+						<span class="user_name">卡易推</span><span><img src="pic/vip.png" alt="" class="user_tag"></span>
+						
+						</div>
+					<div class="loucTag"><span>3楼</span><span>03-26</span></div>
+					</div>
+					<div class="zanbox">
+						<img src="pic/zan.png" alt=""><span>3</span> <img src="pic/laji.png" alt="">
+					</div>
+					</div>
+					
+					<div class="ry_content">
+							本次活动最终全由本公司所有
+					</div>
+					<a class="hf_btn" href="huiF.html">
+						<span>回复</span>
+					</a>
+					
+				</div>
+				
+				<div class="plUser">
+					<div class="user_box">  
+					
+					<img src="pic/logo.jpg" alt="" class="user_icon">
+					<div class="user_text"> 
+					<div class="">
+						<span class="user_name">卡易推</span><span><img src="pic/vip.png" alt="" class="user_tag"></span>
+						
+						</div>
+					<div class="loucTag"><span>3楼</span><span>03-26</span></div>
+					</div>
+					<div class="zanbox">
+						<img src="pic/zan.png" alt=""><span>3</span> <img src="pic/laji.png" alt="">
+					</div>
+					</div>
+					
+					<div class="ry_content">
+							本次活动最终全由本公司所有
+					</div>
+					<a class="hf_btn" href="huiF.html">
+						<span>回复</span>
+					</a>
+					
+				</div>
+				
 				<div class="plUser">
 					<div class="user_box">  
 					
@@ -292,7 +400,7 @@
 					
 					
 				</div>
-				
+				      <div class="moreOne">加载更多</div>
 				<div class="input_text2">
 				<input type="text" placeholder="给你一个神评的机会">
 				<div class="sent">发送</div>
@@ -320,5 +428,22 @@ $("#bclose").on("click",function () {
         e.stopPropagation();
     };
 });
+$(".xzgg_box").scroll(
+        function() {
+            var scrollTop = $(".xzgg_box").scrollTop();
+              console.log(scrollTop);
+            var scrollHeight = $('.xzgg_box').height();
+			console.log(scrollHeight);
+			
+            var windowHeight = $(window).height();
+			console.log(windowHeight);
+			// 600
+            if (scrollTop + windowHeight*0.9 == scrollHeight) {
+				// 此处写滚动条到底部时候触发的事件
+                alert('已经到底了，别再滑了！');
+            }
+        }
+	);
+
 	</script>
 </html>
