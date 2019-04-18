@@ -7,6 +7,7 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link href="css/mui.min.css" rel="stylesheet" />
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<link rel="stylesheet" href="css/index2.css">
 	<link rel="stylesheet" type="text/css" href="css/swiper-4.3.5.min.css"/>
 	</head>
      
@@ -15,20 +16,16 @@
 		<script type="text/javascript">mui.init()</script>
 		 <script src="js/swiper-4.3.5.min.js" type="text/javascript" charset="utf-8"></script>
 		
+		<nav class="cd-nav-container">
 		
-		<div class="swiper-container">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="pic/1.png"/></div>
-        <div class="swiper-slide"><img src="pic/2.png"/></div>
-        <div class="swiper-slide"><img src="pic/1.png"/></div>
-    </div>
-    <!-- 如果需要分页器 -->
-    <div class="swiper-pagination"></div>
-    
-  
-    
-    
-</div>
+				<img src="pic/cha.png"  class="goBack">
+			
+			
+			
+		</nav>
+		
+		
+		<div  class="meau"> 
 		<div class="positon">
 			
 			<div class="positon_more">
@@ -52,6 +49,8 @@
 					<img src="pic/search.png" alt=""  class="search_icon"/>
 					<input type="text" placeholder="搜索地区、商家"/>
 				</div>
+				
+				<a href="" class="cd-nav-trigger"><span></span></a>
 			</div>
 		</div>
 		<div class="mui-slider">
@@ -492,13 +491,15 @@
 			
 		</div>
 		
-		
+		</div>
 	</body>
 	
 	<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
 	(function () {
-	  
+		
+
+	  $(".cd-nav-container").height($(window).height()-54);
 	  var data=[];
 	  var colorG=["#FFE6E6","#FFEDD8","#000"];
 	  var colorT=["red","#FF8E12","#fff"];
@@ -540,6 +541,19 @@
 // 如果需要滚动条
 }
 )     
-
+function toggleNav(bool) {
+		$('.cd-nav-container').toggleClass('is-visible', bool);
+		$('.meau').toggleClass('scale-down', bool);
+	}
+	
+$('.cd-nav-trigger').on('click', function(event){
+		event.preventDefault();
+		toggleNav(true);
+	});
+	$('.goBack').on('click', function(event){
+		event.preventDefault();
+		toggleNav(false);
+	});
+	
 </script>
 </html>
