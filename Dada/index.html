@@ -16,14 +16,47 @@
 		<script type="text/javascript">mui.init()</script>
 		 <script src="js/swiper-4.3.5.min.js" type="text/javascript" charset="utf-8"></script>
 		
+		<div class="cd_box">
 		<nav class="cd-nav-container">
+		<div class="select-bar">
+		<div class="lb-Tag">行业分类<span>(单选)</span>
+		<img src="pic/icon_row2.png" alt="" class="tag_row">
+		</div>
 		
-				<img src="pic/cha.png"  class="goBack">
+		<div class="bar-lb">
+			<span class="classify-tag">水利水电</span>
+			<span class="classify-tag">环保绿化</span>
+			<span class="classify-tag">环保绿化</span>
+			<span class="classify-tag">环保绿化</span>
+			<span class="more_lb">更多分类</span>
+		</div>
+		</div>
+		
+		<div class="input_bar">
+		<div class="lb-Tag">价格区间 </div>
+		<div class="price_input">
 			
+			<input type="text" placeholder="最低价格">
+			<span>-</span>
+			<input type="text" placeholder="最高价格">
+		</div>
+		</div>
+				<!-- <img src="pic/cha.png"  class="goBack"> -->
+		   <nav class="in-cd-nav-container">
+			   <div class="nav-bar"> 
+			  <img src="pic/left_row.png" alt="" id="back-in-dex">更多分类</div>
+		   <div class="work-lb">
+			   <!-- 类别 -->
+			   <div class="work-hy">IT行业</div>
+			   <div class="work-hy">电子行业</div>
+			   <div class="work-hy">建筑建材</div>
+			   <div class="work-hy">服装纺织</div>
+		   </div>
+		   </nav>
 			
-			
+			<!-- <div  class="more_lb">更多分类</div> -->
 		</nav>
-		
+		</div>
 		
 		<div  class="meau"> 
 		<div class="positon">
@@ -497,7 +530,7 @@
 	<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
 	(function () {
-		
+	
 
 	  $(".cd-nav-container").height($(window).height()-54);
 	  var data=[];
@@ -514,7 +547,7 @@
 	  }
 	  
 	})();
-	
+
 	
 	$(".input_text input").focus(function() {
 	$(".search_icon").css("left","74%");
@@ -542,18 +575,60 @@
 }
 )     
 function toggleNav(bool) {
-		$('.cd-nav-container').toggleClass('is-visible', bool);
+		$('.cd_box').toggleClass('is-visible', bool);
 		$('.meau').toggleClass('scale-down', bool);
+		
 	}
 	
 $('.cd-nav-trigger').on('click', function(event){
+	console.log($('.mui-slider-indicator .mui-active').attr('href'));
 		event.preventDefault();
 		toggleNav(true);
+		
+		$('.cd_box').on('click', function(e){
+			 event.stopPropagation(); 
+			event.preventDefault();
+		var target  = $(e.target);
+			if($(e.target).closest(".cd-nav-container").length == 0){
+       	toggleNav(false);
+	   }
+		});
+	
+		
 	});
-	$('.goBack').on('click', function(event){
-		event.preventDefault();
-		toggleNav(false);
-	});
+	
+	
+	$('.more_lb').on('click', function(event){
+
+			event.preventDefault();
+			$('.in-cd-nav-container').toggleClass('is-visiblea');
+			
+			});
+			
+		$('#back-in-dex').on('click', function(event){
+		
+				event.preventDefault();
+				$('.in-cd-nav-container').removeClass('is-visiblea');
+				
+				});
+		
+// 	$('.goBack').on('click', function(event){
+// 		event.preventDefault();
+// 		toggleNav(false);
+// 	});
+
+$(".classify-tag").click(function()
+{
+	
+	$(this).toggleClass('classify-active');
+	
+})
+
+$(".tag_row").click(function()
+{
+	$(this).parent().parent().find('.bar-lb').toggleClass('no-tag_row');
+    $(this).toggleClass('xz_change');
+})
 	
 </script>
 </html>

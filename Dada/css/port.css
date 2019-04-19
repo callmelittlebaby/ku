@@ -1,0 +1,87 @@
+.bar {
+    height: 44px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 44px;
+    box-shadow: 1px 0px 1px #eee;
+    color: #333;
+    background-color: #fff;
+    font-family: din;
+    border-bottom: 1px solid #eee;
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+
+}
+body
+{
+background-color: #EDEDED;
+}
+.left img {
+    position: absolute;
+    height: 30px;
+    left: 0;
+    top: 7px;
+}
+.tagName
+{
+	height: 45px;
+	font-size: 12px;
+	color: #777F88;
+	line-height: 45px;
+	padding-left: 10px;
+}
+.jp
+{
+	
+	background-color: #fff;
+	height: 95px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding-left: 10px;
+}
+.jp_name
+{
+	
+
+}
+.jp .data
+{	
+font-size: 12px;
+color: #888;
+}
+.Reason
+{
+	padding-left: 10px;
+	background-color: #fff;
+	line-height: 50px;
+}
+.tsReason{
+	
+	border-bottom: 1px solid #eee;
+	font-size: 14px;
+}
+.chatMe
+{
+	width: 100%;
+	border: none;
+	height:50px;
+	padding-left: 10px;
+	margin-top: 30px;
+}
+
+.btn{
+width: 80%;
+background-color: #D15143;
+margin-left: 10%;
+height: 40px;
+line-height: 40px;
+text-align: center;
+margin-top: 40px;
+color: #fff;
+margin-bottom: 50px;
+}

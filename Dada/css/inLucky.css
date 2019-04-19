@@ -1,0 +1,220 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body
+{
+	
+}
+
+.remind_boxA
+{
+	background-color: #fff;
+	z-index: 3;
+	
+     margin: auto;
+	
+	padding: 20px;
+	box-sizing: border-box;
+	text-align: center;
+	
+	margin: 20px;
+	
+	
+}
+.text_zj
+{
+	font-size: 20px;
+	font-weight: 800;
+	color: #C9423C;
+}
+.jp_text
+{
+	font-size: 14px;
+	color: #747981;
+	font-weight: 600;
+	margin:10px 0;
+}
+.rm_zj
+{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+.address_pic 
+{
+	 display: flex;
+	flex-direction: column;
+}
+.address_pic img
+{
+	width: 40px;
+	margin: auto;
+	margin-top: 20px;
+}
+.address_pic span
+{
+	margin-top: 20px;
+	font-size: 14px;
+	color: #fff;
+}
+
+.left_address
+{
+	width: 48%;
+	background-color: #C9423E;
+	height: 120px;
+   
+}
+.right_chat
+{
+	border:2px solid #D7D7D6;
+	width: 48%;
+    height: 120px;
+	
+	box-sizing: border-box;
+}
+.rm_zj
+{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+.address_pic 
+{
+	 display: flex;
+	flex-direction: column;
+}
+.address_pic img
+{
+	width: 40px;
+	margin: auto;
+	margin-top: 20px;
+}
+.address_pic span
+{
+	margin-top: 20px;
+	font-size: 14px;
+	color: #fff;
+}
+
+
+.right_chat{
+	
+	text-align: left;
+	padding: 10px ;
+	color: #888;
+}
+
+.wx_Nb
+{
+	margin-top: 10px;
+	font-size: 16px;
+	color: #333;
+}
+.right_chat .copy
+{
+	margin-top: 20px;
+	background: #908280;
+	color: #fff;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+}
+
+.jp_person
+{
+	margin-top: 20px;
+}
+.jp_goods
+{
+	background-color: #F2F2F2;
+    height: 50px;
+	line-height: 50px;
+	color: #757A83;
+	font-weight: 600;
+	font-size: 12px;
+	text-align: center;
+}
+.zj_perSon
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	border: 1px solid #eee;
+	padding: 20px;
+}
+.zj_perSon .icon_tx
+{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+.yh_zj 
+{
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
+.yh_zj .nameT
+{
+	font-size: 12px;
+	margin-top: 10px;
+	color: #888;
+	
+	
+}
+.bar {
+    height: 44px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 44px;
+    box-shadow: 1px 0px 1px #eee;
+    color: #333;
+    background-color: #fff;
+    font-family: din;
+    border-bottom: 1px solid #eee;
+}
+.left img {
+    position: absolute;
+    height: 30px;
+    left: 0;
+    top: 7px;
+}
+.zjl
+{
+	padding: 20px;
+}
+.pityWarn
+{
+	display: flex;
+	flex-direction:column;
+    align-items: center;
+	padding: 20px;
+	border-bottom: 1px solid #eee;
+
+}
+.pityWarn img
+{
+height: 50px;
+margin-bottom: 20px;
+font-size: 14px;
+
+}
+.pityWarn .pity_text
+{
+	color: #C9423C;
+	font-weight:600 ;
+}
+.check_zj
+{
+	
+font-size: 12px;
+margin-top: 20px;
+color: #888;
+	
+}
