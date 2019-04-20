@@ -105,7 +105,7 @@
 {
 	width: 100%;
 	height: 100%;
-	z-index: 2;
+	z-index: 5;
      position: fixed;
  -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
@@ -114,31 +114,39 @@
   transform: translateZ(0);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
- /* -webkit-transform: translateX(100%);
+ -webkit-transform: translateX(100%);
   -moz-transform: translateX(100%);
   -ms-transform: translateX(100%);
   -o-transform: translateX(100%);
-  transform: translateX(100%); */
+  transform: translateX(100%);
   -webkit-transition: -webkit-transform 0.4s 0s, box-shadow 0s 0.4s;
   -moz-transition: -moz-transform 0.4s 0s, box-shadow 0s 0.4s;
   transition: transform 0.4s 0s, box-shadow 0s 0.4s;
   transition: transform 0.4s 0s, box-shadow 0s 0.4s;
  overflow-y: auto;
 }
+.nav_box
+{
+	 width: 80%;
+	height: 100%;
+	position: absolute;
+	z-index: 5;
+	top: 0;
+	right: 0;
+	overflow-y: auto;
+}
 .cd-nav-container {
-  position: absolute;
-  z-index: 5;
-  top: 0;
-  right: 0;
-  width: 80%;
-  height: 100%;
+ position:relative;
+  width: 100%;
+  
   overflow-x: hidden;
   overflow-y: auto;
   box-sizing: border-box;
   padding: 20px  10px;
   background-color: #fff;
   /* Force Hardware Acceleration in WebKit */
- 
+ box-sizing: border-box;
+ margin-bottom: 55px;
 }
 .lb-Tag
 {
@@ -171,7 +179,7 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
+	width: 0%;
 	height: 100%;
 	overflow-y: hidden;
 	background-color:#F6F6F6;
@@ -181,6 +189,8 @@
 	-o-transform: translateX(100%);
 	transform: translateX(100%);
 	z-index: 6;
+	overflow-x: hidden;
+	
 }
 /* .goBack
 {
@@ -224,7 +234,7 @@
 	
   -webkit-transition: -webkit-transform 0.4s 0s, box-shadow 0s 0s;
   -moz-transition: -moz-transform 0.4s 0s, box-shadow 0s 0s;
-	
+	width: 100%;
 }
 .lb-Tag
 {
@@ -250,7 +260,13 @@
 	text-align: center;
 	height: 45px;
     overflow: hidden;
+	margin-bottom:50px;
 	
+	
+}
+.input_bar .lb-Tag
+{
+	margin-bottom: 20px;
 }
 .bar-lb  span
 {
@@ -282,7 +298,7 @@
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
-	margin-top: 20px;
+	margin-bottom: 50px;
 }
 .price_input  span
 {
@@ -299,18 +315,19 @@ margin: 0;
 border-radius: 20px;
 background-color: #F6F6F6;
 border: none;
-color: #D5D5D5;
+color: #575050;
 font-size: 12px;
 text-align: center;
 }
 .lb-Tag .tag_row
 {
-	height: 6px;
-	position: absolute;
-	right: 0;
-	top: 6px;
-	
+	 height: 4px;
+    position: absolute;
+    right: 0;
+    top: 6px;
 }
+	
+
 .no-tag_row
 {
 	height: auto !important;
@@ -322,4 +339,51 @@ text-align: center;
 	-moz-transform:rotate(180deg); 	/* Firefox */
 	-webkit-transform:rotate(180deg); /* Safari 和 Chrome */
 	-o-transform:rotate(180deg);
+}
+/* $(".lb-Tag").click(function()
+{
+	$(this).next().toggleClass('no-tag_row');
+	$(this).find('img').toggleClass('xz_change');
+})
+	 */
+	
+	.city-picker-dropdown,.city-select-wrap
+	{
+		width: 80% !important;
+	}
+	
+	/* .city-picker-span.focus, .city-picker-span.open {
+  width: 72% !important;
+}
+ */
+.cd-nav-btn
+{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	height: 50px;
+	right: 0;
+}
+.cd-nav-btn span
+{
+	border: none;
+	width: 50%;
+	display:inline-block;
+	line-height: 50px;
+   text-align: center;
+}
+.cd-nav-btn span:first-child
+{
+	background-color: #fff;
+	color: #888;
+border-top: 1px solid #eee;
+}
+.cd-nav-btn span:last-child
+{
+	background-color: #CA6353;
+	color: #fff;
+}
+.select-bar:last-child  
+{
+	margin-bottom: 100px;
 }

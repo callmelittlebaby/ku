@@ -1,11 +1,11 @@
 /*!
- * CityPicker v@VERSION
+ * CityPicker v1.0.2
  * https://github.com/tshi0912/citypicker
  *
- * Copyright (c) 2015-@YEAR Tao Shi
+ * Copyright (c) 2015-2016 Tao Shi
  * Released under the MIT license
  *
- * Date: @DATE
+ * Date: 2016-02-29T12:11:36.477Z
  */
 
 (function (factory) {
@@ -24,7 +24,7 @@
     'use strict';
 
     if (typeof ChineseDistricts === 'undefined') {
-        throw new Error('The file "city-picker.data.js" must be included first!');
+        throw new Error('The file "city-picker.data.js"/*tpa=http://www.17sucai.com/preview/497498/2016-03-10/index/js/city-picker.data.js*/ must be included first!');
     }
 
     var NAMESPACE = 'citypicker';
@@ -64,7 +64,7 @@
                     this.getWidthStyle(p.width) + 'height:' +
                     p.height + 'px;line-height:' + (p.height - 1) + 'px;">' +
                     (placeholder ? '<span class="placeholder">' + placeholder + '</span>' : '') +
-                    '<span class="title"></span><div class="arrow"></div>' + '</span>',
+                    '<span class="title"></span>' + '</span>',
 
                 dropdown = '<div class="city-picker-dropdown" style="left:0px;top:100%;' +
                     this.getWidthStyle(p.width, true) + '">' +
@@ -259,7 +259,7 @@
                     });
                     $(this).trigger(EVENT_CHANGE);
                     $this.feedText();
-                    $this.feedVal(true);
+                    $this.feedVal();
                     if (last) {
                         $this.close();
                     }
@@ -356,18 +356,6 @@
             }
         },
 
-        getCode: function (count) {
-            var obj = {}, arr = [];
-            this.$textspan.find('.select-item')
-                .each(function () {
-                    var code = $(this).data('code');
-                    var count = $(this).data('count');
-                    obj[count] = code;
-                    arr.push(code);
-                });
-            return count ? obj[count] : arr.join('/');
-        },
-
         getVal: function () {
             var text = '';
             this.$dropdown.find('.city-select')
@@ -380,11 +368,8 @@
             return text;
         },
 
-        feedVal: function (trigger) {
+        feedVal: function () {
             this.$element.val(this.getVal());
-            if(trigger) {
-                this.$element.trigger('cp:updated');
-            }
         },
 
         output: function (type) {
