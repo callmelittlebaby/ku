@@ -124,6 +124,7 @@
   transition: transform 0.4s 0s, box-shadow 0s 0.4s;
   transition: transform 0.4s 0s, box-shadow 0s 0.4s;
  overflow-y: auto;
+
 }
 .nav_box
 {
@@ -138,7 +139,7 @@
 .cd-nav-container {
  position:relative;
   width: 100%;
-  
+
   overflow-x: hidden;
   overflow-y: auto;
   box-sizing: border-box;
@@ -363,6 +364,7 @@ text-align: center;
 	bottom: 0;
 	height: 50px;
 	right: 0;
+	display: flex;
 }
 .cd-nav-btn span
 {
@@ -386,4 +388,15 @@ border-top: 1px solid #eee;
 .select-bar:last-child  
 {
 	margin-bottom: 100px;
+}
+
+
+
+/* bm */
+
+
+.bm-sl-op select
+{
+	background: #eee;
+	color: #888;
 }
