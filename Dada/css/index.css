@@ -248,6 +248,7 @@ body {
 	top: -1px;
 }
 
+
 .shunfeng {
 	padding: 16px;
 	border-bottom: 1px solid #eee;
@@ -301,6 +302,12 @@ body {
 .date_detail {
 	font-size: 16px;
 }
+.date_detail input
+{
+	border: none;
+	text-align: center;
+}
+
 
 .startSearch {
 	margin: 0;
@@ -642,32 +649,7 @@ border-top-right-radius:5% ; */
 
 /*找工作*/
 
-.saixBar {
-	border-bottom: 1px solid #eee;
-	display: flex;
-	flex-direction: row;
-}
 
-.barBox {
-	width: 50%;
-	text-align: center;
-}
-
-.saixBar img {
-	height: 6px !important;
-	vertical-align: middle;
-	position: relative;
-	top: -1px;
-	left: 4px;
-}
-
-.saixBar span {
-	height: 45px;
-	line-height: 45px;
-	font-weight: 500;
-	font-size: 12px;
-
-}
 
 .barBox {
 	position: relative;
@@ -944,4 +926,13 @@ border-top-right-radius:5% ; */
 .swiper-pagination-bullet-active {
 	opacity: 0.8 !important;
 	background: #ffffff !important;
+}
+
+.dataG
+{
+	border: none !important;
+	border-bottom: 1px solid #eee  !important;
+	font-size: 12px !important;
+	display: inline-block  !important;
+	width: 30%  !important;
 }

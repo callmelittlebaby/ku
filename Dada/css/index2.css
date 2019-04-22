@@ -395,8 +395,53 @@ border-top: 1px solid #eee;
 /* bm */
 
 
+.bm-sl-op
+{
+	position: relative;
+	margin-bottom: 50px;
+	font-size: 12px;
+}
+
 .bm-sl-op select
 {
 	background: #eee;
 	color: #888;
+	font-size: 12px;
+}
+
+.bm-sl-op img
+{
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	height: 4px;
+	transform: translate(-50%, -50%);
+
+}
+
+.cd_bm .lb-Tag .tag_row
+{
+	right: 14px;
+}
+.sale_zoom
+{
+	display: block;
+}
+.room_zoom
+{
+	display: none;
+}
+.select-bar .sp-tag
+{
+	height: auto;
+}
+.dataG
+{
+	border: none !important;
+	border-bottom: 1px solid #eee  !important;
+	font-size: 12px !important;
+	display: inline-block  !important;
+	width: 30%  !important;
+	margin: 0 !important;
+	
 }
