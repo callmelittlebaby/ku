@@ -12,6 +12,7 @@ body {
 	border-bottom: 2px solid #333;
 }
 
+
 .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-progress-bar {
 	background-color: #333;
 }
@@ -477,157 +478,69 @@ border-radius: 50%;
 /*便民
 */
 
-.bianM {
-
-	background-color: #fff;
-	width: 260px;
-	margin: auto;
-	overflow: hidden;
-	margin-top: 10px;
-	box-shadow: 1px 1px 10px #999;
-	/* border-top-left-radius:5% ; 
-border-top-right-radius:5% ; */
-	border-radius: 5%;
-	margin-bottom: 40px;
+#item5
+{
+	background-color: #F4F5F9;
+	min-height: 460px;
 }
-
-.bianM:last-child {
-
-	margin-bottom: 100px;
-}
-
-.bianM .content {
-	font-size: 14px;
-	padding: 20px 10px;
-}
-
-#item5 {
-	background-color: #F9F9F9;
-
-
-}
-
-.bm_tag {
-	font-size: 12px;
-	color: #888;
-	font-weight: 300;
-	padding-left: 10px;
-	margin-bottom: 10px;
-
-}
-
-.bm_tag span {
-	margin-right: 10px;
-}
-
-.bm_tag span:after {
-	display: inline-block;
-	content: "";
-	width: 1px;
-	height: 8px;
-	background-color: #999;
-	position: relative;
-	left: 5px;
-
-}
-
-.bianM .price {
-	font-size: 16px;
-	font-weight: 600;
-	color: red;
-	padding-right: 10px;
-	word-spacing: 5px;
-	margin-bottom: 10px;
-	text-align: right;
-}
-
-.bm_tag span:last-child:after {
-	display: none;
-
-
-}
-
-.bm_dz {
-	padding-left: 10px;
-	margin-bottom: 10px;
-	font-size: 12px;
-	color: #888;
-	transform: scale(0.9);
-	position: relative;
-	left: -12px;
-
-}
-
-.bm_dz img {
-	height: 10px !important;
-	margin-right: 10px;
-	vertical-align: middle;
-	position: relative;
-	top: -1px;
-
-
-
-}
-
-.bianM .goods {
-
-	width: 260px;
-	height: 150px;
-	border-top-left-radius: 5%;
-	border-top-right-radius: 5%;
-	position: relative;
-}
-
-.bianM .goods .tag_bar {
-	position: absolute;
-	bottom: -12px;
-	left: 5px;
-}
-
-.bianM .goods .tag_bar span {
-
-	display: inline-block;
-	background-color: #FFE6E6;
-	font-size: 13px;
-	padding: 0 6px;
+.bmli
+{
+	display: flex;
+	flex-direction:column;
+	padding: 20px;
 	box-sizing: border-box;
-	font-weight: normal;
-	color: red;
-	transform: scale(0.9);
-	border-radius: 2px;
-	margin-right: 10px;
-
+	background-color: #fff;
+	margin-top: 20px;
 }
 
-.bianM .goods img {
-
-	width: 100% !important;
-	height: 150px !important;
-	border-top-left-radius: 5%;
-	border-top-right-radius: 5%;
+.bmli .bm-top
+{
+	
+	display: flex;
+	flex-direction:row;
+	justify-content: space-between;
 }
-
 .bmfw img {
 	display: block;
 	margin: auto;
 	width: 50% !important;
 	margin-top: 16px;
 }
-
-
-.bm_bottom {
+.bm-top-left-box
+{
 	display: flex;
-	flex-direction: row;
-	font-size: 12px;
-	color: #999;
-	justify-content: space-around;
-
-	border-top: 1px solid #eee;
-	align-items: center;
+	flex-direction:column;
 	align-content: center;
-	height: 30px;
-
+	font-size: 14px;
+	justify-content: space-between;
+	color: 000;
 }
+.left-box-bottom
+{
+	color: #999;
+	font-size: 12px;
+}
+.bm-top-left
+{
+	display: flex;
+	flex-direction:row;
+	height: 40px;
+	
+	
+}
+.bm-top-left img
+{
+	  width: 40px !important;
+    height: 40px !important;
+    position: relative;
+    border-radius: 50%;
+	margin-right: 20px;
+}
+.bm-top-price
+{
+	color: red;
+}
+
 
 .czr {
 	height: 14px !important;
@@ -636,15 +549,41 @@ border-top-right-radius:5% ; */
 	position: relative;
 	top: -1px;
 }
-
-.bm_bottom img {
-	height: 15px !important;
-	vertical-align: middle;
+.img-show
+{
+	display: flex;
+	flex-direction:row;
+	width: 100%;
+	
+}
+.img-show img
+{
+   display: inline-block;
+    width: 32% !important;
+    min-width: 32% !important;
+    max-height: 130px!important;
+    margin-right: 2%;
+    margin-top: 3%;
+    margin-bottom: 5%;
 }
 
-.bz_h {
-	transform: scale(0.8);
-	white-space: nowrap;
+
+.good_text
+{
+	
+	height: 40px;
+	overflow: hidden;
+	font-weight: 600;
+	
+	}
+	
+.come-from
+{
+border-top: 1px solid #eee;
+margin-top: 20px;
+line-height: 30px;
+height: 30px;
+font-size: 12px;
 }
 
 /*找工作*/
@@ -928,11 +867,3 @@ border-top-right-radius:5% ; */
 	background: #ffffff !important;
 }
 
-.dataG
-{
-	border: none !important;
-	border-bottom: 1px solid #eee  !important;
-	font-size: 12px !important;
-	display: inline-block  !important;
-	width: 30%  !important;
-}
