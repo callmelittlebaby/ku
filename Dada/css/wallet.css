@@ -1,0 +1,58 @@
+.bar {
+    height: 120px;
+ 
+    box-shadow: 1px 0px 1px #eee;
+    color: #fff;
+    background-color: #fff;
+    font-family: din;
+    border-bottom: 1px solid #eee;
+	background-color: #E84F10;
+	font-size: 14px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+body
+{
+
+}
+.left
+{
+	height: 45px;
+	   line-height: 45px;
+}
+.left img {
+     position: absolute;
+    height: 24px;
+    left: 0;
+    top: 10px;
+}
+.tx{
+
+width: 40px;
+	height: 40px;
+}
+.p-x-bar
+{
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-right:20px;
+	padding-left:40px;
+	box-sizing: border-box;
+	align-items: center;
+	height: 76px;
+}
+.p-x-name
+{
+display: flex;
+	flex-flow: column;
+	
+	
+}
