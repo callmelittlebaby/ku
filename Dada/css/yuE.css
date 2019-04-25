@@ -1,0 +1,89 @@
+.bar {
+    height: 270px;
+ 
+    box-shadow: 1px 0px 1px #eee;
+    color: #fff;
+    background-color: #fff;
+    
+    border-bottom: 1px solid #eee;
+	background-color: #E84F10;
+	font-size: 14px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body
+{
+background: #F5F5F9;
+}
+@font-face
+{
+	font-family: din;
+
+
+	src:
+		url('../fonts/DINPro-Regular.otf');
+
+}
+.left
+{
+	height: 45px;
+	   line-height: 45px;
+}
+.left img {
+     position: absolute;
+    height: 24px;
+    left: 0;
+    top: 10px;
+}
+.money
+{
+	height: 225px;
+}
+.left_money
+{
+	margin-top: 10px;
+	padding-left: 20px;
+	font-size: 12px;
+	height: 30px;
+	line-height: 30px;
+}
+.showMoney
+{
+	padding-left: 20px;
+font-size: 76px;
+	font-family: din;
+height: 160px;
+line-height: 160px;
+}
+.white-line
+{
+	height: 50px;
+	font-size: 12px;
+	line-height: 50px;
+	background: #fff;
+	border-bottom: 1px solid #eee;
+}
+.white-line img
+{
+	height: 20px;
+	vertical-align: middle;
+	margin-left: 20px;
+	margin-right: 10px;
+	
+}
+.ts_tag
+{
+	margin-top: 20px;
+	
+}
+.ts_tag img 
+{
+	height: 25px;
+	margin-right:12px;
+	position: relative;
+	left: 1px;
+}

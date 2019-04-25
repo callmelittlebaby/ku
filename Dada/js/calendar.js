@@ -421,9 +421,10 @@
                 var date = _this.curStartDate.getDate();
 
                 var str = year + "-" + month + "-" + date;
+				$(".dateVisited").text(str);
                 $("input.dateVisited").val(str);
                 $("input.dateVisited").removeClass('dateVisited');
-
+				$(".dateVisited").removeClass('dateVisited');
                 _this.$datePicker.hide();
                 _this.$mask.hide();
 

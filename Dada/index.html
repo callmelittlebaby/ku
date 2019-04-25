@@ -459,18 +459,28 @@
 
 					<div id="item2" class="mui-slider-item mui-control-content">
 						<div class="shunfeng">
-							<div class="wf_ss">
-								<input type="text" />
-								<img src="pic/icon_wf.png" alt="" />
-								<input type="text" />
-							</div>
+						
+								
+								
+								
+								<div  class="sf_hezi">
+								<div id="picker1">
+								<input id="city-picker1" readonly type="text" value="江苏省/常州市/溧阳市" data-toggle="city-picker">
+								</div>
+	                         	<img src="pic/icon_wf.png" alt="" style="height: 20px;"/>
+								<div  id ="picker2" >
+								<input id="city-picker2" readonly type="text" value="江苏省/常州市/溧阳市" data-toggle="city-picker">
+								</div>
+								</div>
+								
+							
 							<div class="select_date">
 								<div class="date_part">前一天</div>
 								<div class="date_show">
 
 									<span class="date_detail">
 										<input type="text" placeholder="2019-4-6" class="dataS">
-										</span>
+									</span>
 
 
 									
@@ -1033,6 +1043,25 @@ break;
 			'use strict';
 
 
+var $citypicker1 = $('#city-picker1');
+
+			$('#reset').click(function() {
+				$citypicker1.citypicker('reset');
+			});
+
+			$('#destroy').click(function() {
+				$citypicker1.citypicker('destroy');
+			});
+
+			var $citypicker2 = $('#city-picker2');
+
+			$('#reset').click(function() {
+				$citypicker2.citypicker('reset');
+			});
+
+			$('#destroy').click(function() {
+				$citypicker2.citypicker('destroy');
+			});
 
 
 
