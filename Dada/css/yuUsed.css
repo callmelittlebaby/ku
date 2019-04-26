@@ -39,6 +39,7 @@ border-bottom: 1px solid #eee;
 	flex-direction: row;
 	justify-content: space-between;
 	width: 100%;
+	align-items: center;
 
 	
 }
@@ -46,11 +47,12 @@ border-bottom: 1px solid #eee;
 {
 	display: flex;
 	flex-direction: column;
+	 justify-content: space-around;
 }
 @font-face
 {
 	font-family: din;
-	src:url('../fonts/DINPro-Regular.otf');;
+	src:url('../fonts/DINPro-Regular.otf');
 }
 .font12
 {
@@ -67,12 +69,22 @@ border-bottom: 1px solid #eee;
 .t-b-class
 {
 	font-size: 14px;
-	margin-bottom: 10px;
+	
 }
 .t-b-date
 {
-	margin-bottom: 8px;
+
 	font-weight: 600;
+}
+.t-l-b
+{
+	height: 70px;
+}
+.t-r-b
+{
+	height: 55px;
+    justify-content: space-between;
+    text-align: right;
 }
 .colorR
 {
