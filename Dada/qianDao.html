@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+        <title></title>
+    </head>
+    <link rel="stylesheet" type="text/css" href="css/qiandao.css">
+    <body>
+		<div>
+		 <img src="pic/qd-d.png" alt="" id="tantan"> 
+		</div>
+    <div class="bar">
+            <div class="left">
+                <img src="pic/left_row.png" alt="">
+                签到
+            </div>
+
+        </div>
+		
+		<div  class="box-all">
+		<div class="box">
+			<img src="pic/bg2.png" alt="">
+			
+		<div class="box-content">
+			<div class="jiFen"><span>5</span>积分</div>
+			<div>积分明细</div>
+		</div>
+		
+		<div  class="qd-box">
+			
+		<div  class="qd-top-box">
+		<div  class="top-box">
+		<div>
+			已签到
+			<span class="fontT">1</span>
+			天
+		</div>
+		<span class="btn">签到领积分</span>
+		</div>
+		</div>
+		<div  class="qd-bar">
+			<div  class="qd-date">
+			<span class="qd-r">1</span>
+			<span class="qd-r">2</span>
+			<span class="qd-r">3</span>
+			<span class="qd-r">4</span>
+			<span class="qd-r">5</span>
+			<span class="qd-r">6</span>
+			<span class="qd-r">7</span>
+			</div>
+			<div class="qd-fen">
+				<span class="qd-f">+5</span>
+				<span class="qd-f">+10</span>
+				<span class="qd-f">+15</span>
+				<span class="qd-f">+20</span>
+				<span class="qd-f">+25</span>
+				<span class="qd-f">+30</span>
+				<span class="qd-f">+70</span>
+			</div>
+			
+		</div>
+		</div>
+		</div>
+		</div>
+    </body>
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript">
+		
+		$(".btn").click(function()
+		{
+			$(".qd-r").eq(0).toggleClass("active");
+			var cls="red";
+			$(".qd-r").eq(0).toggleClass("qd-r" +cls);
+		})
+	</script>
+</html>
