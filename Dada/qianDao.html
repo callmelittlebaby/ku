@@ -7,9 +7,18 @@
     </head>
     <link rel="stylesheet" type="text/css" href="css/qiandao.css">
     <body>
-		<div>
-		 <img src="pic/qd-d.png" alt="" id="tantan"> 
+	<div class="diMu">
+		
+		<div class="whiteMu">
+			<img src="pic/coin.png" alt="">
+			<div class="qd_text">
+				<div class="qd_text_o">签到成功</div>
+				<div class="qd_text_t">+10积分</div>
+			</div>
+			
 		</div>
+	</div>
+		
     <div class="bar">
             <div class="left">
                 <img src="pic/left_row.png" alt="">
@@ -73,5 +82,12 @@
 			var cls="red";
 			$(".qd-r").eq(0).toggleClass("qd-r" +cls);
 		})
+		
+		$(".diMu").click(function()
+		{
+			
+			$(".diMu").css("display","none");
+		})
 	</script>
+	
 </html>

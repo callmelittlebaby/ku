@@ -198,9 +198,9 @@ body
 }
 .same_box .icon_sf
 {
-	height: 40px;
+	height: 20px;
 	vertical-align: middle;
-	margin-right: 20px;
+	margin-right: 10px;
 }
 
 .mb_s .mb_row {
@@ -424,8 +424,7 @@ line-height:60px;
 }
 .b_l img {
 	width: 100%;max-height: 100%;
-	border-top-left-radius: 10px;
-	border-bottom-left-radius: 10px;}
+;}
 	
 .b_r
 {

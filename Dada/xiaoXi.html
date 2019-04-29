@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+        <title></title>
+    </head>
+    <link rel="stylesheet" type="text/css" href="css/xiaoXi.css">
+    <body>
+    <div class="bar">
+            <a class="active" href="#item1">消息</a>
+			<a href="#item2">公告</a>
+			<a href="#item3">聊天</a>
+        </div>
+		
+		<div  class="content-box">
+		<div class="content">
+			<div class="hua">
+			<div class="hua_box truebox">
+			<div class="toPart">
+				<img src="pic/icon_yh.png" alt="">
+				<div class="toPart_exImg">
+					<div class="aName">Shellyoy</div>
+					<div class="aDate">2018-08-31</div>
+				</div>
+			</div>
+		
+			<div class="aContent">
+				似水榴莲：那就算了吧.似水榴莲：那就算了吧.似水榴莲：那就算了吧.似水榴莲：那就算了吧.似水榴莲：那就算了吧.似水榴莲：那就算了吧.
+			</div>
+			<div class="bottoMpart">
+		
+				<div class="b_l">
+					<img src="pic/litu.png" alt="">
+				</div>
+				<div class="b_r">我和他的故事</div>
+			</div>
+			<div class="hf_bar">
+			
+				<a href="" class="a_hfbar">回复</a>
+			</div>
+		</div>
+			<span class="aTag">顺风消息</span>
+		</div>
+			<div class="hua">
+			<div class="hua_box truebox">
+			<div class="toPart">
+				<img src="pic/icon_yh.png" alt="">
+				<div class="toPart_exImg">
+					<div class="aName">Shellyoy</div>
+					<div class="aDate">2018-08-31</div>
+				</div>
+			</div>
+		
+			<div class="aContent">
+				似水榴莲：那就算了吧.似水榴莲：那就算了吧.似水榴莲：那就算了吧.似水榴莲：那就算了吧.似水榴莲：那就算了吧.似水榴莲：那就算了吧.
+			</div>
+			<div class="bottoMpart">
+		
+				
+				<div class="b_r">我和他的故事</div>
+			</div>
+			<div class="hf_bar">
+			
+				<a href="" class="a_hfbar">回复</a>
+			</div>
+		</div>
+			<span class="aTag">顺风消息</span>
+		</div>
+		</div>
+		<!--  -->
+		<div class="content1">
+		<div  class="xtgg">
+		<img src="pic/lab.png" alt=""  class="lab">
+		<div class="imgRight">
+			<div><span class="tag">系统通知</span><span class="date">04-26  18:45</span></div>
+		     <div class="text">[特全卡上线] 福来又来了！777个人特权卡已在微信端上aaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
+		</div>
+		</div>
+		</div>
+		<!--  -->
+		<div class="content2">
+			<div class="gua_box">
+		<div  class="dong_box">
+		
+			<div class="same_content">
+			<div class="content_box">
+		
+			<div class="content_icon">
+		
+		
+			<img src="pic/icon_yh.png" alt="" />
+				</div>
+			<div class="nameAndCont">
+				<span class="chatName">A00浦发银行  谢昭雄 专业贷款00752552</span>
+				<span class="chatCon">退烧了吗？</span>
+			</div>
+			<div class="xx_date">
+				<span class="time">14:58</span>
+				<span class="num">1</span>
+			</div>
+		
+			</div>
+		</div>
+		
+		<div class="btn_delete">
+			删除
+		</div>
+		
+		</div>
+		</div>
+		<div class="gua_box">
+		<div  class="dong_box">
+		
+			<div class="same_content">
+			<div class="content_box">
+		
+			<div class="content_icon">
+		
+		
+			<img src="pic/icon_yh.png" alt="" />
+				</div>
+			<div class="nameAndCont">
+				<span class="chatName">A00浦发银行  谢昭雄 专业贷款00752552</span>
+				<span class="chatCon">退烧了吗？</span>
+			</div>
+			<div class="xx_date">
+				<span class="time">14:58</span>
+				<span class="num">1</span>
+			</div>
+		
+			</div>
+		</div>
+		
+		<div class="btn_delete">
+			删除
+		</div>
+		
+		</div>
+		</div>
+		<div class="gua_box">
+		<div  class="dong_box">
+		
+			<div class="same_content">
+			<div class="content_box">
+		
+			<div class="content_icon">
+		
+		
+			<img src="pic/icon_yh.png" alt="" />
+				</div>
+			<div class="nameAndCont">
+				<span class="chatName">A00浦发银行  谢昭雄 专业贷款00752552</span>
+				<span class="chatCon">退烧了吗？</span>
+			</div>
+			<div class="xx_date">
+				<span class="time">14:58</span>
+				<span class="num">1</span>
+			</div>
+		
+			</div>
+		</div>
+		
+		<div class="btn_delete">
+			删除
+		</div>
+		
+		</div>
+		</div>
+		
+		</div>
+		</div>
+    </body>
+		<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		
+		$(".bar a").click(function()
+		{
+			$(this).toggleClass("active").siblings().removeClass("active");
+			
+		var item=($('.active').attr('href'));
+		
+		switch(item)
+		{
+			case "#item1":
+			$(".content").css("display","block").siblings().css("display","none");
+		
+			break;
+			case "#item2":
+			$(".content1").css("display","block").siblings().css("display","none");	
+			
+		  break;
+		break;
+					case "#item3":
+					$(".content2").css("display","block").siblings().css("display","none");	
+					
+		break;
+			
+		}
+		})
+		$(document).ready(function(e) {
+			// 设定每一行的宽度=屏幕宽度+按钮宽度
+			// $(".dong_box").width($(".same_content").width() + $(".btn_delete").width());
+			// 设定常规信息区域宽度=屏幕宽度
+			// $(".line-normal-wrapper").width($(".line-wrapper").width());
+			// 设定文字部分宽度（为了实现文字过长时在末尾显示...）
+			// $(".line-normal-msg").width($(".line-normal-wrapper").width() - 280);
+		
+			// 获取所有行，对每一行设置监听
+			var lines = $(".dong_box");
+			var len = lines.length;
+			var lastX, lastXForMobile;
+		
+			// 用于记录被按下的对象
+			var pressedObj; // 当前左滑的对象
+			var lastLeftObj; // 上一个左滑的对象
+		
+			// 用于记录按下的点
+			var start;
+		
+			// 网页在移动端运行时的监听
+			for (var i = 0; i < len; ++i) {
+				lines[i].addEventListener('touchstart', function(e) {
+					lastXForMobile = e.changedTouches[0].pageX;
+					pressedObj = this; // 记录被按下的对象
+		
+					// 记录开始按下时的点
+					var touches = event.touches[0];
+					start = {
+						x: touches.pageX, // 横坐标
+						y: touches.pageY // 纵坐标
+					};
+				});
+		
+				lines[i].addEventListener('touchmove', function(e) {
+					// 计算划动过程中x和y的变化量
+					var touches = event.touches[0];
+					delta = {
+						x: touches.pageX - start.x,
+						y: touches.pageY - start.y
+					};
+		
+					// 横向位移大于纵向位移，阻止纵向滚动
+					if (Math.abs(delta.x) > Math.abs(delta.y)) {
+						event.preventDefault();
+					}
+				});
+		
+				lines[i].addEventListener('touchend', function(e) {
+					if (lastLeftObj && pressedObj != lastLeftObj) { // 点击除当前左滑对象之外的任意其他位置
+						$(lastLeftObj).animate({
+							marginLeft: "0"
+						}, 300); // 右滑
+						lastLeftObj = null; // 清空上一个左滑的对象
+					}
+					var diffX = e.changedTouches[0].pageX - lastXForMobile;
+					if (diffX < -150) {
+						$(pressedObj).animate({
+							marginLeft: "-100px"
+						}, 300); // 左滑
+						lastLeftObj && lastLeftObj != pressedObj &&
+							$(lastLeftObj).animate({
+								marginLeft: "0"
+							}, 300); // 已经左滑状态的按钮右滑
+						lastLeftObj = pressedObj; // 记录上一个左滑的对象
+					} else if (diffX > 150) {
+						if (pressedObj == lastLeftObj) {
+							$(pressedObj).animate({
+								marginLeft: "0"
+							}, 300); // 右滑
+							lastLeftObj = null; // 清空上一个左滑的对象
+						}
+					}
+				});
+			}
+		
+			// 网页在PC浏览器中运行时的监听
+			for (var i = 0; i < len; ++i) {
+				$(lines[i]).bind('mousedown', function(e) {
+					lastX = e.clientX;
+					pressedObj = this; // 记录被按下的对象
+				});
+		
+				$(lines[i]).bind('mouseup', function(e) {
+					if (lastLeftObj && pressedObj != lastLeftObj) { // 点击除当前左滑对象之外的任意其他位置
+						$(lastLeftObj).animate({
+							marginLeft: "0"
+						}, 300); // 右滑
+						lastLeftObj = null; // 清空上一个左滑的对象
+					}
+					var diffX = e.clientX - lastX;
+					if (diffX < -150) {
+						$(pressedObj).animate({
+							marginLeft: "-100px"
+						}, 300); // 左滑
+						lastLeftObj && lastLeftObj != pressedObj &&
+							$(lastLeftObj).animate({
+								marginLeft: "0"
+							}, 300); // 已经左滑状态的按钮右滑
+						lastLeftObj = pressedObj; // 记录上一个左滑的对象
+					} else if (diffX > 150) {
+						if (pressedObj == lastLeftObj) {
+							$(pressedObj).animate({
+								marginLeft: "0"
+							}, 300); // 右滑
+							lastLeftObj = null; // 清空上一个左滑的对象
+						}
+					}
+				});
+			}
+		});
+		$(".btn_delete").click(function(event) {
+			/* Act on the event */
+			$(this).parent().parent().remove();
+		
+		});
+	</script>
+</html>
