@@ -6,16 +6,28 @@
         <title></title>
     </head>
     <link rel="stylesheet" type="text/css" href="css/qiandao.css">
+	<link rel="stylesheet" href="css/swiper-4.3.5.min.css">
     <body>
 	<div class="diMu">
 		
 		<div class="whiteMu">
-			<img src="pic/coin.png" alt="">
-			<div class="qd_text">
-				<div class="qd_text_o">签到成功</div>
-				<div class="qd_text_t">+10积分</div>
+			<div class="subMu-top">
+				恭喜你连续签到<span>6</span>天~ 加<span>10</span>积分
 			</div>
-			
+			<div class="subMu-bottom">
+				<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="pic/ad1.png" alt=""></div>
+        <div class="swiper-slide"><img src="pic/ad2.png" alt=""></div>
+        <div class="swiper-slide"><img src="pic/ad3.png" alt=""></div>
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+    
+    
+    
+</div>
+			</div>
 		</div>
 	</div>
 		
@@ -74,6 +86,7 @@
 		</div>
     </body>
 	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/swiper-4.3.5.min.js"></script>
 	<script type="text/javascript">
 		
 		$(".btn").click(function()
@@ -88,6 +101,22 @@
 			
 			$(".diMu").css("display","none");
 		})
+		
+	var mySwiper = new Swiper ('.swiper-container', {
+    
+    loop: true, // 循环模式选项
+    
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    
+     autoplay: {
+    delay: 2000,//1秒切换一次
+  },
+    
+    
+  })   
 	</script>
 	
 </html>
