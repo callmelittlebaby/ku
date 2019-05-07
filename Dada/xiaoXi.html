@@ -21,6 +21,15 @@
 					动态
 				</div>
 			</a>
+			
+<a class="bar1" href="#">
+				<img src="pic/addS.png" alt=""  class="addS" >
+					<img src="" alt=""  >
+					<div class="text">
+						发布
+					</div>
+					
+				</a>
 			<a class="bar1" href="xiaoXi.html">
 				<img src="pic/qp.png"/>
 				<div class="text">
@@ -198,10 +207,68 @@
 		
 		</div>
 		</div>
+		<div class="whiteWrap">
+	<div class="wW-top">
+		<a class="bag" href="myindex.html">
+			<img src="pic/Xz.png"/>
+			<div class="bag-text">
+				闲置发布
+			</div>
+		</a>
+		<a class="bag" href="myindex.html">
+			<img src="pic/Xc.png"/>
+			<div class="bag-text">
+				行程发布
+			</div>
+		</a>
+		<a class="bag" href="myindex.html">
+			<img src="pic/fangz.png"/>
+			<div class="bag-text">
+				租赁发布
+			</div>
+		</a>
+		<a class="bag" href="myindex.html">
+			<img src="pic/qiuzhi.png"/>
+			<div class="bag-text">
+				求职发布
+			</div>
+		</a>
+		<a class="bag" href="myindex.html">
+			<img src="pic/tiezi.png"/>
+			<div class="bag-text">
+				帖子发布
+			</div>
+		</a>
+	</div>
+	<div class="wW-bottom">
+		<img src="pic/close.png" alt="" class="close1">
+	</div>
+	
+</div>
+
     </body>
-		<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.easing.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
 		
+		
+				$(".addS").on('click',function()
+		{
+			$(".whiteWrap").slideDown({
+			duration: 1000, 
+			easing: "easeOutBounce", 
+			});
+			
+			// $(".whiteWrap").css("display","block");
+		})
+		$(".close1").on('click',function()
+		{
+			$(".whiteWrap").slideUp({
+			duration: 1000, 
+			easing: "easeOutQuart", 
+			});
+		})
 		$(".bar a").click(function()
 		{
 			$(this).toggleClass("active").siblings().removeClass("active");

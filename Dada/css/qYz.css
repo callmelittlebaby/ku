@@ -7,6 +7,7 @@
     background-color: #fff;
     border-bottom: 1px solid #eee;
 	position: relative;
+	font-size: 12px;
 }
 *{
     padding: 0;
@@ -25,4 +26,196 @@ body
   left: 0;
   top: 50%;
   transform: translate(7%, -50%);
+}
+
+.tag
+{  
+	display: inline-block;
+	padding: 20px 23px;
+	font-size: 14px;
+	position: relative;
+	
+}
+.tag:before
+{
+	position: absolute;
+	content: "";
+	width: 3px;
+	height: 12px;
+	background-color:#414E69 ;
+	left: 13px;
+	top: 50%;
+	margin-top: -6px;
+	
+}
+
+.tag-warp
+{
+	border-bottom: 10px solid #F6F6F6;
+   min-height: 60px;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: no-wrap;
+   align-items: center;
+   position: relative;
+  
+}
+
+.tag-warp .name 
+{
+	display:flex;
+	height: 100%;
+	align-items: center;
+
+}
+.tag-warp .name input
+{  
+	display:inline-block;
+	outline: none;
+	height: 100%;
+	border: none;
+}
+.no-mean
+{
+	background-color: #F7F7F7;
+	height: 30px;
+	line-height: 30px;
+	color: #909090;
+	font-weight: 600;
+	font-size: 12px;
+	padding-left: 20px;
+}
+.tag-warp .name select
+{
+	margin-right: 5px;
+	height: 30px;
+	border-radius: 5px;
+	color: #888;
+	
+}
+.need
+{
+	color: red;
+}
+.tag-c
+{
+	flex-direction:column;
+	   align-items: flex-start;
+	   padding-bottom: 20px;
+	   position: relative;
+}
+.sendBox
+{
+	background-color:#474747;
+	width: 90%;
+	height: 200px;
+	margin-left:5%;
+	border: 1px dashed #fff;
+	display: flex;
+	flex-direction:column;
+	align-items: center;
+	justify-content: space-around;
+	padding: 20px;
+	box-sizing: border-box;
+	margin: auto;
+}
+.send_btn
+{
+	background: #D7443F;
+	width: 80px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 12px;
+	color: #fff;
+	border-radius: 4px;
+	
+}
+
+.send-content
+{
+	
+	color: #fff;
+	font-size: 14px;
+	margin-top: 20px;
+	text-align: center;
+	
+}
+.send-wrap
+{
+	
+	font-size: 12px;
+	
+}
+.send-remind
+{
+	padding:10px 20px;
+    font-size: 12px;
+	color: #888;
+	
+}
+.getYzm
+{
+	background: #D7443F;
+	width: 80px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	font-size: 12px;
+	color: #fff;
+	border-radius: 4px;
+}
+.state
+{
+	font-size: 12px;
+	padding-left: 20px;
+	color: #888;
+}
+.state span
+{
+	color: #D7443F;
+}
+
+.hSend
+{
+	background: #D7443F;
+	width: 80px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	font-size: 12px;
+	color: #fff;
+	border-radius: 4px;
+	margin-top: 20px;
+	margin-left: 20px;
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
+.xy
+{
+	font-size: 12px ;
+	text-align: center;
+	margin-top: 20px;
+}
+.xy-input
+{
+position: relative;
+top: 3px;
+margin-right: 10px;
+}
+.send
+{
+	width: 60%;
+	margin-left: 20%;
+	background-color: #969699;
+	height: 50px;
+	line-height: 50px;
+	color: #fff;
+	text-align: center;
+	border-radius: 5px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	font-size: 14px;
+	font-weight: 600;
 }

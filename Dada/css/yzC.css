@@ -89,7 +89,20 @@ body
 	color: #fff;
 	text-align: center;
 	border-radius: 5px;
-	margin-top: 50px;
+	margin-top: 40px;
+	margin-bottom:40px;
 	font-size: 14px;
 	font-weight: 600;
+}
+.xy
+{
+	font-size: 12px ;
+	text-align: center;
+	margin-top: 20px;
+}
+.xy-input
+{
+position: relative;
+top: 3px;
+margin-right: 10px;
 }

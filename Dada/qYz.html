@@ -1,18 +1,126 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-        <title></title>
-    </head>
-    <link rel="stylesheet" type="text/css" href="css/invest.css">
-    <body>
-    <div class="bar">
-            <div class="left">
-                <img src="pic/left_row.png" alt="">
-                充值
-            </div>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/qYz.css">
+	<body>
+		<div class="bar">
+			<div class="left">
+				<img src="pic/left_row.png" alt="">
+				企业验证
+			</div>
 
-        </div>
-    </body>
+		</div>
+		<div class="no-mean">信息仅用于审核，绝不外泄</div>
+
+		<div class="tag-warp">
+			<span class="tag"><span class="need">*</span>运营者姓名</span>
+			<span class="name"><input type="text" placeholder="输入姓名"></span>
+		</div>
+		<div class="tag-warp">
+			<span class="tag"><span class="need">*</span>企业名称</span>
+			<span class="name">
+				<input type="text" placeholder="输入公司全称"></span>
+		</div>
+		<div class="tag-warp">
+			<span class="tag"><span class="need">*</span>行业分类</span>
+			<span class="name">
+				<select>
+					<option value="">一级行业</option>
+				</select>
+				<select>
+					<option value="">二级行业</option>
+				</select>
+		</div>
+		<div class="tag-warp">
+			<span class="tag"><span class="need">*</span>运营者手机号码</span>
+			<span class="name">
+				<input type="text" placeholder="输入运营者手机号码"></span>
+		</div>
+		<div class="tag-warp">
+			<span class="tag"><span class="need">*</span>验证码</span>
+			<span class="name">
+				<input type="text" placeholder="输入手机验证码"></span>
+		<div  class="getYzm">获取验证码</div>
+		</div>
+		<div class="tag-warp">
+			<span class="tag"><span class="need">*</span>对公账户</span>
+			<span class="name"><input type="text" placeholder="输入对公账户号"></span>
+		</div>
+		<div class="tag-warp tag-c">
+			<span class="tag"><span class="need">*</span>对公账户验证金额：0.1元【金额随机生成】</span>
+			<div class="send-remind">
+				用户需用对公账户按对一下的账户转账固定金额进行验证（金额随机生成）：
+				<br />
+				中易智能传媒（深圳）有限公司<br />
+				税务号：91440300359750166R<br />
+				对公卡号：44250100014500001136<br />
+				中国建设银行股份有限公司深圳益民支行
+
+			</div>
+			
+			<div class="state">验证状态：<span>待验证（未验证则不通过）</span></div>
+			<div class="hSend">我已提交</div>
+
+		</div>
+		<div class="tag-warp tag-c">
+			<span class="tag"><span class="need">*</span>企业营业职照</span>
+			<div class="send-wrap">
+				<div class="sendBox">
+					<div class="send_btn">
+						上传图片
+					</div>
+
+					<div class="send-content">推荐尺寸800x800,<br>支持Jpg、png、jpeg、bmg格式<br>大小不超过5M</div>
+
+				</div>
+				<div class="send-remind">
+					上传竖版三证合一营业执照正面照，图片将用于识别，请确保完整清晰，仅支持大陆工商颁布的营业执照，请确认证件在有效期内。 如提供不正规营业执照或其他图片，将无法识别，因此导致的审核失败将不予退还审核费。
+					查看示例</div>
+			</div>
+
+		</div>
+		<div class="tag-warp tag-c">
+			<span class="tag"><span class="need">*</span>认证申请公函</span>
+			<div class="send-wrap">
+				<div class="sendBox">
+					<div class="send_btn">
+						上传图片
+					</div>
+
+					<div class="send-content">推荐尺寸800x800,<br>支持Jpg、png、jpeg、bmg格式<br>大小不超过5M</div>
+
+				</div>
+				<div class="send-remind">
+					下载填写《企业认证申请公函》，并加盖公章。上传清晰无残缺加盖公章的公函扫描件。查看示例。
+				</div>
+			</div>
+
+		</div>
+
+		<div class="tag-warp tag-c">
+			<span class="tag"><span class="need">*</span>其他资质</span>
+			<div class="send-wrap">
+				<div class="sendBox">
+					<div class="send_btn">
+						上传图片
+					</div>
+
+					<div class="send-content">推荐尺寸800x800,<br>支持Jpg、png、jpeg、bmg格式<br>大小不超过5M</div>
+
+				</div>
+				<div class="send-remind">
+
+					用户名称、认证信息需体现特定内容，请提供对应资质。
+					例如：网站需提供ICP备案查询截图、商标需提供商标注册证、手机应用需提供软件著作权证、游戏需提供版号、其他品牌授权文件等。
+				</div>
+			</div>
+
+		</div>
+    <div class="xy"><input  type="checkbox" class="xy-input">同意并遵守<a href="">企业认证协议</a></div>
+<div  class="send"> 付费上传验证</div>
+	</body>
 </html>

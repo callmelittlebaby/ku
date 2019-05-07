@@ -128,8 +128,17 @@ body {
       justify-content: center;
     height: 100%;
     align-items: center;
+	position: relative;
 }
-
+.addS
+{
+    left: 50%;
+    position: absolute;
+    height: 50px !important;
+    margin-left: -25px;
+    top: -20px;
+	
+}
 .bottom_bar img {
 	height: 22px;
 	margin-bottom: 5px;
@@ -872,3 +881,58 @@ font-size: 12px;
 	background: #ffffff !important;
 }
 
+.whiteWrap{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+	opacity: 0.95;
+	display: none;
+}
+
+.wW-bottom{
+position: absolute;
+bottom: 0;
+width: 100%;
+height:58px;
+
+}
+.wW-bottom img{
+	display: block;
+height: 20px;
+margin: auto;
+
+}
+.wW-top
+{
+	position: absolute;
+	bottom:78px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.wW-top .bag
+{
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 30%;
+	margin-bottom: 20px;
+	text-decoration: none;
+}
+.wW-top .bag img
+{
+	width: 60px;
+}
+
+.bag-text
+{
+	font-size: 12px;
+	margin-top: 10px;
+}
