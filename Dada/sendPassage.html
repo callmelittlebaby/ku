@@ -6,7 +6,11 @@
         <title></title>
     </head>
     <link rel="stylesheet" type="text/css" href="css/sendPassage.css">
-    <body>
+            <link rel="stylesheet" href="css/laydate.css">
+	 		<link rel="stylesheet" href="css/calendar.css">
+			
+	 
+	<body>
     <div class="bar">
             <div class="left">
                 <img src="pic/close.png" alt="">
@@ -15,6 +19,124 @@
 
         </div>
 		
-		<div> <img src="" alt="">选择模块</div>
+		<div class="select-area"> 
+		<img src="pic/dog.png" alt="" class="dog">
+		<select>
+			<option value ="">选择模块</option>
+			<option value ="">商家活动</option>
+		</select>
+		
+		</div>
+		<div class="select-area"> 
+		<img src="pic/dog.png" alt="" class="dog">
+		<input type="text" placeholder="输入标题"  autofocus="autofocus">
+		
+		</div>
+		<div class="text-area">
+			<textarea rows="" cols=""  placeholder="输入正文" >
+输入正文
+			</textarea>
+			
+	<img src="pic/sc-dog.png" alt="">
+		<div  class="open">
+		<div  class="hj">
+		<input type="checkbox"  class="ck-ting" > <img src="pic/vip_2.png" alt="" class="vip">开启抽奖
+	 </div>
+	  <div class="hj">
+	  <input type="checkbox"  class="zd" > <img src="pic/vip_2.png" alt="" class="vip">帖子置顶
+	</div>
+	
+	
+		</div>
+		
+		</div>
+					<div class="xy"><input  type="checkbox" class="xy-input">同意并遵守<a href="">xx协议</a></div>
+		<div  class="send">确认发布</div>
+		<div class="whiteWrap">
+			<div  class="cj-all">
+		  <img src="pic/left_row.png" alt=""  class ="lf">
+			<div class="select-areaA"> 
+			<img src="pic/dog.png" alt="" class="dog">
+			<input type="text" placeholder="奖品名字"  autofocus="autofocus">
+			
+			</div>
+			<div class="select-areaA"> 
+		    <img src="pic/dog.png" alt="" class="dog">
+			<input type="text" placeholder="活动描述"  autofocus="autofocus">
+			
+			</div>
+			<div  class="pic-sc">
+			<img src="pic/dog.png" alt="" class="dog sdog">奖品图片：
+			<img src="pic/sc-dog.png" alt=""  class="scdog">
+			</div>
+			<div  class="date">
+				
+            <div class="date-input">
+					<img src="pic/dog.png" alt="" class="dog">开奖日期：
+				<input type="text" placeholder="点击选择" class="dataS">
+			</div>
+			 <div class="date-input">
+				 	<img src="pic/dog.png" alt="" class="dog">开奖时间：<input type="text" id="test1" placeholder="点击选择">
+          </div>
+			</div>
+			
+			<div class="xy"><input  type="checkbox" class="xy-input">同意并遵守<a href="">xx协议</a></div>
+			
+			
+			<div  class="send">确认</div>
+			</div>
+		</div>
     </body>
+	
+	<script src="js/jquery-1.11.3.min.js"> </script>
+	
+<!-- 	<script src="js/bootstrap.js" ></script>
+ -->	<script src="js/calendar.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/laydate.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script type="text/javascript">
+	$(".text-area textarea").focus(function()
+	{
+		$(".text-area textarea").html("")
+	});
+	
+		$('.dataS').datePicker({
+	okFunc: function (date1) {
+		console.log(date1);
+	}
+});
+laydate.render({ 
+  elem: '#test1'
+  ,type: 'time'
+});
+
+$(".ck-ting").on('click',function(){
+	
+	if($(".ck-ting").prop("checked") == true){
+	
+	 $('.whiteWrap').toggleClass('is-visible');
+	}
+	
+
+})
+$(".lf").on('click',function(){
+	
+	
+	
+	 $('.whiteWrap').removeClass('is-visible');
+	
+	
+
+})
+$(".send").on('click',function(){
+	
+	
+	
+	 $('.whiteWrap').removeClass('is-visible');
+	
+	
+
+})
+ 
+	</script>
 </html>
