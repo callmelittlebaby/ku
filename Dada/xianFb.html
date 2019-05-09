@@ -4,6 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
         <title></title>
+		<link rel="stylesheet" href="css/bootstrap-1.css">
+		<link rel="stylesheet" href="css/city-picker.css">
     </head>
     <link rel="stylesheet" type="text/css" href="css/xianFb.css">
     <body>
@@ -14,5 +16,81 @@
             </div>
 
         </div>
+		<div class="mb-row">
+			<input type="text" placeholder="标题">
+		</div>
+		
+		<div class="text-area">
+		<textarea rows="" cols=""  placeholder="输入正文" >描述宝贝的转手原因、入手渠道和使用感受
+		</textarea>
+		<div class="sc_dog_she">
+		<span class="dog_she">
+		<img src="pic/sc-dog.png" alt="" class="scdog">
+		<img src="pic/delete.png" alt="" class="dte">
+		</span>
+		<span>
+		<img src="pic/sc-dog.png" alt="" class="scdog">
+		</span>
+		</div>
+		
+		<form class="form-inline">
+		<div id="distpicker">
+		<div class="form-group">
+		<div style="position: relative; " class="xdw">
+		<img src="pic/dw.png" alt="" class="dw">
+		<input id="city-picker3" readonly type="text" value="江苏省/常州市/溧阳市" data-toggle="city-picker">
+		</div>
+		</div>
+		</div>
+		</form>
+		
+		
+		</div>
+		<div  class="radio_baby">
+		<span>	
+		<input type="radio" name="baby">全新宝贝
+		</span>
+		<span>	
+		<input type="radio" name="baby">二手
+		</span>
+		<span>	
+		<input type="radio" name="baby">闲置
+		</span>
+		<span>	
+		<input type="radio" name="baby">转赠
+		</span>
+		</div>
+		<div class="mb-row">
+			<input type="text" placeholder="价格(单位元)">
+		</div>
+		<div class="mb-row " >
+			<input type="text" placeholder="折扣(1-9,可不填)">
+			<div style="float: right;color: brown;transform: scale(0.9);">折扣价格：588元</div>
+		</div>
+		
+		<div class="mb-row" style="margin-top: 40px;">
+			交易方式：<span class="jy-style">自提</span>
+			<span class="jy-style">邮寄</span>
+			<span class="jy-style">同城面交</span>
+		</div>
+		
+		<div class="xy"><input  type="checkbox" class="xy-input">同意并遵守<a href="">xx协议</a></div>
+		
+		
+		<div  class="send">确认发布</div>
     </body>
+	<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.easing.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/city-picker.data.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/city-picker.js" type="text/javascript" charset="utf-8"></script>
+   <script>
+	   var $citypicker3 = $('#city-picker3');
+	   
+	   $(".jy-style").on("click",function()
+	   {
+		   $(this).toggleClass("s-active");
+	   })
+   </script>
+
 </html>
