@@ -1,0 +1,124 @@
+.bar {
+    height: 44px;
+    text-align: center;
+     line-height: 44px;
+    
+    background-color: #fff;
+   position: relative;
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+
+}
+body
+{
+
+}
+.left img {
+  position: absolute;
+  height: 20px;
+  left: 0;
+  top: 50%;
+  transform: translate(7%, -50%);
+}
+.juL
+{
+	padding-left:20px ;
+	margin-top: 20px;
+	
+}
+.addName
+{
+	font-size: 30px;
+	color: #999;
+	border: none;
+	outline: none;
+}
+
+.cfd,.zd
+{
+	position: relative;
+	margin-left: 20px;
+	border: none;
+	border-bottom: 1px solid #eee;
+	margin-top: 20px;
+	height: 40px;
+	outline: none;
+	width: 50%;
+	font-size: 14px;
+	
+}
+.zd
+{
+	border-bottom: 0px solid #eee;
+	padding-left: 5px;
+}
+.r-b
+{
+	width: 6px;
+	height: 6px ;
+	border-radius: 50%;
+	background-color: #FFB534;
+	display: inline-block;
+
+}
+
+
+.r-h
+{
+	
+	background-color: #4B4B68;
+	
+}
+.date-input  input{ 
+
+display: inline-block;
+font-size: 12px;
+margin-right: 20px;
+border: none;
+outline: none;
+}
+.date-input
+{
+	margin-top: 20px;
+	font-size: 12px;
+	color: #888;
+	outline: none;
+	
+}
+
+.dog
+{
+	height: 20px;
+	vertical-align: middle;
+	position: relative;
+	top: -2px;
+	left: -6px;
+	margin-right: 12px;
+}
+#test1
+{
+	position: relative;
+	left: 4px;
+	
+}
+
+	.send
+	{
+		width: 60%;
+		margin-left: 20%;
+		background-color: #969699;
+		height: 50px;
+		line-height: 50px;
+		color: #fff;
+		text-align: center;
+		border-radius: 5px;
+		margin-top: 40px;
+		margin-bottom: 40px;
+		font-size: 14px;
+		
+	}
+	

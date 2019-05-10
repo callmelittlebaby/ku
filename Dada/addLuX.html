@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+        <title></title>
+    </head>
+    <link rel="stylesheet" type="text/css" href="css/addLuX.css">
+	   <link rel="stylesheet" href="css/laydate.css">
+    <body>
+    <div class="bar">
+            <div class="left">
+                <img src="pic/left_row.png" alt="">
+                
+            </div>
+
+        </div>
+		
+		<div class="juL">
+			
+			<input type="text" class="addName" placeholder="添加名称">
+		
+		<div> <span class="r-b"></span> <input type="text" placeholder="在哪里出发？" class="cfd"></div>	
+		<div> <span class="r-b r-h"></span><input type="text" placeholder="去哪里？" class="zd"></div>		
+		
+		 <div class="date-input">
+		<img src="pic/dog.png" alt="" class="dog">时间：<input type="text" id="test1" placeholder="点击选择">
+		</div>
+		</div>
+		
+		
+		
+		
+		
+		<div  class="send">确认</div>
+    </body>
+	<script src="js/jquery-1.11.3.min.js"> </script>
+	<script src="js/calendar.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/laydate.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+		
+		laydate.render({ 
+		  elem: '#test1'
+		  ,type: 'time'
+		});
+		
+	</script>
+</html>
