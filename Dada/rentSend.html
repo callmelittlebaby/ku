@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+	</head>
+	<link rel="stylesheet" href="css/mui.poppicker.css">
+	<link rel="stylesheet" href="css/mui.picker.css">
+	<link rel="stylesheet" href="css/mui.css">
+	<link rel="stylesheet" type="text/css" href="css/rentSend.css">
+
+	<body>
+
+		<div class="bar">
+			<div class="left">
+				<img src="pic/left_row.png" alt="">
+			
+			</div>
+
+		</div>
+
+		<div class="distance">
+			<div class="zwName">发布职位</div>
+			<div class="zw_remind">职位名称,职位类型和工作城市发布后不可修改</div>
+			<div class="zp_tag">职业名称</div>
+			<div   class="tag-box">请填写职业描述  <img src="pic/rrow.png" alt="" style="position: absolute;width:20px;right: 0px;"></div>
+			<div class="separate_lr sx-lar">
+				<span class="separate_tb sx-one">
+					<div class="font12">经验要求</div>
+					<div class="maRin10 sx-content">一年以内</div>
+				</span>
+				<span class="separate  sx-two">
+					<div class="font12">最低学历</div>
+					<div class="maRin10 sx-content">本科</div>
+				</span>
+				<span class="separate  sx-three">
+					<div class="font12">薪资范围</div>
+					<div class="maRin10 sx-content">请选择</div>
+				</span>
+			</div>
+          <div class="zp_tag">职业描述</div>
+		  <div   class="tag-box">请填写职业描述  <img src="pic/rrow.png" alt="" style="position: absolute;width:20px;right: 0px;"></div>
+		  <div class="zp_tag">工作地点</div>
+		  <input type="text" class="zw-name-input" autofocus="autofocus" placeholder="请填写工作地点[这里我希望可以跳转到地图选择,靠你了]">
+		</div>
+		<div class="xy"><input  type="checkbox" class="xy-input">同意并遵守<a href="">xx协议</a></div>
+		
+		
+		<div  class="send">确认发布</div>
+	</body>
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/mui.js"></script>
+	<script src="js/mui.picker.js"></script>
+
+	<script src="js/mui.picker.all.js"></script>
+	<script type="text/javascript">
+		$(".sx-one").click(function() {
+
+			var picker = new mui.PopPicker();
+			picker.setData(
+				[{
+						value: 'zl',
+						text: '一年以内'
+					},
+					{
+						value: 'zl',
+						text: '一至三年'
+					},
+					{
+						value: 'zl',
+						text: '三至五年'
+					},
+					{
+						value: 'zl',
+						text: '五至十年'
+					},
+					{
+						value: 'zl',
+						text: '十年以上'
+					}
+				]);
+			picker.show(function(selectItems) {
+				$(" .sx-one .sx-content").html(selectItems[0].text);
+			})
+		})
+		$(".sx-two").click(function() {
+
+			var picker = new mui.PopPicker();
+			picker.setData(
+				[{
+						value: 'zl',
+						text: '初中及以下'
+					},
+					{
+						value: 'zl',
+						text: '中专/中技'
+					},
+					{
+						value: 'zl',
+						text: '高中'
+					},
+					{
+						value: 'zl',
+						text: '大专'
+					},
+					{
+						value: 'zl',
+						text: '本科'
+					},
+					{
+						value: 'zl',
+						text: '博士'
+					},
+					{
+						value: 'zl',
+						text: '全部'
+					},
+				]);
+			picker.show(function(selectItems) {
+				$(".sx-two .sx-content").html(selectItems[0].text);
+			})
+		})
+		$(".sx-three").click(function() {
+
+			var picker = new mui.PopPicker();
+			picker.setData(
+				[{
+						value: 'zl',
+						text: '3k-5k'
+					},
+					{
+						value: 'zl',
+						text: '5k-10k'
+					},
+					{
+						value: 'zl',
+						text: '10k以上'
+					},
+					{
+						value: 'zl',
+						text: '面议'
+					},
+				]);
+			picker.show(function(selectItems) {
+				$(".sx-three .sx-content").html(selectItems[0].text);
+			})
+		})
+	</script>
+</html>

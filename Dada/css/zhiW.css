@@ -1,0 +1,59 @@
+.bar {
+     height: 44px;
+   text-align: center;
+    line-height: 44px;
+   box-shadow: 1px 0px 1px #eee;
+   color: #333;
+   background-color: #fff;
+   font-family: 宋体;
+   position: relative;
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+
+}
+body
+{
+
+}
+.left img {
+  position: absolute;
+  height: 20px;
+  left: 0;
+  top: 50%;
+  transform: translate(7%, -50%);
+}
+.topic
+{
+	float: right;
+	margin-right: 20px;
+	font-size: 12px;
+}
+.distance
+{
+	padding: 20px;
+}
+.zw-ms
+{
+	font-size: 12px;
+}
+.fh
+{
+	color: #888;
+	font-size: 12px;
+	margin: 20px 0px;
+}
+#textareaid
+{   
+	width: 100%;
+	border: none;
+	font-size: 14px;
+    line-height: 30px;
+	color: #888;
+	outline: none;
+	height: 400px;
+	border-bottom: 1px solid #eee;
+}
