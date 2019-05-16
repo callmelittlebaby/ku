@@ -1,0 +1,125 @@
+
+html
+{
+
+}
+.bar {
+    height:  2.75rem;
+    text-align: center;
+     line-height: 2.75rem;
+    box-shadow:0.0625rem 0rem 0.0625rem #eee;
+    color: #333;
+    background-color: #fff;
+   font-size: 0.75rem;
+  position: relative;
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+
+}
+input
+{
+	padding: 0 !important;
+	margin: 0 !important;
+}
+body
+{
+background-color: #fff;
+}
+.left img {
+  position: absolute;
+  height: 1.25rem;
+  left: 0;
+  top: 50%;
+  transform: translate(7%, -50%);
+}
+
+.top_text
+{
+  float: right;
+  margin-right: 1.25rem;
+}
+
+.wrap-box
+{
+	padding:1.25rem ;
+}
+.last-work
+{
+	margin-top: 1.25rem;
+	font-size: 1.25rem;
+	font-weight: 600;
+}
+
+.cH
+{
+	font-size: 0.75rem;
+	color: #888;
+	margin-top: 0.625rem;
+}
+.bq0t
+{
+	font-size: 0.75rem;
+}
+.maRin20 input
+{
+	border: none;
+	border-bottom: 0.0625rem solid  #eee;
+	width: 100%;
+	height: 3.125rem;
+	outline: none;
+	
+}
+.maRin20
+{
+	margin-top:1.5rem;
+}
+.ch-wrap
+{
+	margin-top: 0.625rem;
+	border-bottom: 0.0625rem solid #eee;
+	padding-bottom: 1.25rem;
+	position: relative;
+}
+.row 
+{
+	position: absolute;
+	height: 1.2rem;
+	right: 0rem;
+}
+.mui-picker-inner
+{
+background-color: #fff;	
+-webkit-mask-box-image:-webkit-linear-gradient(bottom, #fff 5%, #fff 20%, #fff 80%, #fff 95%, #fff) !important;
+}
+.input-wrap 
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.input-wrap input
+{
+	width: 20%;
+	font-size: 0.75rem;
+	color: #888;
+	text-align: center;
+}
+.send
+	{
+		width: 60%;
+		margin-left: 20%;
+		background-color: #969699;
+		height: 50px;
+		line-height: 50px;
+		color: #fff;
+		text-align: center;
+		border-radius: 5px;
+		margin-top: 40px;
+		margin-bottom: 40px;
+		font-size: 14px;
+		
+	}

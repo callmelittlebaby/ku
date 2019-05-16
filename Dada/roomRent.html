@@ -5,6 +5,9 @@
         <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
         <title></title>
     </head>
+	<link rel="stylesheet" href="css/mui.poppicker.css">
+	<link rel="stylesheet" href="css/mui.picker.css">
+	<link rel="stylesheet" href="css/mui.css">
     <link rel="stylesheet" type="text/css" href="css/roomRent.css">
     <body>
     <div class="bar">
@@ -16,6 +19,8 @@
         </div>
 			
 			 <div class="distance">
+			<div class="fh">标题</div>
+			<input type="text" class='r-n' placeholder="标题(区名10个字内)">
 			<div class="fh">发布类型</div>	
 			<div  class="radio_baby">
 			
@@ -29,14 +34,59 @@
 			<input type="radio" name="baby" class="qrend">求租
 			</span>
 			<span>	
-			<input type="radio" name="baby"  class="qsale">求售
+			<input type="radio" name="baby"  class="qsale">求购
+			</span>
+			<span>	
+			<input type="radio" name="baby"  class="zm">转卖
 			</span>
 			</div>
 			<div class="fh">金额</div>
 			<input type="text" class='r-m' placeholder="输入租金">
+			<div class="fh">面积</div>
+			<input type="text" class='r-n' placeholder="单位m²">
+			<div class="fh">地址</div>
+			<input type="text" class='r-n' placeholder="输入详细地址">
+			<div class="separate_lr sx-lar">
+				<span class="separate_tb sx-one">
+					<div class="font12">户型</div>
+					<div class=" maRin10 sx-content">普通住宅</div>
+				</span>
+				<span class="separate_tb  sx-two">
+					<div class="font12">装修程度</div>
+					<div class="  maRin10 sx-content">毛胚</div>
+				</span>
+				
+				<span class="separate_tb  sx-three">
+					<div class="font12">楼层</div>
+					<div class=" maRin10 sx-content">6层</div>
+				</span>
+					<span class="separate_tb  sx-five">
+					<div class="font12">电梯</div>
+					<div class=" maRin10 sx-content">有</div>
+				</span>
+				<span class="separate_tb  sx-four">
+					<div class="font12">可入住时间</div>
+					<div class=" maRin10 sx-content">请选择</div>
+				</span>
+			
 			</div>
+			
+			<div class="fh">房产描述</div>
+			<textarea rows="" cols="" autofocus="autofocus">房产描述
+				
+			</textarea>
+			</div>
+			
+				<div class="xy"><input  type="checkbox" class="xy-input">同意并遵守<a href="">xx协议</a></div>
+			
+			
+			<div  class="send">确认发布</div>
     </body>
 	<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/mui.js"></script>
+	<script src="js/mui.picker.js"></script>
+	
+	<script src="js/mui.picker.all.js"></script>
 	<script type="text/javascript" type="text/javascript">
 		
 		$(".sale").on('click',function(){
@@ -68,6 +118,182 @@
 			}
 		})
 		
+		$(".zm").on('click',function(){
+			
+			if($(this).prop("checked") == true){
+			
+			 $('.r-m').attr('placeholder','转卖金额/元');
+			}
+		})
 		
+		$(".sx-one").click(function() {
+		
+			var picker = new mui.PopPicker();
+			picker.setData(
+				[{
+						value: 'zl',
+						text: '普通住宅'
+					},
+					{
+						value: 'zl',
+						text: '别墅'
+					},
+					{
+						value: 'zl',
+						text: '公寓'
+					},
+					{
+						value: 'zl',
+						text: '其他'
+					},
+					{
+						value: 'zl',
+						text: '平房'
+					},
+					
+				]);
+			picker.show(function(selectItems) {
+				$(" .sx-one .sx-content").html(selectItems[0].text);
+			})
+		})
+		$(".sx-two").click(function() {
+		
+			var picker = new mui.PopPicker();
+			picker.setData(
+				[{
+						value: 'zl',
+						text: '毛胚'
+					},
+					{
+						value: 'zl',
+						text: '普通装修'
+					},
+					{
+						value: 'zl',
+						text: '豪华装修'
+					},
+					{
+						value: 'zl',
+						text: '精装修'
+					},
+					{
+						value: 'zl',
+						text: '无装修'
+					},
+				
+				]);
+			picker.show(function(selectItems) {
+				$(".sx-two .sx-content").html(selectItems[0].text);
+			})
+		})
+		$(".sx-three").click(function() {
+		
+			var picker = new mui.PopPicker();
+			picker.setData(
+				[{
+						value: 'zl',
+						text: '1层'
+					},
+					{
+						value: 'zl',
+						text: '2层'
+					},
+					{
+						value: 'zl',
+						text: '3层'
+					},
+					{
+						value: 'zl',
+						text: '4层'
+					},
+					{
+						value: 'zl',
+						text: '5层'
+					},
+					{
+						value: 'zl',
+						text: '6层'
+					},
+					{
+						value: 'zl',
+						text: '7层'
+					},
+					{
+						value: 'zl',
+						text: '8层'
+					},
+					{
+						value: 'zl',
+						text: '9层'
+					},
+					{
+						value: 'zl',
+						text: '10层'
+					},
+					{
+						value: 'zl',
+						text: '11层'
+					},
+					{
+						value: 'zl',
+						text: '12层'
+					},
+					{
+						value: 'zl',
+						text: '12层以上'
+					},
+					
+				]);
+				
+			picker.show(function(selectItems) {
+				$(".sx-three .sx-content").html(selectItems[0].text);
+			})
+		})
+		
+		
+			$(".sx-four").click(function() {
+		
+			var picker = new mui.PopPicker();
+			picker.setData(
+				[{
+						value: 'zl',
+						text: '随时入住'
+					},
+					{
+						value: 'zl',
+						text: '面议后入住'
+					},
+					{
+						value: 'zl',
+						text: '一周后'
+					},
+					{
+						value: 'zl',
+						text: '一月后'
+					},
+					
+				]);
+			picker.show(function(selectItems) {
+				$(".sx-four .sx-content").html(selectItems[0].text);
+			})
+		})
+		$(".sx-five").click(function() {
+		
+			var picker = new mui.PopPicker();
+			picker.setData(
+				[{
+						value: 'zl',
+						text: '有'
+					},
+					{
+						value: 'zl',
+						text: '无'
+					},
+	
+				]);
+			picker.show(function(selectItems) {
+				$(".sx-five .sx-content").html(selectItems[0].text);
+			})
+		})
 	</script>
 </html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+        <title></title>
+    </head>
+	<link rel="stylesheet" href="css/mui.poppicker.css">
+	<link rel="stylesheet" href="css/mui.picker.css">
+	<link rel="stylesheet" href="css/mui.css">
+    <link rel="stylesheet" type="text/css" href="css/qz-tx2.css">
+    
+	<body>
+    <div class="bar">
+            <div class="left">
+                <img src="pic/left_row.png" alt="">
+                
+                <span  class="top_text"> 下一步</span>
+            </div>
+
+        </div>
+		
+		<div class="wrap-box">
+			<div class="last-work">最近一份工作经历</div>
+		     <div class="cH">99%的boss关注你最近一份工作经历</div>
+		<div class="maRin20">
+		<div class="bq0t">公司名称</div>
+		<input type="text" placeholder="输入公司名称">
+		</div>
+		<div class="maRin20">
+		<div class="bq0t">时间段</div>
+		<div  class="ch-wrap time ">
+			<span  class="cH">请选择 至</span> <span>至今</span>
+		<img src="pic/rrow.png" alt="" class="row">
+		
+		</div>
+		</div>
+		<div class="maRin20">
+		<div class="bq0t">职业类型</div>
+		<div  class="ch-wrap work">
+			<span  class="cH">请选择职位类型</span> 
+		<img src="pic/rrow.png" alt="" class="row">
+		
+		</div>
+		</div>
+		<div class="maRin20">
+		<div class="bq0t">技能标签</div>
+		<div  class="input-wrap">
+
+		<input type="" placeholder="输入标签">
+		<input type="" placeholder="输入标签">
+		<input type="" placeholder="输入标签">
+		</div>
+		</div>
+		
+	 <div class="maRin20">
+	 <div class="bq0t">职位描述</div>
+	 <div  class="ch-wrap">
+	 	<span  class="cH">填写基本工作</span> 
+		<!-- 跳到zhiw.html -->
+	 <img src="pic/rrow.png" alt="" class="row">
+	 
+	 </div>
+	 </div>
+		
+			<div  class="send">下一步</div>
+		</div>
+    </body>
+	<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/mui.js"></script>
+	<script src="js/mui.picker.js"></script>
+	
+	<script src="js/mui.picker.all.js"></script>
+	
+	<script type="text/javascript">
+		$(".time").click(function() {
+		
+			var picker = new mui.PopPicker();
+			picker.setData(
+				[{
+						value: 'zl',
+						text: '2018'
+					},
+					{
+						value: 'zl',
+						text: '2017'
+					},
+					{
+						value: 'zl',
+						text: '2013'
+					},
+					{
+						value: 'zl',
+						text: '2012'
+					},
+					{
+						value: 'zl',
+						text: '2011'
+					},
+					{
+						value: 'zl',
+						text: '2010'
+					},
+					{
+							value: 'zl',
+							text: '2010前'
+						},
+										
+				
+				]);
+			picker.show(function(selectItems) {
+				$(".time .cH").html(selectItems[0].text);
+			})
+		})
+		
+		
+	</script>
+</html>
+

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+        <title></title>
+    </head>
+	<link rel="stylesheet" href="css/mui.poppicker.css">
+	<link rel="stylesheet" href="css/mui.picker.css">
+	<link rel="stylesheet" href="css/mui.css">
+    <link rel="stylesheet" type="text/css" href="css/qz-tx4.css">
+    
+	<body>
+    <div class="bar">
+            <div class="left">
+                <img src="pic/left_row.png" alt="">
+                
+                <span  class="top_text"> 下一步</span>
+            </div>
+
+        </div>
+		
+		<div class="wrap-box">
+			<div class="school">教育经历</div>
+		     <div class="cH">详细的教育经历能为你拉分哦</div>
+		<div class="maRin20">
+		<div class="bq0t">学校名称</div>
+		<input type="text" placeholder="输入学校名称">
+		</div>
+		<div class="maRin20">
+		<div class="bq0t">学历</div>
+		<div  class="ch-wrap xl ">
+			<span  class="cH">请选择</span>
+		<img src="pic/rrow.png" alt="" class="row">
+		
+		</div>
+		</div>
+		<div class="maRin20">
+		<div class="bq0t">时间段</div>
+		
+		<div  class="time-jd">
+		<div  class="ch-wrap time timeS ">
+			<span  class="cH">请选择</span>
+
+		
+		</div>
+		<span>至</span>
+		<div  class="ch-wrap time timeE">
+			<span  class="cH">请选择</span>
+		
+		
+		</div>
+		</div>
+		</div>
+		
+		
+		
+	
+		
+			<div  class="send">下一步</div>
+		</div>
+    </body>
+	<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/mui.js"></script>
+	<script src="js/mui.picker.js"></script>
+	
+	<script src="js/mui.picker.all.js"></script>
+	
+	<script type="text/javascript">
+		$(".xl").click(function() {
+		
+			var picker = new mui.PopPicker();
+			picker.setData(
+				[{
+						value: 'zl',
+						text: '初中及初中以下'
+					},
+					{
+						value: 'zl',
+						text: '中专/中技'
+					},
+					{
+						value: 'zl',
+						text: '高中'
+					},
+					{
+						value: 'zl',
+						text: '大专'
+					},
+					{
+						value: 'zl',
+						text: '本科'
+					},
+					{
+						value: 'zl',
+						text: '博士'
+					},
+				
+										
+				
+				]);
+			picker.show(function(selectItems) {
+				$(".xl .cH").html(selectItems[0].text);
+			})
+		})
+		
+		$(".timeS").click(function() {
+		
+			var picker = new mui.PopPicker();
+			picker.setData(
+				[{
+							value: 'zl',
+						text: '2018'
+					},
+					{
+						value: 'zl',
+						text: '2017'
+					},
+					{
+						value: 'zl',
+						text: '2013'
+					},
+					{
+						value: 'zl',
+						text: '2012'
+					},
+					{
+						value: 'zl',
+						text: '2011'
+					},
+					{
+						value: 'zl',
+						text: '2010'
+					},
+					{
+							value: 'zl',
+							text: '2010前'
+						},
+				
+										
+				
+				]);
+			picker.show(function(selectItems) {
+				$(".timeS .cH").html(selectItems[0].text);
+			})
+		})
+		$(".timeE").click(function() {
+		
+			var picker = new mui.PopPicker();
+			picker.setData(
+				[{
+							value: 'zl',
+						text: '2018'
+					},
+					{
+						value: 'zl',
+						text: '2017'
+					},
+					{
+						value: 'zl',
+						text: '2013'
+					},
+					{
+						value: 'zl',
+						text: '2012'
+					},
+					{
+						value: 'zl',
+						text: '2011'
+					},
+					{
+						value: 'zl',
+						text: '2010'
+					},
+					{
+							value: 'zl',
+							text: '2010前'
+						},
+										
+				
+				]);
+			picker.show(function(selectItems) {
+				$(".timeE .cH").html(selectItems[0].text);
+			})
+		})
+	</script>
+</html>
+
