@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+        <title></title>
+    </head>
+    <link rel="stylesheet" type="text/css" href="css/dt.css">
+    <body>
+    <div class="bar1">
+            <div class="left">
+                <img src="pic/left_row.png" alt="">
+                动态
+                <span  class="top_text"> </span>
+            </div>
+
+        </div>
+			<div class="go-top" ><img src="pic/zd.png" alt=""></div>
+		<div class="bottom_bar">
+					
+					<a class="bar" href="index.html">
+						<img src="pic/sy.png"/>
+						<div class="text">
+							首页
+						</div>
+					</a>
+					<a class="bar" href="#">
+						<img src="pic/dt1.png"/>
+						<div class="text">
+							动态
+						</div>
+					</a>
+					<a class="bar" href="#">
+					<img src="pic/addS.png" alt=""  class="addS" >
+						<img src="" alt=""  >
+						<div class="text">
+							发布
+						</div>
+						
+					</a>
+					<a class="bar" href="xiaoXi.html">
+						<img src="pic/qp1.png"/>
+						<div class="text">
+							消息
+						</div>
+					</a>
+					<a class="bar" href="myindex.html">
+						<img src="pic/me1.png"/>
+						<div class="text">
+							个人中心
+						</div>
+					</a>
+					
+				</div>
+		<div  class="psg_all">
+			<div  class="psg">
+			<div class="psg_topic">
+				求职记，现实福利活动，白无常素材免费送 ，走过路过不要错过
+			</div>
+			<div class="pic_ad">
+				<img src="pic/ad_1.jpg" /><img src="pic/ad_free.png" /><img src="pic/ad_2.png" />
+			</div>
+			<div class="tag_bar">
+				<span class="company">中易智能传媒</span> <span class="jp">有奖活动</span>
+			</div>
+			</div>
+			
+			<div  class="psg">
+			<div class="psg_topic">
+				求职记，现实福利活动，白无常素材免费送 ，走过路过不要错过
+			</div>
+			<div class="pic_ad">
+				<img src="pic/ad_1.jpg" /><img src="pic/ad_free.png" /><img src="pic/ad_2.png" />
+			</div>
+			<div class="tag_bar">
+				<span class="company">中易智能传媒</span> <span class="jp">有奖活动</span>
+			</div>
+			</div>
+			<div  class="psg">
+			<div class="psg_topic">
+				求职记，现实福利活动，白无常素材免费送 ，走过路过不要错过
+			</div>
+			<div class="pic_ad">
+				<img src="pic/ad_1.jpg" /><img src="pic/ad_free.png" /><img src="pic/ad_2.png" />
+			</div>
+			<div class="tag_bar">
+				<span class="company">中易智能传媒</span> <span class="jp">有奖活动</span>
+			</div>
+			</div>
+				<div  class="psg">
+			<div class="psg_topic">
+				求职记，现实福利活动，白无常素材免费送 ，走过路过不要错过
+			</div>
+			<div class="pic_ad">
+				<img src="pic/ad_1.jpg" /><img src="pic/ad_free.png" /><img src="pic/ad_2.png" />
+			</div>
+			<div class="tag_bar">
+				<span class="company">中易智能传媒</span> <span class="jp">有奖活动</span>
+			</div>
+			</div>
+		</div>
+		
+		
+    </body>
+	<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		 $(function(){  
+		    var go_top = $('.go-top');  
+		
+		    function site(){  
+		        var wh = $(window).height()*0.4;  
+		        var st = $(document).scrollTop();  
+		
+		        if(st > wh)  
+		            go_top.fadeIn("slow");  
+		        else  
+		            go_top.fadeOut("slow");  
+		    }  
+		
+		    $(window).scroll(function(){   
+		        site();  
+		    })  
+		
+		    //点击go＿top　按钮时，　滚动到顶部  
+		    go_top.click(function(prem) {    
+		        prem.preventDefault();    
+		        //绑定返回顶部    
+		        var top = $(document).scrollTop();            
+		        var ini_h = 1;    
+		        timer = setInterval(function() {    
+		            if (top -  ini_h <= 0) {    
+		                $(window).scrollTop(0);    
+		                timer && clearInterval(timer);    
+		            } else {    
+		                top = top - ini_h;    
+		                $(window).scrollTop(top);  
+		            }    
+		            ini_h += 5;     //数字越大走越快    
+		        }, 15);    
+		    });  
+		})  
+	</script>
+</html>
