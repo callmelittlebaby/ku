@@ -1,0 +1,158 @@
+
+html
+{
+
+}
+.bar {
+  height: 55px;
+  text-align: center;
+  line-height: 55px;
+  box-shadow: 1px 0px 1px #eee;
+  color: #333;
+  background-color: #fff;
+  display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	font-size: 12px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+
+}
+body
+{
+
+}
+.left img {
+  position: absolute;
+  height: 1.25rem;
+  left: 0;
+  top: 50%;
+  transform: translate(7%, -50%);
+}
+.content1,.content2,.content3,.content4,.content5
+{
+	display: none;
+	width: 100%;
+}
+.top_text
+{
+  position: absolute;
+  right: 1.25rem;
+	top: 0.875rem;
+	border: none;
+
+	
+}
+
+.bar .active
+{
+	border-bottom: 1px solid #666;
+}
+.bar .part
+{
+	width: 33.3%;
+	height: 100%;
+}
+.bar  a
+{
+	height: 100%;
+	color: #333;
+}
+.same
+{
+	
+
+	
+	
+}
+.same-wrap
+{
+	display: flex;
+	flex-direction: row;
+ height: 6.25rem;
+ padding-bottom: 20px;
+ border-bottom: 0.0625rem solid #eee;
+}
+.left-img
+{
+	width: 6.25rem;
+	height: 6.25rem;
+}
+.right-wrap
+{
+	display: flex;
+	flex-direction: column;    
+	justify-content: space-between;
+	height: 100%;
+	margin-left: 1.25rem;
+	
+}
+.topic
+{
+	font-weight: 600;
+}
+.price
+{
+	color: red;
+}
+.ly span
+{
+	font-size: 0.75rem;
+	color: #999;
+
+	
+}
+.same-all
+{
+	display: flex;
+	flex-flow: column;
+	
+}
+.function_all
+{
+	display: flex;
+	flex-flow: row;
+	justify-content: space-around;
+	font-size: 0.75rem;
+	margin-top: 0.625rem;
+	color: #888;
+}
+.function_all  .state
+{
+	line-height: 1.75rem;
+
+}
+.same-x
+{
+	
+	border-bottom: 10px solid #eee;
+	padding:0.625rem 1.25rem;
+  margin-top: 0.125rem;
+
+}
+
+.function_all .btn
+{
+	border: 0.0625rem solid  #eeee;
+	padding:0.3125rem 0.625rem;
+	border-radius: 5px;
+}
+.con-content
+{
+	font-size: 0.75rem;
+	color: #888;
+	width: 70%;
+	overflow: hidden;
+}
+.zd-img
+{
+	height: 14px;
+	vertical-align: middle;
+	position: relative;
+	top: -1px;
+	right: 5px;
+}

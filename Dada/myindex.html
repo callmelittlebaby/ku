@@ -18,6 +18,33 @@
 			
 			<div class="rowEx">帐号</div>
 		</div>
+		
+		<div  class="yz_mu">
+			<div class="white-mu">
+				<div class="wrap-box">
+					<img src="pic/dhyz.png" alt="">
+					
+					<span>电话验证</span>
+				</div>
+				<div  class="wrap-box">
+					<img src="pic/sfyz.png" alt="">
+					
+					<span>身份证验证</span>
+				</div >
+				<div  class="wrap-box">
+					<img src="pic/cz.png" alt="">
+					
+					<span>车主验证</span>
+				</div>
+				<div  class="wrap-box">
+					<img src="pic/qyyz.png" alt="">
+					
+					<span>企业验证</span>
+				</div>
+				
+			</div>
+			
+		</div>
 		<div>
 			
 		</div>
@@ -88,7 +115,7 @@
 
 					<span>联系客服</span>
 				</div>
-				<div class="function_area">
+				<div class="function_area xxyz">
 
 					<img src="pic/yZ.png" alt="">
 
@@ -127,7 +154,7 @@
 					</div>
 					
 				</a>
-				<a class="bar" href="xiaoXi.html">
+				<a class="bar " href="xiaoXi.html">
 					<img src="pic/qp1.png"/>
 					<div class="text">
 						消息
@@ -198,6 +225,26 @@
 		{
 			
 			$(".tanDimu").toggleClass("is-visible");
+		})
+		
+		
+		
+		$('.xxyz').on('click', function() {
+		
+			
+			$(".yz_mu").css("display","block");
+		
+		})
+		
+		$(".yz_mu").on("click",function(e)
+		{
+				event.stopPropagation();
+				event.preventDefault();
+				var target = $(e.target);
+				if ($(e.target).closest(".white-mu").length == 0) {
+				$(".yz_mu").css("display","none");
+				console.log("aa");
+			}
 		})
 		$(".lk").click(function()
 		{

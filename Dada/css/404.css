@@ -1,0 +1,58 @@
+
+html
+{
+
+}
+.bar {
+    height:  2.75rem;
+    text-align: center;
+     line-height: 2.75rem;
+ 
+    color: #333;
+    background-color: #fff;
+   font-size: 0.75rem;
+  position: relative;
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+
+}
+body
+{
+
+}
+
+
+.top_text
+{
+  float: right;
+  margin-right: 1.25rem;
+}
+
+
+.cuo
+{
+	width: 100%;
+}
+
+.w-text
+{
+	font-size: 50px;
+	text-align: center;
+	margin-top: 50px;
+	font-weight: 600;
+	color: #CFF0FF;
+}
+.w-textc
+{
+	font-size: 20px;
+	text-align: center;
+	margin-top: 50px;
+	font-weight: 600;
+	color: #568EC8;
+}
+
+

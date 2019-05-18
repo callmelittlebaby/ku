@@ -936,3 +936,17 @@ margin: auto;
 	font-size: 12px;
 	margin-top: 10px;
 }
+
+.go-top
+{
+	
+position: fixed; z-index: 999;right: 0; bottom: 100px;
+	
+}
+
+.go-top  img
+{
+	
+height: 30px;
+	
+}

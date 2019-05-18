@@ -60,6 +60,30 @@ body
 	float: right;
 	margin-right: 20px;
 }
+.scdog
+{   
+	width: 80px;
+	height: 80px;
+	margin-right: 10px;
+}
+.sc_dog_she 
+{
+	display: flex;
+	flex-direction: row;
+}
+.dog_she{
+	width: 80px;
+	height: 80px;
+	position: relative;
+	margin-right: 10px;
+}
+.dte
+{
+	position: absolute;
+	height: 20px;
+	top: 0;
+	left: -5px;
+}
 .row
 {
 	
@@ -133,13 +157,7 @@ select
 	vertical-align: middle;
 }
 
-.scdog
-{
-	
-	height: 80px;
-	vertical-align: middle;
-	margin-left: 20px;
-}
+
 
 .cj-all
 {

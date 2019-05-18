@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/mui.poppicker.css">
 	<link rel="stylesheet" href="css/mui.picker.css">
 	<link rel="stylesheet" href="css/mui.css">
+	<link rel="stylesheet" href="css/mui.dtpicker.css">
     <link rel="stylesheet" type="text/css" href="css/qz-tx4.css">
     
 	<body>
@@ -105,83 +106,39 @@
 		})
 		
 		$(".timeS").click(function() {
+		var dtPicker = new mui.DtPicker({
+		type: "month", //设置日历初始视图模式
 		
-			var picker = new mui.PopPicker();
-			picker.setData(
-				[{
-							value: 'zl',
-						text: '2018'
-					},
-					{
-						value: 'zl',
-						text: '2017'
-					},
-					{
-						value: 'zl',
-						text: '2013'
-					},
-					{
-						value: 'zl',
-						text: '2012'
-					},
-					{
-						value: 'zl',
-						text: '2011'
-					},
-					{
-						value: 'zl',
-						text: '2010'
-					},
-					{
-							value: 'zl',
-							text: '2010前'
-						},
-				
-										
-				
-				]);
-			picker.show(function(selectItems) {
-				$(".timeS .cH").html(selectItems[0].text);
-			})
+		
+		});
+		dtPicker.show(function (selectItems) { 
+		
+		
+		var y = selectItems.y.text;  //获取选择的年
+		var m = selectItems.m.text;  //获取选择的月
+		var date = y + "-" + m;
+		$(".timeS .cH").html(date); 
+		console.log(selectItems.y);//{text: "2016",value: 2016} 
+		console.log(selectItems.m);//{text: "05",value: "05"} 
+		});
 		})
-		$(".timeE").click(function() {
 		
-			var picker = new mui.PopPicker();
-			picker.setData(
-				[{
-							value: 'zl',
-						text: '2018'
-					},
-					{
-						value: 'zl',
-						text: '2017'
-					},
-					{
-						value: 'zl',
-						text: '2013'
-					},
-					{
-						value: 'zl',
-						text: '2012'
-					},
-					{
-						value: 'zl',
-						text: '2011'
-					},
-					{
-						value: 'zl',
-						text: '2010'
-					},
-					{
-							value: 'zl',
-							text: '2010前'
-						},
-										
-				
-				]);
-			picker.show(function(selectItems) {
-				$(".timeE .cH").html(selectItems[0].text);
-			})
+		$(".timeE").click(function() {
+		var dtPicker = new mui.DtPicker({
+		type: "month", //设置日历初始视图模式
+		
+		
+		});
+		dtPicker.show(function (selectItems) { 
+		
+		
+		var y = selectItems.y.text;  //获取选择的年
+		var m = selectItems.m.text;  //获取选择的月
+		var date = y + "-" + m;
+		$(".timeE .cH").html(date); 
+		console.log(selectItems.y);//{text: "2016",value: 2016} 
+		console.log(selectItems.m);//{text: "05",value: "05"} 
+		});
 		})
 	</script>
 </html>

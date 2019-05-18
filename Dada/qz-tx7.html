@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+        <title></title>
+		<link rel="stylesheet" href="css/mui.poppicker.css">
+		<link rel="stylesheet" href="css/mui.picker.css">
+		<link rel="stylesheet" href="css/mui.css">
+    </head>
+    <link rel="stylesheet" type="text/css" href="css/qz-tx7.css">
+    <body>
+    <div class="bar">
+            <div class="left">
+                <img src="pic/left_row.png" alt="">
+              
+                <span  class="top_text">发布</span>
+            </div>
+
+        </div>
+		
+		<div class="wrap-box">
+			<div class="work-yx">求职状态</div>
+		     <div class="cH">根据求职意向为您推荐相关职业</div>
+			 
+			 <div class="maRin20">
+			 <div class="bq0t">求职状态</div>
+			 <div  class="ch-wrap work">
+			 	<span  class="cH">在职-考虑机会</span> 
+			 <img src="pic/rrow.png" alt="" class="row">
+			 
+			 </div>
+			 </div>
+			
+			<div class="maRin20">
+			<div class="bq0t">期待行业</div>
+			<input type="text" placeholder="请选择期待职位">
+			<!-- qz3 -->
+			</div>
+			
+			
+			 <div class="maRin20">
+			 <div class="bq0t">薪资要求</div>
+			 <div  class="ch-wrap gongx">
+			 	<span  class="cH">2K-3K</span> 
+			 <img src="pic/rrow.png" alt="" class="row">
+			 
+			 </div>
+			 </div>
+			 
+			 <div class="xy"><input  type="checkbox" class="xy-input">同意并遵守<a href="">xx协议</a></div>
+			 
+			 
+			 <div  class="send">发布</div>
+		</div>
+    </body>
+		<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/mui.js"></script>
+	<script src="js/mui.picker.js"></script>
+	
+	<script src="js/mui.picker.all.js"></script>
+	<script type="text/javascript">
+		$(".work").click(function() {
+		
+			var picker = new mui.PopPicker();
+			picker.setData(
+				[{
+						value: 'zl',
+						text: '离职-随时到岗'
+					},
+					{
+						value: 'zl',
+						text: '在职-月内到岗'
+					},
+					{
+						value: 'zl',
+						text: '在职-考虑机会'
+					},
+					{
+						value: 'zl',
+						text: '在职-暂不考虑'
+					},
+					
+										
+				
+				]);
+			picker.show(function(selectItems) {
+				$(".work .cH").html(selectItems[0].text);
+			})
+		})
+		$(".gongx").click(function() {
+		
+			var picker = new mui.PopPicker();
+			picker.setData(
+				[{
+						value: 'zl',
+						text: '2k-3k'
+					},
+					{
+						value: 'zl',
+						text: '3k-5k'
+					},
+					{
+						value: 'zl',
+						text: '5k-8k'
+					},
+					{
+						value: 'zl',
+						text: '10k以上'
+					},
+					{
+						value: 'zl',
+						text: '面议'
+					},
+					
+										
+				
+				]);
+			picker.show(function(selectItems) {
+				$(".gongx .cH").html(selectItems[0].text);
+			})
+		})
+	</script>
+</html>

@@ -24,6 +24,7 @@ input
 {
 	padding: 0 !important;
 	margin: 0 !important;
+	font-size: 0.75rem;
 }
 body
 {
@@ -136,3 +137,13 @@ background-color: #fff;
 	{
 		width: 40%;
 	}
+textarea
+{
+	border: none;
+	border-bottom: 0.0625rem solid #eee;
+	font-size: 0.75rem;
+	min-height: 5rem;
+	color: #888;
+}
+
+

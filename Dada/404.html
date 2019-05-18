@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+        <title></title>
+    </head>
+    <link rel="stylesheet" type="text/css" href="css/404.css">
+    <body>
+    <div class="bar">
+            <div class="left">
+               
+                
+                <span  class="top_text"> </span>
+            </div>
+
+        </div>
+		
+		<img src="pic/worry.png" alt=""  class="cuo">
+		
+		<div class="w-text"> 页面错误</div>
+		
+		<div class="w-textc"><span class="time">5</span>秒后返回</div>
+    </body>
+	<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var time = 5;
+		function getRandomCode(){
+		if (time === 0){ 
+		clearInterval();
+		return;
+		} 
+		else { 
+		time--;
+		$('.time').text(time);
+		} 
+		}
+	setInterval(function() { 
+		getRandomCode();
+		},1000);
+
+	</script>
+</html>

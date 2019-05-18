@@ -1,13 +1,11 @@
 .bar {
-    height: 44px;
+    height: 55px;
     text-align: center;
-    line-height: 44px;
+    line-height: 55px;
     box-shadow: 1px 0px 1px #eee;
     color: #333;
     background-color: #fff;
-    
-
-	display: flex;
+    display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	font-size: 12px;
@@ -42,11 +40,7 @@ body
 {
 	display: block;
 }
-.content1,.content2
-{
-	display: none;
-	width: 100%;
-}
+ 
 .content-box
 {
 	width: 100%;

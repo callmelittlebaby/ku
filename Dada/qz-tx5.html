@@ -8,7 +8,8 @@
 	<link rel="stylesheet" href="css/mui.poppicker.css">
 	<link rel="stylesheet" href="css/mui.picker.css">
 	<link rel="stylesheet" href="css/mui.css">
-    <link rel="stylesheet" type="text/css" href="css/qz-tx4.css">
+	<link rel="stylesheet" href="css/mui.dtpicker.css">
+    <link rel="stylesheet" type="text/css" href="css/qz-tx5.css">
     
 	<body>
     <div class="bar">
@@ -24,17 +25,10 @@
 			<div class="school">项目经历</div>
 		     <div class="cH">项目经历是BOSS最为看重</div>
 		<div class="maRin20">
-		<div class="bq0t">项目经历</div>
-		<input type="text" placeholder="输入项目名称">
+		<div class="bq0t">项目负责职位</div>
+		<input type="text" placeholder="输入项目负责职位名称">
 		</div>
-		<div class="maRin20">
-		<div class="bq0t">学历</div>
-		<div  class="ch-wrap xl ">
-			<span  class="cH">请选择</span>
-		<img src="pic/rrow.png" alt="" class="row">
 		
-		</div>
-		</div>
 		<div class="maRin20">
 		<div class="bq0t">时间段</div>
 		
@@ -52,9 +46,21 @@
 		</div>
 		</div>
 		</div>
+		<div class="maRin20">
+		<div class="bq0t">项目名称</div>
+		<input type="text" placeholder="输入项目名称">
+		</div>
+		
+		<div class="maRin20">
+		<div class="bq0t">项目内容</div>
+		<textarea name="" id="" cols="" rows=""></textarea>
+		</div>
+		<div>
+			
+		</div>
 		
 		
-		
+	
 	
 		
 			<div  class="send">下一步</div>
@@ -67,122 +73,42 @@
 	<script src="js/mui.picker.all.js"></script>
 	
 	<script type="text/javascript">
-		$(".xl").click(function() {
 		
-			var picker = new mui.PopPicker();
-			picker.setData(
-				[{
-						value: 'zl',
-						text: '初中及初中以下'
-					},
-					{
-						value: 'zl',
-						text: '中专/中技'
-					},
-					{
-						value: 'zl',
-						text: '高中'
-					},
-					{
-						value: 'zl',
-						text: '大专'
-					},
-					{
-						value: 'zl',
-						text: '本科'
-					},
-					{
-						value: 'zl',
-						text: '博士'
-					},
-				
-										
-				
-				]);
-			picker.show(function(selectItems) {
-				$(".xl .cH").html(selectItems[0].text);
-			})
-		})
-		
-		$(".timeS").click(function() {
-		
-			var picker = new mui.PopPicker();
-			picker.setData(
-				[{
-							value: 'zl',
-						text: '2018'
-					},
-					{
-						value: 'zl',
-						text: '2017'
-					},
-					{
-						value: 'zl',
-						text: '2013'
-					},
-					{
-						value: 'zl',
-						text: '2012'
-					},
-					{
-						value: 'zl',
-						text: '2011'
-					},
-					{
-						value: 'zl',
-						text: '2010'
-					},
-					{
-							value: 'zl',
-							text: '2010前'
-						},
-				
-										
-				
-				]);
-			picker.show(function(selectItems) {
-				$(".timeS .cH").html(selectItems[0].text);
-			})
-		})
-		$(".timeE").click(function() {
-		
-			var picker = new mui.PopPicker();
-			picker.setData(
-				[{
-							value: 'zl',
-						text: '2018'
-					},
-					{
-						value: 'zl',
-						text: '2017'
-					},
-					{
-						value: 'zl',
-						text: '2013'
-					},
-					{
-						value: 'zl',
-						text: '2012'
-					},
-					{
-						value: 'zl',
-						text: '2011'
-					},
-					{
-						value: 'zl',
-						text: '2010'
-					},
-					{
-							value: 'zl',
-							text: '2010前'
-						},
-										
-				
-				]);
-			picker.show(function(selectItems) {
-				$(".timeE .cH").html(selectItems[0].text);
-			})
-		})
+$(".timeS").click(function() {
+var dtPicker = new mui.DtPicker({
+type: "month", //设置日历初始视图模式
+
+
+});
+dtPicker.show(function (selectItems) { 
+
+
+var y = selectItems.y.text;  //获取选择的年
+var m = selectItems.m.text;  //获取选择的月
+var date = y + "-" + m;
+$(".timeS .cH").html(date); 
+console.log(selectItems.y);//{text: "2016",value: 2016} 
+console.log(selectItems.m);//{text: "05",value: "05"} 
+});
+})
+
+$(".timeE").click(function() {
+var dtPicker = new mui.DtPicker({
+type: "month", //设置日历初始视图模式
+
+
+});
+dtPicker.show(function (selectItems) { 
+
+
+var y = selectItems.y.text;  //获取选择的年
+var m = selectItems.m.text;  //获取选择的月
+var date = y + "-" + m;
+$(".timeE .cH").html(date); 
+console.log(selectItems.y);//{text: "2016",value: 2016} 
+console.log(selectItems.m);//{text: "05",value: "05"} 
+});
+})
 	</script>
 </html>
 
