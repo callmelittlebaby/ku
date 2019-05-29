@@ -17,7 +17,7 @@
 }
 body
 {
-
+background-color: #fff;
 }
 .left img {
   position: absolute;
@@ -215,3 +215,46 @@ font-size: 12px;
 		
 	}
 	
+	.price
+	{
+		border-bottom: 1px solid #eee !important;
+		padding-bottom: 5px;
+	}
+	.tg1
+	{
+		margin-top: 20px;
+	}
+	.bz
+	{border-bottom: 1px solid #eee !important;
+		padding-bottom: 5px;
+		width: 70%;
+	}
+	
+	.zd1
+	{
+		position: relative;
+		margin-left: 20px;
+	}
+	.zd1::before
+	{
+	
+	content: "";
+    position: absolute;
+    width: 2px;
+    height: 21px;
+    background-color: #ebebeb;
+    top: 2px;
+    left: -21px;
+
+		
+	}
+	
+	.zd-active{
+		
+		background-color: #FDBD09;
+		color: #fff;
+	}
+	.c-active
+	{
+		background:#5BC0DE; color: #fff;
+	}

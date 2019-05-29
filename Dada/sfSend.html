@@ -22,8 +22,9 @@
 	<div> <span class="r-b"></span> <input type="text" placeholder="在哪里出发？" class="cfd"></div>	
 	<div> <span class="r-b r-h"></span><input type="text" placeholder="去哪里？" class="zd"></div>		
     <div class="hadUse">
-   <span class="changY">财富大厦</span>  
-   <span class="changY">秦泰中信小学</span>
+   <span class="changY acc" >车找人</span>  
+   <span class="changY acc">人找车</span>
+    <span class="changY zd1 " >置顶</span>
    </div>
    
    
@@ -36,7 +37,16 @@
    			 <div class="date-input">
    				 	<img src="pic/dog.png" alt="" class="dog">出发时间：<input type="text" id="test1" placeholder="点击选择">
    </div>
-   			</div>
+   
+    <div class="tg1"> <img src="pic/dog.png" alt="" class="dog">期待价格：<input type="text" placeholder="填写期待价格(单位元)" class="price"></div>
+       <div class="tg1"> <img src="pic/dog.png" alt="" class="dog">容纳人数：<input type="text" placeholder="如:1人" class="price"></div>
+   
+	   <div class="tg1"><img src="pic/dog.png" alt="" class="dog">提示备注：
+	  
+		  <input type="text" placeholder="不允许带宠物" class="bz">
+	   </div>
+	   
+	   </div>
   
    
    <div class="lux">
@@ -81,6 +91,16 @@
 		  elem: '#test1'
 		  ,type: 'time'
 		});
+		$(".zd1").click(function()
+		{
+			$(".zd1").toggleClass("zd-active");
+		})
+		$(".acc").click(function()
+		{
+			$(".acc").removeClass("c-active");
+			$(this).toggleClass("c-active");
+			
+		})
 		
 	</script>
 </html>

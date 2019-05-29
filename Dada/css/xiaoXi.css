@@ -35,6 +35,8 @@ body
 {
 	height: 100%;
 	color: #333;
+	width: 30%;
+	position: relative;
 }
 .content
 {
@@ -465,4 +467,39 @@ margin: auto;
 {
 	font-size: 12px;
 	margin-top: 10px;
+}
+.qp
+{
+	    min-width: 14px;
+    text-align: center;
+    line-height: 14px;
+    display: inline-block;
+    position: absolute;
+    left: 60%;
+    top: -8px;
+    background: red;
+    color: #fff;
+    border-radius: 17px;
+    padding: 6px;
+    font-size: 16px;
+    transform: scale(.7);
+  
+}
+
+.qp1
+{
+	    min-width: 14px;
+    text-align: center;
+    line-height: 14px;
+    display: inline-block;
+    position: absolute;
+    left: 60%;
+    top: 8px;
+    background: red;
+    color: #fff;
+    border-radius: 17px;
+    padding: 6px;
+    font-size: 16px;
+    transform: scale(.7);
+  
 }

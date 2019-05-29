@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+        <title></title>
+    </head>
+    <link rel="stylesheet" type="text/css" href="css/rm-rent.css">
+    <body>
+    <div class="bar">
+            <div class="left">
+                <img src="pic/left_row.png" alt="">
+                 
+                <span  class="top_text"> 下一步</span>
+            </div>
+
+        </div>
+		
+		 <div class="distance">
+		<div class="fh">标题</div>
+		<input type="text" class='r-n' placeholder="标题(区名10个字内)">
+		<div class="fh">发布类型</div>	
+		<div  class="radio_baby">
+		
+		<span>	
+		<input type="radio" name="baby" class="sale">出售
+		</span>
+		<span>	
+		<input type="radio" name="baby" class="rend">出租
+		</span>
+		<span>	
+		<input type="radio" name="baby" class="qrend">求租
+		</span>
+		<span>	
+		<input type="radio" name="baby"  class="qsale">求购
+		</span>
+		<span>	
+		<input type="radio" name="baby"  class="zm">转卖
+		</span>
+		</div>
+		<div class="fh">金额</div>
+		<input type="text" class='r-m' placeholder="输入租金">
+		<div class="fh">面积</div>
+		<input type="text" class='r-n' placeholder="单位m²">
+		
+		</div>
+		
+		<div  class="send">下一步</div>
+    </body>
+	
+	<script src="js/jquery-1.11.3.min.js"> </script>
+	<script type="text/javascript">
+		
+		$(".sale").on('click',function(){
+			
+			if($(".sale").prop("checked") == true){
+			
+			 $('.r-m').attr('placeholder','出售金额/元');
+			}
+		})
+		$(".rend").on('click',function(){
+			
+			if($(this).prop("checked") == true){
+			
+			 $('.r-m').attr('placeholder','出租金额元/月');
+			}
+		})
+		$(".qrend").on('click',function(){
+			
+			if($(this).prop("checked") == true){
+			
+			 $('.r-m').attr('placeholder','租金预算元/月');
+			}
+		})
+		$(".qsale").on('click',function(){
+			
+			if($(this).prop("checked") == true){
+			
+			 $('.r-m').attr('placeholder','购入预算/元');
+			}
+		})
+		
+		$(".zm").on('click',function(){
+			
+			if($(this).prop("checked") == true){
+			
+			 $('.r-m').attr('placeholder','转卖金额/元');
+			}
+		})
+		
+	</script>
+</html>

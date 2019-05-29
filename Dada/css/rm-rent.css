@@ -1,0 +1,100 @@
+
+html
+{
+
+}
+.bar {
+    height:  2.75rem;
+    text-align: center;
+     line-height: 2.75rem;
+    box-shadow:0.0625rem 0rem 0.0625rem #eee;
+    color: #333;
+    background-color: #fff;
+   font-size: 0.75rem;
+  position: relative;
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+
+}
+body
+{
+
+}
+.left img {
+  position: absolute;
+  height: 1.25rem;
+  left: 0;
+  top: 50%;
+  transform: translate(7%, -50%);
+}
+
+.top_text
+{
+  float: right;
+  margin-right: 1.25rem;
+}
+
+.distance{
+	padding: 0 20px;
+}
+.radio_baby
+{
+	font-size: 14px;
+	color: #888;
+	display: flex;
+	
+}
+.radio_baby span
+{
+	margin-right: 5%;
+}
+.radio_baby input
+{
+	margin-right: 10px;
+	position: relative;
+	top: 4px;
+}
+.fh
+{
+	font-size: 12px;
+	margin:  20px 0px;
+}
+.r-m,.r-n
+{  
+	padding: 0 !important;
+	margin: 0 !important;
+	border: none !important;
+	width: 100% !important;
+	height: 30px !important;
+	line-height: 30px !important;
+	border-bottom: 1px solid #eee !important;
+	outline: none !important;
+	font-size: 14px;
+}
+.separate_tb{
+	
+	display: flex;
+	flex-direction: column;
+    margin-right: 6%;
+	
+}	
+	.send
+	{
+		width: 60%;
+		margin-left: 20%;
+		background-color: #969699;
+		height: 50px;
+		line-height: 50px;
+		color: #fff;
+		text-align: center;
+		border-radius: 5px;
+		margin-top: 40px;
+		margin-bottom: 40px;
+		font-size: 14px;
+		
+	}
+	

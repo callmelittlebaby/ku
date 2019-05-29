@@ -473,3 +473,21 @@
 	margin-bottom: 40px;
 
 }
+
+.qp
+{
+	    min-width: 24px;
+    text-align: center;
+    line-height: 14px;
+    display: inline-block;
+    position: absolute;
+    left: 60%;
+    top: -8px;
+    background: red;
+    color: #fff;
+    border-radius: 17px;
+    padding: 6px;
+    font-size: 16px;
+    transform: scale(.7);
+  
+}
