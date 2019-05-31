@@ -73,7 +73,7 @@ white-space:nowrap;
 	flex-direction:row;
 	
 }
-.toPart img 
+.toPart .yh 
 {
 	width: 40px;
 	height: 40px;
@@ -222,10 +222,12 @@ padding-bottom:20px;
 	overflow: hidden;
 	padding: 5px 0;
 	white-space: nowrap;
+	display: flex;
+	flex-direction: column;
 }
 
 .same_content .nameAndCont span {
-	display: block;
+	display: inline-block;
 	line-height: 25px;
 }
 .content_box {
@@ -233,7 +235,7 @@ padding-bottom:20px;
 	align-content: center;
 	height: 60px;
 }
-.same_content img {
+.same_content .yh {
 	width: 42px;
 	height: 42px;
 	border-radius: 50%;
@@ -248,7 +250,7 @@ padding-bottom:20px;
 }
 
 .xx_date span {
-	display: block;
+	display: inline-block;
 	line-height: 25px;
 }
 
@@ -256,8 +258,13 @@ padding-bottom:20px;
 	font-size: 14px;
 	font-weight: 500;
 	color: #333;
+	max-width:80%;
+	overflow: hidden;
 }
-
+.vipName{
+	
+	color: red;
+}
 .chatCon {
 	color: #7F7F7F;
 	font-weight: 500;
@@ -503,3 +510,50 @@ margin: auto;
     transform: scale(.7);
   
 }
+
+.vipName
+{
+	color: red !important;
+	
+}
+.aName .vip_pc
+{
+	width: 20px;
+	position: relative;
+	top: 6px;
+}
+.svip
+{
+	background-color:#FCE063 ;
+}
+
+ .svip
+ {
+	 display: inline-block;
+ 	background-color:#FCE063 ;
+	padding:  2px 5px;
+	transform: scale(0.7);
+	border-radius: 5px;
+	color: #CD1304;
+	height: 18px;
+	line-height: 18px !important;
+	 top: -1px;
+	position: relative;
+	left: -6px;
+ }
+ 
+ .sj-img{
+	 
+	 width: 16px;
+	 position: relative;
+	 top: 2px;
+	 left: -8px;
+ }
+ 
+ .qy-img
+ {
+	 	 width: 16px;
+	 position: relative;
+	 top: 2px;
+	 left: -8px;
+ }

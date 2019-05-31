@@ -11,6 +11,10 @@
 	margin: 0;
 }
 
+.vipName
+{
+	color: red !important;
+}
 .bar
 {
 	height: 44px;

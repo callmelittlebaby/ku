@@ -577,3 +577,8 @@ input::-webkit-input-placeholder{    color: #918787;}
 	font-weight: 600 ;
 	color: #555;
 }
+
+.vipName
+{
+	color: red !important;
+}
