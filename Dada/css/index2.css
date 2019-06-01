@@ -497,3 +497,17 @@
 	color: red;
 	
 }
+
+ .svip
+ {
+	 display: inline-block;
+ 	background-color:#FCE063 ;
+	padding:  2px 5px;
+	transform: scale(0.7);
+	border-radius: 5px;
+	color: #CD1304;
+  line-height: 18px !important;
+	 top: -1px;
+	position: relative;
+	left: -6px;
+ }

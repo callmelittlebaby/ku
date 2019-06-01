@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+        <title></title>
+    </head>
+    <link rel="stylesheet" type="text/css" href="css/team.css">
+    <body>
+    <div class="bar">
+            <div class="left">
+                <img src="pic/left_rowb.png" alt="">
+                团队
+               
+            </div>
+            
+        </div>
+	<div  class="team">
+		
+		<div class="tuiG">
+		<div class="tuiG-wrap">
+	    <span >推广人数</span>
+		<div> <span class="tuiG-number">33</span>人</div>
+		</div>
+		
+		<div>
+			
+			<img src="pic/team1.png" alt=""   class="team-img">
+		</div>
+		</div>	
+	</div>
+			
+			 <div class="sx-bar">
+			        <a class="active" href="#item1">一级<span class="number">（4）</span>
+					
+					</a>
+					<a href="#item2">二级<span>（4）</span>
+				
+					</a>
+					
+			    </div>
+			<div  class="search">  
+				   <input type="text" placeholder="点击搜索会员名称">
+				   <img src="pic/search.png" alt="" class="search-img">
+			</div>
+			 
+			 <div  class="px-bar">
+				 
+				<div class="px-wrap">
+				<span>团队排序</span>
+				<img src="pic/th.png" alt="" class="th">
+				</div> 
+				  
+				 <div class="px-wrap">
+				 <span>时间排序</span>
+				 <img src="pic/th.png" alt="" class="th">
+				 </div> 
+			</div>
+			<div>
+			<div  class="content">
+			<div class="team-list">
+				<img src="pic/icon_yh.png" alt="" class="yh">
+				<div  class="xx-wrap">
+					<div  class="name vipName">修行者 <span class="svip">年svip</span></div>
+					<div class="date">加入时间：2019/05/24</div>
+					
+					
+				</div>
+				<div class="right-wrap">
+					<div>推荐人数: <span class="number">10</span>人</div>
+					<img src="pic/chat.png" alt="">
+				</div>
+			</div>
+			<div class="team-list">
+				<img src="pic/icon_yh.png" alt="" class="yh">
+				<div  class="xx-wrap">
+					<div  class="name">修行者</div>
+					<div class="date">加入时间：2019/05/24</div>
+				</div>
+				<div class="right-wrap">
+					<div>推荐人数: <span class="number">10</span>人</div>
+					<img src="pic/chat.png" alt="">
+				</div>
+			</div>
+			</div>
+			<div  class="content1">
+			<div class="team-list">
+				<img src="pic/icon_yh.png" alt="" class="yh">
+				<div  class="xx-wrap">
+					<div  class="name">修行者</div>
+					<div class="date">加入时间：2019/05/24</div>
+					<div class="right-wrap">
+						<div>推荐人数: <span class="number">10</span>人</div>
+						<img src="pic/chat.png" alt="">
+					</div>
+				</div>
+				
+			</div>
+			</div>
+			
+			</div>
+			
+    </body>
+	<script  src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript">
+		$(".sx-bar a").click(function()
+		{
+			$(this).toggleClass("active").siblings().removeClass("active");
+			
+		var item=($('.active').attr('href'));
+		
+		switch(item)
+		{
+			case "#item1":
+			$(".content").css("display","block").siblings().css("display","none");
+		
+			break;
+			case "#item2":
+			$(".content1").css("display","block").siblings().css("display","none");	
+			
+		  break;
+	
+		}
+		})
+	</script>
+</html>
