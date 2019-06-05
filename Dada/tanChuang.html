@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+        <title></title>
+    </head>
+    <link rel="stylesheet" type="text/css" href="css/tanchuang.css">
+    <body>
+   
+   <div class="bg-tc">
+	   
+	   <div  class="alert-remind">
+		   <img src="pic/cha.png" alt=""  class="cha">
+		   申请已提交，系统扣款中
+	   </div>
+   </div>
+   
+   
+    </body>
+	
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script>
+		
+			$('.bg-tc').on('click', function(e) {
+			event.stopPropagation();
+			event.preventDefault();
+			var target = $(e.target);
+			if ($(e.target).closest(".alert-remind").length == 0) {
+				
+				$(".alert-remind").css("display","none")
+			}
+		});
+		$('.cha').on('click', function(e) {
+				$(".alert-remind").css("display","none")
+		});
+	</script>
+</html>

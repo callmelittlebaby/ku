@@ -1,0 +1,169 @@
+
+html
+{
+
+}
+.bar {
+    height:  2.75rem;
+    text-align: center;
+     line-height: 2.75rem;
+   font-weight: 600;
+    color: #fff;
+    background-color: #E93323;
+   font-size: 0.75rem;
+  position: relative;
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+
+}
+@font-face {
+	font-family: din;
+     src:
+		url('../fonts/DIN-Regular.otf');
+		
+	
+
+}
+body
+{
+background-color: #F5F5F5;
+}
+.left img {
+  position: absolute;
+  height: 1.25rem;
+  left: 0;
+  top: 50%;
+  transform: translate(7%, -50%);
+}
+
+.top_text
+{
+  float: right;
+  margin-right: 1.25rem;
+}
+.bg4
+{
+	width: 100%;
+	background-image: url(../pic/bg4.png);
+	height: 240px;
+	background-size: 100% 100%; 
+	background-repeat: no-repeat;
+}
+/* .bg4  img
+{
+	width: 100%;
+}
+ */
+
+.my-yj
+{
+	display: flex;
+	flex-direction: column;
+	color: #fff;
+	align-items: center;
+	padding-top: 30px;
+	height: 120px;
+	justify-content: space-between;
+	position: relative;
+}
+.my-yj .number
+{
+	font-size: 60px;
+	font-family: din;
+}
+
+.record
+{
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	font-size: 14px;
+	
+}
+.row-img
+{
+	transform:rotate(180deg);
+	height: 18px;
+	position: relative;
+	top: 4px;
+	left: 5px;
+}
+.sy-yj
+{
+	height: 70px;
+	position: relative;
+	margin-top: 20px;
+}
+
+.yj-row{
+	
+	display: flex;
+	flex-direction: column;
+	color: #fff;
+	align-items: center;
+	height:50px;
+	justify-content: space-between;
+	font-size: 14px;
+	font-family: din;
+	
+}
+.left-w
+{
+	position:absolute ;
+	left: 30px;
+	bottom: 20px;
+}
+.right-w
+{
+	position:absolute ;
+	right: 30px;
+	bottom: 20px;
+	
+	
+}
+.btn
+{
+	background-color:#E93323;
+	width: 130px;
+	text-align: center;
+	border-radius: 50px;
+	height: 30px;
+	line-height: 30px;
+	color: #fff;
+	position: relative;
+	margin: auto;
+	top: -20px;
+	font-size: 12px;
+}
+
+.function_area
+{
+	
+	padding: 5px 10px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.w45
+{
+	width: 49%;
+	background-color: #fff;
+	height:130px;
+	border-radius: 5%;
+	margin-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 12px;
+}
+.w45 img
+{
+	width: 40px;
+	margin-bottom: 20px;
+}
