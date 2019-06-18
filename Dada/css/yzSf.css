@@ -79,6 +79,7 @@ body
 	margin-right: 20px;
 	font-size: 14px;
 	color: #FF823B;
+	display: block;
 }
 .tag-warp .name 
 {
@@ -139,4 +140,15 @@ body
 position: relative;
 top: 3px;
 margin-right: 10px;
+}
+
+
+
+.fin-img
+{
+	position: absolute;
+	width: 20px;
+	right: 20px;
+	top: 20px;
+	
 }

@@ -35,8 +35,10 @@ background-color: #fff;
 	margin-top: 20px;
 	height: 40px;
 	outline: none;
-	width: 50%;
+	width: 60%;
 	font-size: 14px;
+	box-sizing: border-box;
+	font-size: 12px;
 	
 }
 
@@ -60,6 +62,7 @@ width: 6px;
 	display: inline-block;
 	margin-right: 20px;
 	
+	
 }
 .r-h
 {
@@ -69,7 +72,7 @@ width: 6px;
 }
 .hadUse
 {
-	margin-top: 30px;
+	margin-top: 50px;
 	padding-left: 20px;
 }
 .changY
@@ -112,6 +115,7 @@ display: inline-block;
 font-size: 12px;
 margin-right: 20px;
 border: none;
+box-sizing: border-box;
 }
 .date-input
 {
@@ -131,57 +135,7 @@ border: none;
 	position: relative;
 	left: 4px;
 }
-.lux-content
-{  
-	border-radius: 5px;
-	padding: 20px;
-	margin-top: 40px;
-	margin-bottom: 40px;
-	box-shadow: 1px 1px 10px #C8C8C8;
-}
-.lux-part .tag
-{
-    display: inline-block;
-    background-color: #888;
-    color: #fff;
-    padding: 2px 10px;
-    border-radius: 12px;
-	font-size: 12px;
-	margin-right: 10px;
-	transform: scale(0.95);
-	
-}
 
-.lux-part
-{   
-	position: relative;
-	margin-top: 20px;
-	padding-bottom: 20px;
-	border-bottom: 1px solid #eee;
-}
-.lux-part:last-child
-{
-	border-bottom: 0px solid #eee;
-}
-.lux-part .time
-{
-font-size: 12px;
-	transform: scale(0.8);
-	color: #888;
-}
-
-.maRinT
-{
-	margin-top: 20px;
-}
-.rrow
-{
-	position: absolute;
-	height: 20px;
-	right: 10px;
-	top: 50%;
-	margin-top: -10px;
-}
 	.xy
 	{
 		font-size: 12px ;
@@ -209,7 +163,7 @@ font-size: 12px;
 		color: #fff;
 		text-align: center;
 		border-radius: 5px;
-		margin-top: 40px;
+		margin-top: 100px;
 		margin-bottom: 40px;
 		font-size: 14px;
 		
@@ -258,3 +212,56 @@ font-size: 12px;
 	{
 		background:#5BC0DE; color: #fff;
 	}
+	
+	.lx-dw
+	{
+		position: relative;
+	}
+	.a-lx
+	{
+		position: absolute;
+		right:20px;
+		font-size: 12px;
+		top: 50%;
+	}
+	.dz
+	{
+		margin-top: 20px;
+		position: relative;
+		box-sizing: border-box;
+	}
+	
+	.record,.record2{
+		
+		position: absolute;
+		background-color: rgba(0,0,0,0.3);
+		color:#fff;
+		width: 63%;
+		
+		min-height: 60px;
+		z-index: 2;
+		left: 20px;
+		top: 50px;
+		text-align: center;
+		display: flex;
+		display: none;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		transform: scale(0.8);
+	}
+	.ad12
+	{
+		font-size: 12px;
+		border-bottom: 1px solid #fff;
+		line-height: 40px;
+		width: 100%;
+		
+		
+	}
+	.ad12:hover
+	{
+		background-color:#C8EAEB;
+	}
+	
+	

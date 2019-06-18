@@ -1,0 +1,124 @@
+
+html
+{
+
+}
+.bar {
+    height:  2.75rem;
+    text-align: center;
+     line-height: 2.75rem;
+    box-shadow:0.0625rem 0rem 0.0625rem #eee;
+    color: #333;
+    background-color: #fff;
+   font-size: 0.75rem;
+  position: relative;
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+
+}
+body
+{
+
+}
+.left img {
+  position: absolute;
+  height: 1.25rem;
+  left: 0;
+  top: 50%;
+  transform: translate(7%, -50%);
+}
+
+.top_text
+{
+  float: right;
+  margin-right: 1.25rem;
+}
+
+.lux-content
+{  
+	border-radius: 5px;
+	padding: 20px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	box-shadow: 1px 1px 10px #C8C8C8;
+}
+.lux-part .tag
+{
+    display: inline-block;
+    background-color: #888;
+    color: #fff;
+    padding: 2px 10px;
+    border-radius: 12px;
+	font-size: 12px;
+	margin-right: 10px;
+	transform: scale(0.95);
+	
+}
+
+.lux-part
+{   
+	position: relative;
+	margin-top: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #eee;
+}
+.lux-part:last-child
+{
+	border-bottom: 0px solid #eee;
+}
+.lux-part .time
+{
+font-size: 12px;
+	transform: scale(0.8);
+	color: #888;
+}
+
+
+.maRinT
+{
+	margin-top: 20px;
+}
+.rrow
+{
+	position: absolute;
+	height: 20px;
+	right: 10px;
+	top: 50%;
+	margin-top: -10px;
+}
+.lux
+{
+	margin-top: 40px;
+	padding: 0 20px;
+	font-size: 14px;
+}
+.r-b
+{
+	width: 6px;
+	height: 6px ;
+	border-radius: 50%;
+	background-color: #FFB534;
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.r-c
+{
+width: 6px;
+	height: 6px ;
+	border-radius: 50%;
+	background-color: #FFB534;
+	display: inline-block;
+	margin-right: 20px;
+	
+}
+.r-h
+{
+	
+	background-color: #4B4B68;
+	
+}

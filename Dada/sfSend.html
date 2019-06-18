@@ -13,70 +13,51 @@
             <div class="left">
                 <img src="pic/left_row.png" alt="">
                 行程发布
+			
             </div>
 
         </div>
 		<div class="" style="height: 100px;width: 100%;height: 200px;">
 			<img src="pic/dq.png" alt="" style="width: 100%;height: 100%;opacity: 0.3;">
 			</div>
-	<div> <span class="r-b"></span> <input type="text" placeholder="在哪里出发？" class="cfd"></div>	
-	<div> <span class="r-b r-h"></span><input type="text" placeholder="去哪里？" class="zd"></div>		
+			
+			<div  class="lx-dw">
+	<div  class="dz"> 
+	<span class="r-b"></span> <input type="text" placeholder="在哪里出发？" class="cfd">
+	<div class="record">
+		<div class="ad12">广东省惠州市惠阳区中区华府后门财富大厦</div>
+		<div class="ad12">广东省惠州市惠阳区中区华府后门财富大厦</div>
+		
+	</div>
+	
+	
+	</div>
+	
+		
+		
+	<div  class="dz">
+		<span class="r-b r-h"></span><input type="text" placeholder="去哪里？" class="cfd">
+		<div class="record">
+			<div class="ad12">广东省惠州市惠阳区中区华府后门财富大厦</div>
+			<div class="ad12">广东省惠州市惠阳区中区华府后门财富大厦</div>
+			
+		</div>
+	</div>	
+	<span  class="a-lx">常用路线</span>
+		</div>
     <div class="hadUse">
    <span class="changY acc" >车找人</span>  
    <span class="changY acc">人找车</span>
     <span class="changY zd1 " >置顶</span>
    </div>
    
+
    
-   <div  class="date">
-   				
-     <div class="date-input">
-   	  <img src="pic/dog.png" alt="" class="dog">出发日期：
-   			<input type="text" placeholder="点击选择" class="dataS">
-   			</div>
-   			 <div class="date-input">
-   				 	<img src="pic/dog.png" alt="" class="dog">出发时间：<input type="text" id="test1" placeholder="点击选择">
-   </div>
-   
-    <div class="tg1"> <img src="pic/dog.png" alt="" class="dog">期待价格：<input type="text" placeholder="填写期待价格(单位元)" class="price"></div>
-       <div class="tg1"> <img src="pic/dog.png" alt="" class="dog">容纳人数：<input type="text" placeholder="如:1人" class="price"></div>
-   
-	   <div class="tg1"><img src="pic/dog.png" alt="" class="dog">提示备注：
-	  
-		  <input type="text" placeholder="不允许带宠物" class="bz">
-	   </div>
-	   
-	   </div>
-  
-   
-   <div class="lux">
-	   <div>常用路线</div>
-	   <div style="float: right;font-size: 12px;color: #888;">添加常用路线</div>
-   
-   <div class="lux-content">
-	   
-	<div class="lux-part">
-   <div><span class="tag">上班</span><span class="time">07:00</span></div>
-   <div class="maRinT"><span class="r-c"></span><span>秦泰中信小学</span></div>
-    <div class="maRinT"><span class="r-c r-h"></span><span>秦泰中信小学</span></div>
-   <img src="pic/rrow.png" alt="" class="rrow">
-   </div>
-   
-   <div class="lux-part">
-   <div><span class="tag">上班</span><span class="time">07:00</span></div>
-   <div class="maRinT"><span class="r-c"></span><span>秦泰中信小学</span></div>
-    <div class="maRinT"><span class="r-c r-h"></span><span>秦泰中信小学</span></div>
-    <img src="pic/rrow.png" alt="" class="rrow">
-   </div>
-   
-   </div>
-   
-   </div>
-   
-   <div class="xy"><input  type="checkbox" class="xy-input">同意并遵守<a href="">xx协议</a></div>
+
+ 
    
    
-   <div  class="send">确认发布</div>
+   <div  class="send">下一步</div>
 	</body>
 		<script src="js/jquery-1.11.3.min.js"> </script>
 	<script src="js/calendar.js" type="text/javascript" charset="utf-8"></script>
@@ -87,7 +68,7 @@
 				console.log(date1);
 			}
 		});
-		laydate.render({ 
+		laydate.render({
 		  elem: '#test1'
 		  ,type: 'time'
 		});
@@ -101,6 +82,26 @@
 			$(this).toggleClass("c-active");
 			
 		})
-		
+//打开地区检索数据
+$(".cfd").focus(function(){
+	record_obj = $(this).parent().find('.record')
+	$(record_obj).css("display","flex");
+});
+$('.record').on('click','.ad12',function(res){
+	var HtmlVal=$(this).html();
+	
+	
+		$(this).parent().parent().find('.cfd').val(HtmlVal);
+	
+
+})
+$('body').on('click', function(e) {
+				event.stopPropagation();
+				event.preventDefault();
+				var target = $(e.target);
+				if ($(e.target).closest(".cfd").length == 0) {
+					$(".cfd").parent().find(".record").css("display","none");
+				}
+			});
 	</script>
 </html>

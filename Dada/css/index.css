@@ -950,3 +950,9 @@ position: fixed; z-index: 999;right: 0; bottom: 100px;
 height: 30px;
 	
 }
+
+.pic_ad
+{
+	max-width: 100%;
+	overflow: hidden;
+}

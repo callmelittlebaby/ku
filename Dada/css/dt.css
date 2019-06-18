@@ -49,6 +49,7 @@ body
 	display: flex;
 	justify-content: flex-start;
 	align-content: space-around;
+	overflow: hidden;
 }
 .tag_bar .company {
 	font-size: 12px;

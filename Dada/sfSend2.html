@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+        <title></title>
+    </head>
+    <link rel="stylesheet" type="text/css" href="css/sfSend2.css">
+	   <link rel="stylesheet" href="css/laydate.css">
+	<link rel="stylesheet" href="css/calendar.css">
+    <body>
+    <div class="bar">
+            <div class="left">
+                <img src="pic/left_row.png" alt="">
+                 行程发布
+                <span  class="top_text"> 发布</span>
+            </div>
+
+        </div>
+		
+		   
+		<div  class="date">
+						
+		  <div class="date-input">
+			  <img src="pic/dog.png" alt="" class="dog">出发日期：
+					<input type="text" placeholder="点击选择" class="dataS">
+					</div>
+					 <div class="date-input">
+						 	<img src="pic/dog.png" alt="" class="dog">出发时间：<input type="text" id="test1" placeholder="点击选择">
+		</div>
+		
+		 <div class="tg1"> <img src="pic/dog.png" alt="" class="dog">期待价格：<input type="text" placeholder="填写期待价格(单位元)" class="price"></div>
+		    <div class="tg1"> <img src="pic/dog.png" alt="" class="dog">容纳人数：<input type="text" placeholder="如:1人" class="price"></div>
+		
+			   <div class="tg1"><img src="pic/dog.png" alt="" class="dog">提示备注：
+			  
+				  <input type="text" placeholder="不允许带宠物" class="bz">
+			   </div>
+			   
+			   </div>
+			   
+			    <div class="xy"><input  type="checkbox" class="xy-input">同意并遵守<a href="">xx协议</a></div>
+			   
+			   
+			   <div  class="send">发布</div>
+		  
+    </body>
+		<script src="js/jquery-1.11.3.min.js"> </script>
+	<script src="js/calendar.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/laydate.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+			$('.dataS').datePicker({
+			okFunc: function (date1) {
+				console.log(date1);
+			}
+		});
+		laydate.render({ 
+		  elem: '#test1'
+		  ,type: 'time'
+		});
+		$(".zd1").click(function()
+		{
+			$(".zd1").toggleClass("zd-active");
+		})
+	
+		
+	</script>
+</html>
