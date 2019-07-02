@@ -116,3 +116,43 @@ background-color: #fff;
 		font-size: 14px;
 		
 	}
+		.distance
+	{
+		
+		position: relative;
+		
+	}
+	
+	.record,.record2{
+		
+		position: absolute;
+		background-color: rgba(0,0,0,0.3);
+		color:#fff;
+		width: 63%;
+		
+		min-height: 60px;
+		z-index: 2;
+		left: -7px;
+    top: 75px;
+		text-align: center;
+		display: flex;
+		display: none;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		transform: scale(0.8);
+	}
+	.ad12
+	{
+		font-size: 12px;
+		border-bottom: 1px solid #fff;
+		line-height: 40px;
+		width: 100%;
+		
+		
+	}
+	.ad12:hover
+	{
+		background-color:#C8EAEB;
+	}
+	

@@ -22,7 +22,7 @@
 		<div class="fh">发布类型</div>	
 		<div  class="radio_baby">
 		
-		<span>	
+		<!-- <span>	
 		<input type="radio" name="baby" class="sale">出售
 		</span>
 		<span>	
@@ -36,7 +36,16 @@
 		</span>
 		<span>	
 		<input type="radio" name="baby"  class="zm">转卖
-		</span>
+		</span> -->
+		
+		   <div class="hadUse">
+		<span class="changY acc" >出租</span>  
+		<span class="changY acc">出售</span>
+		 <span class="changY  acc " >求租</span>
+		 	 <span class="changY  acc " >求购</span>
+			  <span class="changY  acc " >专卖</span>
+		</div>
+		
 		</div>
 		<div class="fh">金额</div>
 		<input type="text" class='r-m' placeholder="输入租金">
@@ -87,6 +96,11 @@
 			 $('.r-m').attr('placeholder','转卖金额/元');
 			}
 		})
-		
+		$(".acc").click(function()
+		{
+			$(".acc").removeClass("c-active");
+			$(this).toggleClass("c-active");
+			
+		})
 	</script>
 </html>

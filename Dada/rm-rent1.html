@@ -49,6 +49,11 @@
 	    <div class="distance">
 	  <div class="fh">地址</div>
 	  <input type="text" class='r-n' placeholder="输入详细地址">
+	  <div class="record">
+	  	<div class="ad12">广东省惠州市惠阳区中区华府后门财富大厦</div>
+	  	<div class="ad12">广东省惠州市惠阳区中区华府后门财富大厦</div>
+	  	
+	  </div>
 	  </div>
 	  
 	  <div  class="send">下一步</div>
@@ -228,6 +233,25 @@
 			$(".sx-five .sx-content").html(selectItems[0].text);
 		})
 	})	
+		$(".r-n").focus(function(){
+			record_obj = $(this).parent().find('.record')
+			$(record_obj).css("display","flex");
+		});
+		$('.record').on('click','.ad12',function(res){
+			var HtmlVal=$(this).html();
+			
+			
+				$(this).parent().parent().find('.r-n').val(HtmlVal);
+			
 		
+		})
+		$('body').on('click', function(e) {
+						event.stopPropagation();
+						event.preventDefault();
+						var target = $(e.target);
+						if ($(e.target).closest(".r-n").length == 0) {
+							$(".r-n").parent().find(".record").css("display","none");
+						}
+					});
 	</script>
 </html>

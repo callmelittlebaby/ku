@@ -7,7 +7,7 @@ html
     height:  2.75rem;
     text-align: center;
      line-height: 2.75rem;
-    box-shadow:0.0625rem 0rem 0.0625rem #eee;
+    box-shadow:0.0625rem 0rem 0.0625rem #EFEFEF;
     color: #333;
     background-color: #fff;
    font-size: 0.75rem;
@@ -22,7 +22,7 @@ html
 }
 body
 {
-
+background-color: #fff;
 }
 .left img {
   position: absolute;
@@ -38,25 +38,109 @@ body
   margin-right: 1.25rem;
 }
 
-.all
+.row-list
 {
-	padding: 20px;
-	font-size: 12px;
-	color: #888;
+	
 }
-.pa input
+.row-all
 {
-	display: inline-block;
+
+}
+
+.row-list
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 30px;
+	border-bottom: 1px solid #eee;
+	padding: 20px;
+	align-items: center;
+	font-size: 14px;
+	line-height: 30px;
+}
+.yh
+{  
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+ .tx
+{
+height: 40px;	
+}
+.rightFont
+{
+	color: #888;
 	border: none;
-	margin-top: 20px;
+	display: block;
+	text-align: right;
+	height: 100%;
+	outline: none;
+}
+.setBar {
+    height: 44px;
+    line-height: 44px;
+    box-shadow: 1px 0px 1px #eee;
+    color: #333;
+    background-color: #fff;
+    font-family: din;
+	color: #666;
+    z-index: 2;
+	position:relative;
+	text-align: center;
+	font-size: 12px;
+}
+
+.tanDimu
+{
+	width: 100%;
+	height: 100%;
+	z-index: 5;
+	position: fixed;
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+	background-color: #fff;
+	transition: transform 0.4s 0s, box-shadow 0s 0.4s;
+	transition: transform 0.4s 0s, box-shadow 0s 0.4s;
+	overflow-y: auto;
+	-webkit-transform: translateX(100%);
+	-moz-transform: translateX(100%);
+	-ms-transform: translateX(100%);
+	-o-transform: translateX(100%);
+	transform: translateX(100%);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	top: 0;
+}
+.is-visible {
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	-ms-transform: translateX(0);
+	-o-transform: translateX(0);
+	transform: translateX(0);
+
+	-webkit-transition: -webkit-transform 0.4s 0s, box-shadow 0s 0s;
+	-moz-transition: -moz-transform 0.4s 0s, box-shadow 0s 0s;
+	width: 100%;
+}
+
+.qm-t
+{
+	display: block;
+	width: 100%;
+	height: 100px;
+	border: none;
 	border-bottom: 1px solid #eee;
 	outline: none;
 }
-.gg input
-{
-	margin-left: 10px;
-	margin-right: 10px;
-	position: relative;
-	top: 3px;
 
+.wc
+{
+	position: absolute;
+	right: 5px;
+	top: 0;
 }

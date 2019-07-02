@@ -48,10 +48,7 @@ body
 	display: flex;
 	
 }
-.radio_baby span
-{
-	margin-right: 5%;
-}
+
 .radio_baby input
 {
 	margin-right: 10px;
@@ -97,4 +94,25 @@ body
 		font-size: 14px;
 		
 	}
-	
+		.hadUse
+	{
+		
+		
+	}
+	.changY
+	{
+		padding: 4px 10px;
+		box-sizing: border-box;
+		font-size: 12px;
+		box-shadow: 1px 1px 8px #888;
+		height: 24px;
+		border-radius: 20px;
+		line-height: 24px;
+		margin-right: 20px;
+		color: #888;
+		
+	}
+	.c-active
+	{
+		background:#5BC0DE; color: #fff;
+	}

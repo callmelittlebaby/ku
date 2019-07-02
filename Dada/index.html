@@ -496,12 +496,8 @@
 						</div>
 						<div class="tag_find">
 
-							<div class="">
-								<input type="checkbox" name="车找人" id="" value="" /><span>车找人</span>
-							</div>
-							<div class="">
-								<input type="checkbox" name="车找人" id="" value="" /><span>人找车</span>
-							</div>
+							<span class="changY acc" >车找人</span>  
+							<span class="changY acc">人找车</span>
 							<div class="">
 								<span>价格排序</span> <img src="pic/angle.png" alt="" />
 							</div>
@@ -1218,5 +1214,11 @@ var $citypicker1 = $('#city-picker1');
             }, 15);    
         });  
     })  
+		$(".acc").click(function()
+	{
+		$(".acc").removeClass("c-active");
+		$(this).toggleClass("c-active");
+		
+	})
 	</script>
 </html>

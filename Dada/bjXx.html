@@ -5,7 +5,10 @@
         <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
         <title></title>
     </head>
+	
     <link rel="stylesheet" type="text/css" href="css/bjXx.css">
+	<link rel="stylesheet" href="css/mui.picker.css">
+	<link rel="stylesheet" href="css/mui.poppicker.css">
     <body>
     <div class="bar">
             <div class="left">
@@ -16,18 +19,93 @@
 
         </div>
 		<div>
-		<div class="all">
-			<div class="gg">
-			<span>性别：</span>  男<input type="radio">女<input type="radio">
-		</div>
-		<div class="pa">
-			电话：<input type="text" placeholder="电话">
-		</div>
-		<div class="pa">
-			签名：<input type="text" placeholder="签名">
+				<div class="tanDimu">
+				<div class="setBar">
+					  <div class="left">
+					    <img src="pic/left_row.png" alt=""  class="lk">
+					   个性签名
+					</div>
+					<span  class="wc"> 完成</span>
+				</div>
+				
+				 <textarea class="qm-t" id=""  placeholder="写点什么"></textarea>
+			</div>
+			
+			<div  class="row-all">
+	<div class="row-list tx">
+		<span>头像</span>
+	      <img src="pic/icon_yh.png" alt=""  class="yh">
+	</div>	
+	<div class="row-list name">
+		<span>昵称</span>
+	     <input class="rightFont" placeholder="JadeDING"></input>
+	</div>	
+	<div class="row-list sex " id="showSex">
+		<span>性别</span>
+	       <select name="" id="" class="rightFont"><option value="">男</option><option value="">女</option></select>
+	</div>
+	<div class="row-list">
+		<span>微信</span>
+	    <input class="rightFont" placeholder="131313"></input>
+	</div>	
+	<div class="row-list">
+		<span>电话</span>
+	       <input class="rightFont" placeholder="131313"></input>
+	</div>	
+	<div class="row-list qm">
+		<span>签名</span>
+		
+	     <span class="rightFont">13313131</span>
+	</div>
 		</div>
 		
-		</div>
+		<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+			<script src="js/jquery.easing.js" type="text/javascript" charset="utf-8"></script>
 		
+		<script type="text/javascript">
+			$(".qm").click(function()
+			{
+				
+				$(".tanDimu").toggleClass("is-visible");
+			})
+			
+			
+			
+			$('.xxyz').on('click', function() {
+			
+				
+				$(".yz_mu").css("display","block");
+			
+			})
+			
+			$(".yz_mu").on("click",function(e)
+			{
+					event.stopPropagation();
+					event.preventDefault();
+					var target = $(e.target);
+					if ($(e.target).closest(".white-mu").length == 0) {
+					$(".yz_mu").css("display","none");
+					console.log("aa");
+				}
+			})
+			$(".lk").click(function()
+			{
+				
+				$(".tanDimu").removeClass("is-visible");
+			})
+			
+			
+					$(".addS").on('click',function()
+			{
+				$(".whiteWrap").slideDown({
+				duration: 1000, 
+				easing: "easeOutBounce", 
+				});
+				
+				// $(".whiteWrap").css("display","block");
+			})
+
+
+		</script>
     </body>
 </html>

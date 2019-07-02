@@ -511,3 +511,20 @@
 	position: relative;
 	left: -6px;
  }
+ 	.changY
+ {
+ 	padding: 4px 10px;
+ 	box-sizing: border-box;
+ 	font-size: 12px;
+ 	box-shadow: 1px 1px 8px #ca5757;
+ 	height: 24px;
+ 	border-radius: 20px;
+ 	
+ 	margin-right: 20px;
+ 	color: #888;
+ 	
+ }
+ .c-active
+ {
+ 	background:#ff423c; color: #fff;
+ }

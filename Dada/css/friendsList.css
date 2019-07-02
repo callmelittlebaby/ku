@@ -37,6 +37,7 @@ body
   float: right;
   margin-right: 1.25rem;
 }
+
 .search-img
 {
 	  height: 25px;
@@ -46,7 +47,10 @@ body
 		transform: translate(7%, -50%);
 		z-index: 5;
 }
-
+.add
+{
+right: 40px;
+}
 .tag
 {
 	
